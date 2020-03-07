@@ -1,0 +1,35 @@
+{
+  "name": "@sabaki/i18n",
+  "version": "0.43.3",
+  "description": "Home of Sabaki's translation efforts",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"**/*.{js,md}\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabakiHQ/i18n.git"
+  },
+  "keywords": [
+    "sabaki",
+    "i18n",
+    "translation"
+  ],
+  "author": "Yichuan Shen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SabakiHQ/i18n/issues"
+  },
+  "homepage": "https://github.com/SabakiHQ/i18n#readme",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "proseWrap": "always",
+    "quoteProps": "preserve"
+  },
+  "devDependencies": {
+    "prettier": "1.19.1"
+  }
+}
