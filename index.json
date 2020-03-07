@@ -1,0 +1,12 @@
+{
+  "en": {
+    "name": "English",
+    "nativeName": "English",
+    "stats": {
+      "totalStringsCount": 456,
+      "translatedStringsCount": 456,
+      "progress": 1,
+      "unusedFlags": 0
+    }
+  }
+}
