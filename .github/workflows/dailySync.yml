@@ -27,6 +27,7 @@ jobs:
     - name: Perform sync
       run: |
         node ./ci/dailySync.js
+        npm run update-readme
 
         npm run format
         git config --local user.email "action@github.com"
