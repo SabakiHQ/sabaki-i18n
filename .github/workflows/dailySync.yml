@@ -1,0 +1,41 @@
+name: Daily Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Clone, install Sabaki, and update translation files
+      run: |
+        npm install
+        git clone --depth 1 https://github.com/SabakiHQ/Sabaki ./.tmp/Sabaki
+
+        cd ./.tmp/Sabaki
+        npm install
+
+        npm run i18n
+        cp ./i18n/*.i18n.js ../../src
+        npx dolm update ./i18n/template.i18n.js ../../src/*.i18n.js
+    - name: Perform sync
+      run: |
+        node ./ci/dailySync.js
+
+        npm run format
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git diff
+        git commit -m "Daily Sync" -a
+        echo Done.
+      shell: bash {0}
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.5.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
