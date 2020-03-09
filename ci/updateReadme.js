@@ -6,7 +6,7 @@ let readmeFilename = path.resolve(__dirname, '../README.md')
 let readme = readFileSync(readmeFilename, 'utf8')
 let progressTable = [['Language', 'File', 'Progress'], Array(3).fill('---')]
 
-for (let locale in index) {
+for (let locale of Object.keys(index).sort()) {
   let entry = index[locale]
 
   progressTable.push([
