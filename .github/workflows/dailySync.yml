@@ -23,7 +23,7 @@ jobs:
 
         npm run i18n
         cp ./i18n/*.i18n.js ../../src
-        npx dolm update ./i18n/template.i18n.js ../../src/*.i18n.js
+        npx dolm update ./i18n/template.i18n.js "../../src/*.i18n.js" "!../../src/en.i18n.js"
     - name: Perform sync
       run: |
         node ./ci/dailySync.js
