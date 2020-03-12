@@ -37,7 +37,7 @@ Entries that don't have a translation will have the value `null` and you can
 replace it with an actual translation. Use the file `en.i18n.js` for a model
 translation file.
 
-Once you finished translating, commit your work, and open a pull request to this
+Once you finish translating, commit your work, and open a pull request to this
 repository. Once your work gets merged, the translation will be available in the
 next Sabaki release.
 
