@@ -67,7 +67,7 @@ file `template.i18n.js` inside the `src` directory and name your copy
 
 ### Try out your translation
 
-Make sure you have
-[developer mode turned on in Sabaki](https://github.com/SabakiHQ/Sabaki/blob/master/docs/guides/debugging.md).
+Make sure you have Sabaki v0.50.1 or higher installed and
+[developer mode turned on](https://github.com/SabakiHQ/Sabaki/blob/master/docs/guides/debugging.md).
 Once you start Sabaki, choose 'Developer' > 'Load Language File…' from the main
 menu. Dismiss the warning and you can choose your language file.
