@@ -14,7 +14,7 @@ for (let locale of Object.keys(index).sort()) {
     `\`${locale}.i18n.js\``,
     entry.stats == null || entry.stats.progress == null
       ? '-'
-      : Math.round(entry.stats.progress * 100) + '%'
+      : Math.floor(entry.stats.progress * 100) + '%'
   ])
 }
 
