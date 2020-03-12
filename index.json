@@ -8,5 +8,21 @@
       "progress": 1,
       "unusedFlags": 0
     }
+  },
+  "ja": {
+    "name": "Japanese",
+    "nativeName": "日本語"
+  },
+  "ko": {
+    "name": "Korean",
+    "nativeName": "한국어"
+  },
+  "zh-Hans": {
+    "name": "Simplified Chinese",
+    "nativeName": "简体中文"
+  },
+  "zh-Hant": {
+    "name": "Traditional Chinese",
+    "nativeName": "繁體中文"
   }
 }
