@@ -11,18 +11,42 @@
   },
   "ja": {
     "name": "Japanese",
-    "nativeName": "日本語"
+    "nativeName": "日本語",
+    "stats": {
+      "totalStringsCount": 456,
+      "translatedStringsCount": 0,
+      "progress": 0,
+      "unusedFlags": 0
+    }
   },
   "ko": {
     "name": "Korean",
-    "nativeName": "한국어"
+    "nativeName": "한국어",
+    "stats": {
+      "totalStringsCount": 456,
+      "translatedStringsCount": 0,
+      "progress": 0,
+      "unusedFlags": 0
+    }
   },
   "zh-Hans": {
     "name": "Simplified Chinese",
-    "nativeName": "简体中文"
+    "nativeName": "简体中文",
+    "stats": {
+      "totalStringsCount": 456,
+      "translatedStringsCount": 0,
+      "progress": 0,
+      "unusedFlags": 0
+    }
   },
   "zh-Hant": {
     "name": "Traditional Chinese",
-    "nativeName": "繁體中文"
+    "nativeName": "繁體中文",
+    "stats": {
+      "totalStringsCount": 456,
+      "translatedStringsCount": 0,
+      "progress": 0,
+      "unusedFlags": 0
+    }
   }
 }

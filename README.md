@@ -6,9 +6,13 @@ Home of Sabaki's translation efforts.
 
 <!-- begin-progress-table -->
 
-| Language          | File         | Progress |
-| ----------------- | ------------ | -------- |
-| English (English) | `en.i18n.js` | 100%     |
+| Language                       | File              | Progress |
+| ------------------------------ | ----------------- | -------- |
+| English (English)              | `en.i18n.js`      | 100%     |
+| 日本語 (Japanese)              | `ja.i18n.js`      | 0%       |
+| 한국어 (Korean)                | `ko.i18n.js`      | 0%       |
+| 简体中文 (Simplified Chinese)  | `zh-Hans.i18n.js` | 0%       |
+| 繁體中文 (Traditional Chinese) | `zh-Hant.i18n.js` | 0%       |
 
 <!-- end-progress-table -->
 
