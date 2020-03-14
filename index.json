@@ -3,8 +3,8 @@
     "name": "English",
     "nativeName": "English",
     "stats": {
-      "totalStringsCount": 456,
-      "translatedStringsCount": 456,
+      "totalStringsCount": 430,
+      "translatedStringsCount": 430,
       "progress": 1,
       "unusedFlags": 0
     }
@@ -16,7 +16,7 @@
       "totalStringsCount": 456,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 0
+      "unusedFlags": 26
     }
   },
   "ko": {
@@ -26,7 +26,7 @@
       "totalStringsCount": 456,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 0
+      "unusedFlags": 26
     }
   },
   "zh-Hans": {
@@ -36,7 +36,7 @@
       "totalStringsCount": 456,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 0
+      "unusedFlags": 26
     }
   },
   "zh-Hant": {
@@ -46,7 +46,7 @@
       "totalStringsCount": 456,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 0
+      "unusedFlags": 26
     }
   }
 }
