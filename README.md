@@ -45,6 +45,20 @@ Once you finish translating, commit your work, and open a pull request to this
 repository. Once your work gets merged, the translation will be available in the
 next Sabaki release.
 
+#### Try out your translation
+
+Make sure you have Sabaki v0.50.1 or higher installed and
+[developer mode turned on](https://github.com/SabakiHQ/Sabaki/blob/master/docs/guides/debugging.md).
+Once you start Sabaki, choose 'Developer' > 'Load Language File…' from the main
+menu. Dismiss the warning and you can choose your language file.
+
+#### Guidelines
+
+- Don't introduce standalone functions/variables outside of `module.exports`. In particular, don't import third party libraries or other files.
+- Always use UTF-8 encoding for all files.
+- Always use real typographic punctuation symbols, such as apostrophe (’), or quotation marks (“ ”), etc.
+- There's no need to update your progress in the README or `index.json` file. They will be automatically updated every day.
+
 ### Add a new language
 
 First, find the
@@ -68,10 +82,3 @@ Set `name` to the English name of the language and `nativeName` to the name of
 the language in its own language. Once the language entry is there, copy the
 file `template.i18n.js` inside the `src` directory and name your copy
 `<language code>.i18n.js`.
-
-### Try out your translation
-
-Make sure you have Sabaki v0.50.1 or higher installed and
-[developer mode turned on](https://github.com/SabakiHQ/Sabaki/blob/master/docs/guides/debugging.md).
-Once you start Sabaki, choose 'Developer' > 'Load Language File…' from the main
-menu. Dismiss the warning and you can choose your language file.
