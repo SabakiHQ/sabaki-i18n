@@ -28,8 +28,7 @@
     "singleQuote": true,
     "bracketSpacing": false,
     "proseWrap": "always",
-    "quoteProps": "preserve",
-    "trailingComma": "es5"
+    "quoteProps": "preserve"
   },
   "devDependencies": {
     "globby": "^11.0.0",

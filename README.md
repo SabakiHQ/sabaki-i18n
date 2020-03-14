@@ -54,10 +54,13 @@ menu. Dismiss the warning and you can choose your language file.
 
 #### Guidelines
 
-- Don't introduce standalone functions/variables outside of `module.exports`. In particular, don't import third party libraries or other files.
+- Don't introduce standalone functions/variables outside of `module.exports`. In
+  particular, don't import third party libraries or other files.
 - Always use UTF-8 encoding for all files.
-- Always use real typographic punctuation symbols, such as apostrophe (’), or quotation marks (“ ”), etc.
-- There's no need to update your progress in the README or `index.json` file. They will be automatically updated every day.
+- Always use real typographic punctuation symbols, such as apostrophe (’), or
+  quotation marks (“ ”), etc.
+- There's no need to update your progress in the README or `index.json` file.
+  They will be automatically updated every day.
 
 ### Add a new language
 
