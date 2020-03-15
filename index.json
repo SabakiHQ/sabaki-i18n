@@ -3,8 +3,8 @@
     "name": "English",
     "nativeName": "English",
     "stats": {
-      "totalStringsCount": 430,
-      "translatedStringsCount": 430,
+      "totalStringsCount": 434,
+      "translatedStringsCount": 434,
       "progress": 1,
       "unusedFlags": 0
     }
@@ -13,40 +13,40 @@
     "name": "Japanese",
     "nativeName": "日本語",
     "stats": {
-      "totalStringsCount": 456,
+      "totalStringsCount": 434,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 26
+      "unusedFlags": 0
     }
   },
   "ko": {
     "name": "Korean",
     "nativeName": "한국어",
     "stats": {
-      "totalStringsCount": 456,
+      "totalStringsCount": 434,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 26
+      "unusedFlags": 0
     }
   },
   "zh-Hans": {
     "name": "Simplified Chinese",
     "nativeName": "简体中文",
     "stats": {
-      "totalStringsCount": 456,
+      "totalStringsCount": 434,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 26
+      "unusedFlags": 0
     }
   },
   "zh-Hant": {
     "name": "Traditional Chinese",
     "nativeName": "繁體中文",
     "stats": {
-      "totalStringsCount": 456,
+      "totalStringsCount": 434,
       "translatedStringsCount": 0,
       "progress": 0,
-      "unusedFlags": 26
+      "unusedFlags": 0
     }
   }
 }
