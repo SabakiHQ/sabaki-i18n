@@ -1,160 +1,170 @@
 module.exports = {
   'menu.file': {
-    'New Window': '新建窗体',
-    'File': '文件',
-    'New': '新建对局',
-    'Open…': '打开...',
-    'Save': '保存',
-    'Save As…': '另存为...',
-    'Clipboard': '剪贴板',
-    'Load SGF': '从剪贴板读取SGF',
-    'Copy SGF': '生成SGF到剪贴板',
-    'Copy ASCII Diagram': '生成ASCII棋盘到剪贴板',
-    'Game Info': '对局信息',
-    'Manage Games…': '对局管理...',
-    'Preferences…': '选项...'
+    'New Window': '&W新窗口',
+    'File': '&F文件',
+    'New': '&N新对局',
+    'Open…': '&O打开...',
+    'Save': '&S保存',
+    'Save As…': '&v另存为...',
+    'Clipboard': '&C剪贴板',
+    'Load SGF': '&L从剪贴板加载SGF',
+    'Copy SGF': '&C拷贝SGF到剪贴板',
+    'Copy ASCII Diagram': '&A拷贝ASCII棋盘到剪贴板',
+    'Game Info': '&I对局信息',
+    'Manage Games…': '&M对局管理...',
+    'Preferences…': '&P首选项...'
   },
   'updater': {
     'Download Update': '下载更新',
-    'View Changelog': '查看更新历史',
+    'View Changelog': '查看更新日志',
     'Not Now': '现在不',
-    '${appName} v${version} is available now.': '新版本 ${appName} v${version} 可下载。',
-    'OK': '好',
+    '${appName} v${version} .': p =>
+     `${p.appName} v${p.version} 可用`,
+    'OK': 'OK',
     'No updates available': '没有新版本',
-    '${appName} v${version} is the latest version.': '${appName} v${version} 已是最新版本。'
+    '${appName} v${version} is the latest version.': p =>
+    `${p.appName} v${p.version} 为当前最新版本.`
   },
   'exception': {
-    '${appName} v${version}': '${appName} v${version}',
-    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': '${appName} 程序遇到了一个问题需要关闭。请考虑在 ${appName} 的 GitHub 项目主页上报告该问题。'
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
+    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': p =>
+      [
+        `异常发生， ${p.appName} 自动关闭。`,
+        `如果方便的话，请到 ${p.appName}的 GitHub 仓库反馈。`
+      ].join(' ')
   },
   'menu.play': {
-    'Play': '对局',
-    'Toggle Player': '切换玩家（黑/白）',
-    'Select Point': '输入落子坐标',
-    'Enter a coordinate to select a point': '请输入落子点坐标',
-    'Pass': '停一手',
-    'Resign': '认输',
-    'Estimate': '估计目数',
-    'Score': '计算目数'
+    'Play': '&P对局',
+    'Toggle Player': '&T切换黑/白）',
+    'Select Point': '&l输入坐标',
+    'Enter a coordinate to select a point':
+      '输入坐标来选点',
+    'Pass': '&P停一手',
+    'Resign': '&n认输',
+    'Estimate': '&E形势判断',
+    'Score': '&r数子'
   },
   'menu.edit': {
-    'Edit': '编辑',
-    'Undo': '撤销',
-    'Redo': '取消撤销',
-    'Toggle Edit Mode': '进入/离开编辑模式',
-    'Select Tool': '选择工具',
-    'Stone Tool': '棋子',
-    'Cross Tool': '叉',
-    'Triangle Tool': '三角',
-    'Square Tool': '方块',
-    'Circle Tool': '圆',
-    'Line Tool': '连线',
-    'Arrow Tool': '箭头',
-    'Label Tool': '字母/文字',
-    'Number Tool': '数字',
-    'Copy Variation': '复制变化',
-    'Cut Variation': '剪切变化',
-    'Paste Variation': '粘贴变化',
-    'Make Main Variation': '设置为主要变化',
-    'Shift Left': '左移',
-    'Shift Right': '右移',
-    'Flatten': '删除所有变化，仅保留该棋盘状态',
-    'Remove Node': '删除节点',
-    'Remove Other Variations': '删除除此之外的所有变化'
+    'Edit': '&E编辑',
+    'Undo': '&U撤销',
+    'Redo': '&d取消撤销',
+    'Toggle Edit Mode': '&E切换编辑模式',
+    'Select Tool': '&S选择工具',
+    'Stone Tool': '&S棋子',
+    'Cross Tool': '&C叉',
+    'Triangle Tool': '&T三角',
+    'Square Tool': '&q方',
+    'Circle Tool': '&i圆',
+    'Line Tool': '&L线',
+    'Arrow Tool': '&A箭头',
+    'Label Tool': '&b字母',
+    'Number Tool': '&N数字',
+    'Copy Variation': '&C复制变化',
+    'Cut Variation': '&t剪切变化',
+    'Paste Variation': '&P粘贴变化',
+    'Make Main Variation': '&V设为主要变化',
+    'Shift Left': '&L左移',
+    'Shift Right': '&g右移',
+    'Flatten': '&F清空该节点前的所有变化',
+    'Remove Node': '&R删除节点',
+    'Remove Other Variations': '&O删除此外的所有变化'
   },
   'menu.find': {
-    'Find': '查找',
-    'Toggle Find Mode': '进入/离开查找模式',
-    'Find Next': '查找下一个',
-    'Find Previous': '查找上一个',
-    'Toggle Hotspot': '标记/取消标记书签',
-    'Jump to Next Hotspot': '跳转到下一个书签',
-    'Jump to Previous Hotspot': '跳转到上一个书签'
+    'Find': '&d查找',
+    'Toggle Find Mode': '&F进入/离开查找模式',
+    'Find Next': '&N下一个',
+    'Find Previous': '&P上一个',
+    'Toggle Hotspot': '&H标记/取消焦点',
+    'Jump to Next Hotspot': '&x跳转到下一焦点',
+    'Jump to Previous Hotspot': '&v跳转到上一焦点'
   },
   'menu.navigation': {
-    'Navigation': '导航',
-    'Back': '向前',
-    'Forward': '向后',
-    'Go to Previous Fork': '上一个分叉',
-    'Go to Next Fork': '下一个分叉',
-    'Go to Previous Comment': '上一个注释',
-    'Go to Next Comment': '下一个注释',
-    'Go to Beginning': '开局',
-    'Go to End': '结束',
-    'Go to Main Variation': '主要变化',
-    'Go to Previous Variation': '上一个变化',
-    'Go to Next Variation': '下一个变化',
-    'Go to Move Number': '第X手...',
-    'Enter a move number to go to': '请输入手数',
-    'Go to Next Game': '下一个对局',
-    'Go to Previous Game': '上一个对局'
+    'Navigation': '&N导航',
+    'Back': '&B向后',
+    'Forward': '&F向前',
+    'Go to Previous Fork': '&P上一分支',
+    'Go to Next Fork': '&N下一分支',
+    'Go to Previous Comment': '&t上一注释',
+    'Go to Next Comment': '&C下一注释',
+    'Go to Beginning': '&g到开局',
+    'Go to End': '&E到终局',
+    'Go to Main Variation': '&M到主要变化',
+    'Go to Previous Variation': '&V到上一变化',
+    'Go to Next Variation': '&r到下一变化',
+    'Go to Move Number': '&u到第...手',
+    'Enter a move number to go to': '到指定手数',
+    'Go to Next Game': '&x到下一局',
+    'Go to Previous Game': '&s到上一局'
   },
   'menu.engines': {
-    'Engines': '对弈引擎',
-    'Show Engines Sidebar': '显示对弈引擎命令行',
-    'Toggle Analysis': '棋局分析',
-    'None of the attached engines support analysis.': '已加载的对弈引擎不支持棋局分析',
-    'Start Engine vs. Engine Game': '开始程序与程序的对局',
-    'Stop Engine vs. Engine Game': '停止程序与程序的对局',
-    'Generate Move': '程序生成下一手',
-    'Please assign an engine to the player first.': '请先为当前玩家加载对弈引擎',
-    'Manage Engines…': '管理对弈引擎...',
-    'Clear Console': '清空'
+    'Engines': '&i引擎',
+    'Show Engines Sidebar': '&E显示引擎侧边栏',
+    'Toggle Analysis': '&A分析',
+    'None of the attached engines support analysis.': 
+      '加载的引擎不支持分析模式',
+    'Start Engine vs. Engine Game': '&G开始引擎对战',
+    'Stop Engine vs. Engine Game': '&G停止引擎对战',
+    'Generate Move': '&M让引擎走一手',
+    'Please assign an engine to the player first.': 
+      '请先为当前玩家分配一个引擎',
+    'Manage Engines…': '&E管理引擎...',
+    'Clear Console': '&C清空控制台'
   },
   'menu.tools': {
-    'Tools': '工具',
-    'Toggle Autoplay Mode': '进入/离开自动播放模式',
-    'Toggle Guess Mode': '进入/离开',
-    'Clean Markup…': '删除所有标记',
-    'Edit SGF Properties…': '编辑SGF属性',
-    'Rotate Anticlockwise': '逆时针旋转棋盘',
-    'Rotate Clockwise': '顺时针旋转棋盘',
-    'Flip Horizontally': '水平翻转棋盘',
-    'Flip Vertically': '垂直翻转棋盘',
-    'Invert Colors': '对调黑棋和白棋',
-    'Reset': '重置'
+    'Tools': '&T工具',
+    'Toggle Autoplay Mode': '&p进入/离开自动播放模式',
+    'Toggle Guess Mode': '&G进入/离开猜棋模式',
+    'Clean Markup…': '&M删除标记',
+    'Edit SGF Properties…': '&E编辑SGF属性',
+    'Rotate Anticlockwise': '&A逆时针旋转',
+    'Rotate Clockwise': '&C顺时针旋转',
+    'Flip Horizontally': '&F水平翻转',
+    'Flip Vertically': '&V垂直翻转',
+    'Invert Colors': '&I对调黑白',
+    'Reset': '&R重置'
   },
   'menu.view': {
-    'View': '界面',
-    'Toggle Menu Bar': '显示/隐藏菜单栏',
-    'Toggle Full Screen': '进入/离开全屏',
-    'Show Coordinates': '显示坐标',
-    'Show Move Numbers': '显示手数',
-    'Show Move Colorization': '',
-    'Show Next Moves': '用圆点显示下一手',
-    'Show Sibling Variations': '用圆点显示该手的其它变化',
-    'Show Heatmap': '显示热点图',
-    'Don’t Show': '不显示',
-    'Show Win Rate': '显示胜率',
-    'Show Score Lead': '显示目数差',
-    'Show Winrate Graph': '显示胜率图',
-    'Show Game Tree': '显示变化树',
-    'Show Comments': '显示注释',
-    'Zoom': '放大/缩小',
-    'Increase': '放大',
-    'Decrease': '缩小',
-    'Reset': '默认',
-    'Transform Board': '棋盘显示'
+    'View': '&V界面',
+    'Toggle Menu Bar': '&B显示/隐藏菜单栏',
+    'Toggle Full Screen': '&F进入/取消全屏',
+    'Show Coordinates': '&C显示坐标',
+    'Show Move Numbers': '&u显示手数',
+    'Show Move Colorization': '&z显示移动着色',
+    'Show Next Moves': '&N显示下一手',
+    'Show Sibling Variations': '&S显示该手的其它变化',
+    'Show Heatmap': '&W显示热图',
+    'Don’t Show': '&D不显示',
+    'Show Win Rate': 'W显示胜率',
+    'Show Score Lead': '&S显示目数差',
+    'Show Winrate Graph': '&W显示胜率图',
+    'Show Game Tree': '&T显示变化树',
+    'Show Comments': '&m显示注释',
+    'Zoom': '&o缩放',
+    'Increase': '&I放大',
+    'Decrease': '&D缩小',
+    'Reset': '&R重置',
+    'Transform Board': '&r旋转棋盘'
   },
   'menu.help': {
-    'Help': '帮助',
-    '${appName} v${version}': '${appName} v${version}',
-    'Check for Updates': '检查更新',
-    'GitHub Repository': 'GitHub 主页',
-    'Report Issue': '报告问题'
+    'Help': '&H帮助',
+    '${appName} v${version}':  p => `${p.appName} v${p.version}`,
+    'Check for Updates': '&U检查更新',
+    'GitHub Repository': '&R  GitHub 仓库',
+    'Report Issue': '&I反馈问题'
   },
   'menu.developer': {
-    'Developer': '开发者',
-    'Open Settings Folder': '浏览配置文件夹',
-    'Toggle Developer Tools': '显示/隐藏开发者工具',
-    'Load Language File…': '载入语言文件...',
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': '语言文件是一个 JaveScript 文件，其中可能包含任何可执行命令，所以请不要载入您不信任来源的语言文件。',
-    'I understand': '我明白',
-    'JavaScript Files': '选择语言文件',
-    'Unload Language File': '卸载语言文件'
+    'Developer': '&o开发者',
+    'Open Settings Folder': '&F浏览配置文件夹',
+    'Toggle Developer Tools': '&D开发者工具开关',
+    'Load Language File…': '&L载入语言文件...',
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 
+      '语言包是一个JaveScript文件，可能在您的计算机上执行任何指令，所以请不要载入任何不可信来源的语言包文件。',
+    'I understand': '我了解',
+    'JavaScript Files': 'JavaScript 文件',
+    'Unload Language File': '&U卸载语言包'
   },
   'menu.macos': {
-    'Text': ''
+    'Text': '文本'
   },
   'App': {
     'Press Esc to exit full screen mode': '按 ESC 键退出全屏',
@@ -167,76 +177,91 @@ module.exports = {
     'OK': 'OK'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': 'GTP对弈引擎不支持非法的棋盘坐标点',
-    'GTP engines only support board sizes that don’t exceed ${length}.': 'GTP对弈引擎仅支持不超过 ${length} 的棋盘尺寸',
-    'Current board arrangement can’t be recreated on the GTP engine.': 'GTP对弈引擎加载当前棋盘状态失败',
-    'GTP engine can’t be synced to current state.': 'GTP对弈引擎与当前棋盘状态同步失败'
+    'GTP engines don’t support invalid board positions.': 'GTP对弈引擎不支持无效的棋盘尺定位。',
+    'GTP engines only support board sizes that don’t exceed ${length}.': p =>
+      `GTP引擎仅支持不超过 ${p.length} 的大小。`,
+    'Current board arrangement can’t be recreated on the GTP engine.': 'GTP引擎加载无法当前棋盘安排。',
+    'GTP engine can’t be synced to current state.': 'GTP引擎与当前棋盘状态同步。'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': '当前GTP对弈引擎日志文件目录无法写入，请确保设置的对弈引擎日志文件目录存在且具有写入权限，或者请关闭对弈引擎日志记录'
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 
+      '当前GTP引擎日志文件目录设置错误，请确保设置的引擎日志文件目录存在且具有写入权限，否则请关闭引擎日志记录。'
   },
   'sabaki.window': {
-    'Game ${gameNumber}': '对局 ${gameNumber}'
+    'Game ${gameNumber}':  p => `对局 ${p.gameNumber}`
   },
   'sabaki.file': {
     'All Files': '全部文件',
     'This file is unreadable.': '无法读取该文件',
-    'Your changes will be lost if you close this file without saving.': '如果您不保存就关闭，您做的更改将丢失',
+    'Your changes will be lost if you close this file without saving.': 
+      '如果您不保存就关闭，您做的更改将丢失。',
     'Save': '保存',
     'Don’t Save': '不保存',
     'Cancel': '取消',
-    'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': '当前打开的文件已被外部程序修改，您要重新打开该文件吗？您做的修改将丢失',
-    'Reload': '重新打开',
-    'Don’t Reload': '不要重新打开'
+    'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': p =>
+    [
+      `该文件被 ${p.appName}外部应用改变。`,
+      '是否重新加载该文件? 你当前所做的改变会丢失。'
+    ].join('\n'),
+    'Reload': '重新加载',
+    'Don’t Reload': '不重载'
   },
   'sabaki.play': {
-    'Edit Label': '编辑标记字母/文字',
+    'Edit Label': '&E编辑标记',
     'Enter label text': '请输入标记字母/文字',
-    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': '您输入的这一手将导致棋盘状态与之前某一手后状态完全一致，在许多围棋规则中这是不允许的',
+    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': 
+      '您输入的这一手将导致棋盘状态与之前某一手后状态完全一致，在许多围棋规则中这是不允许的。',
     'Play Anyway': '仍然下这一手',
     'Don’t Play': '取消',
-    'You are about to play a suicide move.\nThis is invalid in some rulesets.': '您输入的这一手是自杀手，在许多围棋规则中这是不允许的'
+    'You are about to play a suicide move.\nThis is invalid in some rulesets.': 
+      '您的这一手是自杀，在许多围棋规则中这是不允许的。'
   },
   'sabaki.engine': {
     'Connection Failed': '连接失败',
-    '${engine} has failed to generate a move.': '${engine} 生成下一手失败',
-    '${engine} has resigned.': '${engine} 认输了',
-    'Please attach one or more engines first.': '请先载入一个或多个对弈引擎',
-    'The selected engine does not support analysis.': '当前选择的对弈引擎不支持棋局分析'
+    '${engine} has failed to generate a move.': p =>
+      `${p.engine} 走子失败。`,
+    '${engine} has resigned.': p => `${p.engine} 认输了。`,
+    'Please attach one or more engines first.': 
+      '请先载入一个或多个引擎。',
+    'The selected engine does not support analysis.': 
+      '当前选择的引擎不支持分析模式。'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?': '您确定要删除该节点吗？',
+    'Do you really want to remove this node?': 
+      '您确定要删除该节点吗？',
     'Remove Node': '删除节点',
     'Cancel': '取消',
-    'Do you really want to remove all other variations?': '您确定要删除所有其它变化吗？',
-    'Remove Variations': '删除'
+    'Do you really want to remove all other variations?': 
+      '您确定要删除所有其它变化吗？',
+    'Remove Variations': '删除变化'
   },
   'menu.comment': {
-    'Clear Annotations': '清除评注',
-    'Good for Black': '黑形势好',
-    'Unclear Position': '形势不明朗',
-    'Even Position': '形势均衡',
-    'Good for White': '白形势好',
-    'Good Move': '好棋',
-    'Interesting Move': '有意思的一手',
-    'Doubtful Move': '问题手',
-    'Bad Move': '臭棋',
-    'Hotspot': '书签'
+    'Clear Annotations': '&C清除注释',
+    'Good for Black': '&B黑好',
+    'Unclear Position': '&U形势不明',
+    'Even Position': '&E均势',
+    'Good for White': '&W白好',
+    'Good Move': '&G好棋',
+    'Interesting Move': '&I有趣的一手',
+    'Doubtful Move': '&D问题手',
+    'Bad Move': '&a臭棋',
+    'Hotspot': '&H焦点'
   },
   'menu.variation': {
-    'Add Variation': '新增变化',
-    'The root node cannot have sibling nodes.': '根节点不能有旁系分支节点'
+    'Add Variation': '&A新增变化',
+    'The root node cannot have sibling nodes.': 
+      '根节点不能有兄弟节点'
   },
   'menu.engineAction': {
-    'Start': '开始',
-    'Stop': '停止',
-    'Detach': '卸载引擎',
-    'Synchronize': '同步',
-    'Generate Move': '生成下一手',
-    'Set as Analyzer': '设置为分析器',
-    'Set as Black Player': '设置为黑棋玩家',
-    'Set as White Player': '设置为白旗玩家',
-    'Go to Engine': '选择引擎'
+    'Start': '&S开始',
+    'Stop': '&S停止',
+    'Detach': '&D卸载引擎',
+    'Synchronize': '&y同步',
+    'Generate Move': '&G走一手',
+    'Set as Analyzer': '&A设为分析引擎',
+    'Set as Black Player': '&B持黑',
+    'Set as White Player': '&W持白',
+    'Go to Engine': '&G转到引擎控制台'
   },
   'AutoplayBar': {
     'sec per move': '每秒步数'
@@ -245,11 +270,11 @@ module.exports = {
     'Stone Tool': '棋子',
     'Cross Tool': '叉',
     'Triangle Tool': '三角',
-    'Square Tool': '方块',
+    'Square Tool': '方',
     'Circle Tool': '圆',
-    'Line Tool': '连线',
+    'Line Tool': '线',
     'Arrow Tool': '箭头',
-    'Label Tool': '字母/文字',
+    'Label Tool': '字母',
     'Number Tool': '数字'
   },
   'FindBar': {
@@ -258,18 +283,19 @@ module.exports = {
     'Previous': '上一个'
   },
   'GuessBar': {
-    'Click on the board to guess the next move.': '点击棋盘猜下一手'
+    'Click on the board to guess the next move.': 
+      '点击棋盘猜下一手。'
   },
   'PlayBar': {
-    'Pass': '停一手',
-    'Resign': '认输',
-    'Estimate': '估计目数',
-    'Score': '计算目数',
-    'Edit': '编辑',
-    'Find': '查找',
-    'Info': '对局信息',
-    'Hotspot': '书签',
-    'Engine': '对弈引擎',
+    'Pass': '&P停一手',
+    'Resign': '&R认输',
+    'Estimate': '&t形势判断',
+    'Score': '&S数子',
+    'Edit': '&E编辑',
+    'Find': '&F查找',
+    'Info': '&I对局信息',
+    'Hotspot': '焦点',
+    'Engine': '引擎',
     'Black': '黑棋',
     'Change Player': '切换玩家（黑/白）',
     'White to play': '轮到白棋',
@@ -277,33 +303,33 @@ module.exports = {
     'White': '白棋'
   },
   'ScoringBar': {
-    'Details': '查看详细...',
+    'Details': '细节',
     'Draw': '平局',
     'Please select dead stones.': '请点选死棋',
     'Toggle group status.': '点选'
   },
   'AdvancedPropertiesDrawer': {
-    'Remove': '',
-    'Enter property name': '',
-    'This property has been blocked.': '',
-    'Add': '',
-    'Close': ''
+    'Remove': '移除',
+    'Enter property name': '输入属性名称',
+    'This property has been blocked.': '该属性已被阻止',
+    'Add': '增加',
+    'Close': '关闭'
   },
   'CleanMarkupDrawer': {
-    'From Current Position': '仅删除当前节点的标记',
-    'From Entire Game': '删除对局中所有的标记',
+    'From Current Position': '&P删除从当前节点开始的标记',
+    'From Entire Game': '&G删除对局中所有的标记',
     'Clean Markup': '删除标记',
     'Cross markers': '叉',
     'Triangle markers': '三角',
-    'Square markers': '方块',
+    'Square markers': '方',
     'Circle markers': '圆',
-    'Line markers': '连线',
+    'Line markers': '线',
     'Arrow markers': '箭头',
-    'Label markers': '字母/文字',
+    'Label markers': '字母',
     'Comments': '注释',
     'Annotations': '评注',
-    'Hotspots markers': '书签',
-    'Winrate data': '胜率信息',
+    'Hotspots markers': '焦点',
+    'Winrate data': '胜率',
     'Remove': '删除',
     'Close': '关闭'
   },
@@ -311,24 +337,26 @@ module.exports = {
     'Black': '黑棋',
     'White': '白旗',
     'Remove Game': '删除对局',
-    'Do you really want to remove this game permanently?': '您确定要删除这个对局吗？',
+    'Do you really want to remove this game permanently?': 
+      '您确定要删除这个对局吗？',
     'Cancel': '取消',
-    'Remove Other Games': '删除除此之外的所有对局',
-    'Do you really want to remove all other games permanently?': '您确定要删除除此之外的所有对局吗？',
-    'Remove Games': '删除',
-    'Add New Game': '新对局',
-    'Add Existing Files…': '打开文件....',
+    'Remove Other Games': '&O删除除此之外的所有对局',
+    'Do you really want to remove all other games permanently?': 
+      '您确定要删除除此之外的所有对局吗？',
+    'Remove Games': '删除对局',
+    'Add New Game': '&N增加新对局',
+    'Add Existing Files…': '打开文件...',
     'All Files': '所有文件',
     'Some files are unreadable.': '部分文件无法读取',
-    'Black Player': '黑棋玩家名称',
-    'White Player': '白棋玩家名称',
-    'Black Rank': '黑棋段位',
-    'White Rank': '白旗段位',
+    'Black Player': '&B黑棋玩家名称',
+    'White Player': '&W白棋玩家名称',
+    'Black Rank': '&a黑棋段位',
+    'White Rank': '&k白棋段位',
     'Game Name': '对局名称',
     'Game Event': '赛事名称',
     'Date': '日期',
-    'Number of Moves': '总手数',
-    'Reverse': '倒序',
+    'Number of Moves': '&M总手数',
+    'Reverse': '&R倒序',
     'Manage Games': '管理对局',
     'Filter': '过滤',
     'Add': '添加',
@@ -337,17 +365,17 @@ module.exports = {
   },
   'InfoDrawer': {
     'Manual': '手动',
-    '(Unnamed Engine)': '未命名的对弈引擎',
-    'Attach Engine': '加载对弈引擎',
-    'Manage Engines…': '管理对弈引擎...',
-    'Previous Month': '前一个月',
-    'Next Month': '后一个月',
+    '(Unnamed Engine)': '(未命名的引擎)',
+    'Attach Engine': '加载引擎',
+    'Manage Engines…': '管理引擎...',
+    'Previous Month': '上个月',
+    'Next Month': '下个月',
     'Rank': '段位',
     'Black': '黑棋名称',
     'Swap': '交换',
     'White': '白棋名称',
     'Name': '对局名称',
-    '(Unnamed)': '未命名',
+    '(Unnamed)': '(未命名)',
     'Event': '赛事名称',
     'None': '无',
     'Date': '日期',
@@ -357,7 +385,7 @@ module.exports = {
     'Komi': '贴目',
     'Handicap': '让子',
     'No stones': '无',
-    '${stones} stones': '${stones} 子',
+    '${stones} stones':  p => `${p.stones} 子`,
     'Board Size': '棋盘尺寸',
     'OK': '确定',
     'Cancel': '取消'
@@ -365,12 +393,12 @@ module.exports = {
   'PreferencesDrawer': {
     'Enable hardware acceleration if possible': '硬件加速（若支持）',
     'Check for updates at startup': '启动程序时检查更新',
-    'Enable sounds': '声音',
+    'Enable sounds': '打开声音',
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Instantly play out analysis variations on board': 'Instantly play out analysis variations on board',
-    'Show automatic move titles': 'Show automatic move titles',
+    'Instantly play out analysis variations on board': '立即在棋盘上显示分析变化',
+    'Show automatic move titles': '显示自动落子标题',
     'Show ko warning': '非法劫提示',
     'Show suicide warning': '自杀手提示',
     'Show remove node warning': '删除节点时提示确认',
@@ -381,12 +409,13 @@ module.exports = {
     'Game Tree Style:': '对局变化树样式',
     'Compact': '紧凑',
     'Spacious': '大间距',
-    'Big': '大节点图标',
+    'Big': '大图标',
     'Path': '路径',
     'Browse…': '浏览...',
     'Directory not found': '未找到文件夹',
     'File not found': '未找到文件',
-    'Do you really want to uninstall this theme?': '您确定要卸载该主题吗？',
+    'Do you really want to uninstall this theme?': 
+      '您确定要卸载该主题吗？',
     'Uninstall': '卸载',
     'Cancel': '取消',
     'Uninstallation failed.': '卸载失败',
@@ -399,15 +428,15 @@ module.exports = {
     'Background image:': '背景图片',
     'Default': '默认',
     'Install Theme…': '安装主题...',
-    'Get more themes…': '获取更多主题...',
-    'by ${author}': '作者：${author}',
+    'Get more themes…': '获取主题...',
+    'by ${author}':p => `by ${p.author}`,
     'Homepage': '主页',
     'All Files': '所有文件',
     'Remove': '删除',
-    '(Unnamed Engine)': '未命名的对弈引擎',
+    '(Unnamed Engine)': '未命名的引擎',
     'No arguments': '无运行参数',
-    'Initial commands (;-separated)': '启动参数（用分号分隔）',
-    'Enable GTP logging to directory:': '将GTP日志保存到目录：',
+    'Initial commands (;-separated)': '启动参数(用;分隔)',
+    'Enable GTP logging to directory:': 'GTP日志保存目录：',
     'Add': '新增',
     'General': '一般',
     'Themes': '主题',
