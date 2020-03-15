@@ -52,6 +52,9 @@ Make sure you have Sabaki v0.50.1 or higher installed and
 Once you start Sabaki, choose 'Developer' > 'Load Language File…' from the main
 menu. Dismiss the warning and you can choose your language file.
 
+This feature is just for convenience. Unfortunately, not all strings can be replaced on runtime, so
+prepare for inconsistencies.
+
 #### Guidelines
 
 - Don't introduce standalone functions/variables outside of `module.exports`. In
