@@ -401,9 +401,9 @@ module.exports = {
     'Enable sounds': '소리 켜기',
     'Jump to end after loading file': '파일을 연 후 맨 끝으로 이동',
     'Fuzzy stone placement': 
-      '돌 비뚤게 놓기',
+      '돌 비껴 놓기',
     'Animate fuzzy placement':
-      '비뚤게 놓을 때 움직이기',
+      '비껴 놓을 때 움직이기',
     'Instantly play out analysis variations on board':
       '엔진 분석 변화도를 판에 한번에 보여주기',
     'Show automatic move titles': 
@@ -477,7 +477,7 @@ module.exports = {
   },
   'CommentBox': {
     'Result: ${result}': p => `결과: ${p.result}`,
-    '${a}-${b} Point': p => `${p.a}-${p.b}집`,
+    '${a}-${b} Point': p => `${p.a}-${p.b}`,
     'View article on Sensei’s Library': 'Sensei’s Library에서 관련 글 보기',
     'Bad move': '악수',
     'Very bad move': '대악수',
