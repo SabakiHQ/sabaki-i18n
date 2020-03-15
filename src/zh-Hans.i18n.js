@@ -2,7 +2,7 @@ module.exports = {
   'menu.file': {
     'New Window': '新建窗体',
     'File': '文件',
-    'New': '新建',
+    'New': '新建对局',
     'Open…': '打开...',
     'Save': '保存',
     'Save As…': '另存为...',
@@ -30,8 +30,8 @@ module.exports = {
   'menu.play': {
     'Play': '对局',
     'Toggle Player': '切换玩家（黑/白）',
-    'Select Point': '选择落点',
-    'Enter a coordinate to select a point': '请输入落点坐标',
+    'Select Point': '输入落子坐标',
+    'Enter a coordinate to select a point': '请输入落子点坐标',
     'Pass': '停一手',
     'Resign': '认输',
     'Estimate': '估计目数',
@@ -146,7 +146,7 @@ module.exports = {
   'menu.developer': {
     'Developer': '开发者',
     'Open Settings Folder': '浏览配置文件夹',
-    'Toggle Developer Tools': '使能/禁能开发者工具',
+    'Toggle Developer Tools': '显示/隐藏开发者工具',
     'Load Language File…': '载入语言文件...',
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': '语言文件是一个 JaveScript 文件，其中可能包含任何可执行命令，所以请不要载入您不信任来源的语言文件。',
     'I understand': '我明白',
@@ -358,7 +358,7 @@ module.exports = {
     'Handicap': '让子',
     'No stones': '无',
     '${stones} stones': '${stones} 子',
-    'Board Size': '期盼尺寸',
+    'Board Size': '棋盘尺寸',
     'OK': '确定',
     'Cancel': '取消'
   },
