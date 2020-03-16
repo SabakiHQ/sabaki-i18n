@@ -158,7 +158,7 @@ module.exports = {
     'Toggle Developer Tools': '개발자 도구 켜기/끄기',
     'Load Language File…': '언어 파일 불러오기',
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
-      '언어 파일은 기본적으로 JavaScript 파일로, 임의의 코드를 실행하는 데 사용될 수 있습니다..\n\n매우 위험할 수 있으므로, 믿을 수 있는 제작자의 언어 파일만을 불러오기를 권장합니다.',
+      '언어 파일은 기본적으로 JavaScript 파일로, 임의의 코드를 실행하는 데 사용될 수 있습니다.\n\n매우 위험할 수 있으므로, 믿을 수 있는 제작자의 언어 파일만을 불러오기를 권장합니다.',
     'I understand': '이해했습니다',
     'JavaScript Files': 'JavaScript 파일',
     'Unload Language File': '불러온 언어 파일 해제'
@@ -403,7 +403,7 @@ module.exports = {
     'Animate fuzzy placement': '비껴 놓을 때 움직이기',
     'Instantly play out analysis variations on board':
       '엔진 분석 변화도를 판에 한번에 보여주기',
-    'Language:': null,
+    'Language:': '언어',
     'Game Tree Style:': '게임 트리 모양',
     'Compact': '작게',
     'Spacious': '넓게',
@@ -433,7 +433,7 @@ module.exports = {
     'White stone image:': '백돌 이미지',
     'Board image:': '바둑판 이미지',
     'Background image:': '배경 이미지',
-    'Current Theme': null,
+    'Current Theme': '현재 테마',
     'Default': '기본값',
     'Install Theme…': '테마 설치',
     'Get more themes…': '더 많은 테마 얻기',
@@ -455,7 +455,7 @@ module.exports = {
     'Black': '흑',
     'White': '백',
     'Draw': '무승부',
-    'Score': null,
+    'Score': '점수',
     'Area': '집+돌',
     'Territory': '집',
     'Captures': '사석',
@@ -555,14 +555,14 @@ module.exports = {
     'Large Knight': '눈목자',
     'Shoulder Hit': '어깨짚음',
     'Diagonal Jump': '밭전자',
-    '4-4 Point': '화점',
-    'Pass': null,
-    'Take': null,
-    'Atari': null,
-    'Suicide': null,
-    'Fill': null,
-    'Connect': null,
-    'Tengen': null,
-    'Hoshi': null
+    '4-4 Point': '4-4 화점',
+    'Pass': '착수 넘김',
+    'Take': '따냄',
+    'Atari': '단수',
+    'Suicide': '자살수',
+    'Fill': '단수 이음',
+    'Connect': '연결',
+    'Tengen': '천원',
+    'Hoshi': '화점'
   }
 }
