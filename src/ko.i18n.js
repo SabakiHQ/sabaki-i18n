@@ -108,7 +108,8 @@ module.exports = {
     'Please assign an engine to the player first.':
       '먼저 대국자로 엔진을 지정해 주십시오.',
     'Manage Engines…': '엔진 관리',
-    'Clear Console': '콘솔 내역 지우기'
+    'Clear Console': '콘솔 내역 지우기',
+    '(Unnamed Engine)': '(이름 없는 엔진)'
   },
   'menu.tools': {
     'Tools': '도구',
