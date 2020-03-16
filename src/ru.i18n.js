@@ -103,7 +103,8 @@
     'Generate Move': 'Сделать ход',
     'Please assign an engine to the player first.': 'Сначала назначьте программу игроку.',
     'Manage Engines…': 'Управление программами',
-    'Clear Console': 'Очистить консоль'
+    'Clear Console': 'Очистить консоль',
+    '(Unnamed Engine)': '(Безымянная программа)'
   },
   'menu.tools': {
     'Tools': 'Инструменты',
