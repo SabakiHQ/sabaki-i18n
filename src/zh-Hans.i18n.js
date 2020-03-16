@@ -96,11 +96,11 @@ module.exports = {
   'menu.engines': {
     'Engines': '对弈引擎',
     'Show Engines Sidebar': '显示对弈引擎命令行',
-    'Toggle Analysis': '棋局分析',
+    'Toggle Analysis': '开始/停止棋局分析',
     'None of the attached engines support analysis.': '已加载的对弈引擎不支持棋局分析',
-    'Start Engine vs. Engine Game': '开始程序与程序的对局',
-    'Stop Engine vs. Engine Game': '停止程序与程序的对局',
-    'Generate Move': '程序生成下一手',
+    'Start Engine vs. Engine Game': '开始对弈引擎之间的对局',
+    'Stop Engine vs. Engine Game': '停止对弈引擎之间的对局',
+    'Generate Move': '生成一手棋',
     'Please assign an engine to the player first.': '请先为当前玩家加载对弈引擎',
     'Manage Engines…': '管理对弈引擎...',
     'Clear Console': '清空'
@@ -243,7 +243,7 @@ module.exports = {
     'Go to Engine': '选择对弈引擎'
   },
   'AutoplayBar': {
-    'sec per move': '每秒步数'
+    'sec per move': '步每秒'
   },
   'EditBar': {
     'Stone Tool': '棋子',
@@ -356,7 +356,7 @@ module.exports = {
     'None': '无',
     'Date': '日期',
     'Comment': '注释',
-    'Result': '结果',
+    'Result': '对局结果',
     'Show': '显示',
     'Komi': '贴目',
     'Handicap': '让子',
@@ -463,8 +463,8 @@ module.exports = {
     'Plays as Black': '执黑',
     'Plays as White': '执白',
     'Attach Engine…': '加载对弈引擎...',
-    'Start Engine vs. Engine Game': '开始两个对弈引擎之间的对局',
-    'Stop Engine vs. Engine Game': '停止两个对弈引擎之间的对局'
+    'Start Engine vs. Engine Game': '开始对弈引擎之间的对局',
+    'Stop Engine vs. Engine Game': '停止对弈引擎之间的对局'
   },
   'WinrateGraph': {
     'Black': '黑棋',
@@ -481,7 +481,7 @@ module.exports = {
   'boardmatcher': {
     'Low Chinese Opening': '低中国流',
     'High Chinese Opening': '高中国流',
-    'Orthodox Opening': '',
+    'Orthodox Opening': 'Orthodox Opening',
     'Enclosure Opening': '守角',
     'Kobayashi Opening': '小林流',
     'Small Chinese Opening': '变相中国流',
@@ -495,11 +495,11 @@ module.exports = {
     'Low Enclosure': '低位守角',
     'High Enclosure': '高位守角',
     'Mouth Shape': '方形',
-    'Table Shape': '',
-    'Tippy Table': '',
+    'Table Shape': 'Table Shape',
+    'Tippy Table': 'Tippy Table',
     'Bamboo Joint': '双',
-    'Trapezium': '',
-    'Diamond': '',
+    'Trapezium': 'Trapezium',
+    'Diamond': 'Diamond',
     'Tiger’s Mouth': '虎',
     'Empty Triangle': '空三角',
     'Turn': '拐',
@@ -508,14 +508,14 @@ module.exports = {
     'Wedge': '挖',
     'Hane': '扳',
     'Cut': '断',
-    'Square': '',
-    'Throwing Star': '',
-    'Parallelogram': '',
+    'Square': 'Square',
+    'Throwing Star': 'Throwing Star',
+    'Parallelogram': 'Parallelogram',
     'Dog’s Head': '猴子脸',
-    'Horse’s Head': '',
+    'Horse’s Head': 'Horse’s Head',
     'Attachment': '贴',
     'One-Point Jump': '跳',
-    'Big Bulge': '',
+    'Big Bulge': 'Big Bulge',
     'Small Knight': '飞',
     'Two-Point Jump': '大跳',
     'Large Knight': '大飞',
