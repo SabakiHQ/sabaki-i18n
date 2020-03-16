@@ -18,14 +18,18 @@ module.exports = {
     'Download Update': '下载更新',
     'View Changelog': '查看更新历史',
     'Not Now': '现在不',
-    '${appName} v${version} is available now.': '新版本 ${appName} v${version} 可下载。',
+    '${appName} v${version} is available now.': p => `新版本 ${p.appName} v${p.version} 可下载。`,
     'OK': '好',
     'No updates available': '没有新版本',
-    '${appName} v${version} is the latest version.': '${appName} v${version} 已是最新版本。'
+    '${appName} v${version} is the latest version.': p => `${p.appName} v${p.version} 已是最新版本。`
   },
   'exception': {
-    '${appName} v${version}': '${appName} v${version}',
-    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': '${appName} 程序遇到了一个问题需要关闭。请考虑在 ${appName} 的 GitHub 项目主页上报告该问题。'
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
+    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': p =>
+      [
+        `${p.appName} 遇到了一个问题需要关闭`,
+        `您可以在 ${p.appName} 的 GitHub 主页上报告该问题`
+      ].join(' ')
   },
   'menu.play': {
     'Play': '对局',
@@ -104,7 +108,7 @@ module.exports = {
   'menu.tools': {
     'Tools': '工具',
     'Toggle Autoplay Mode': '进入/离开自动播放模式',
-    'Toggle Guess Mode': '进入/离开',
+    'Toggle Guess Mode': '进入/离开猜下一手模式',
     'Clean Markup…': '删除所有标记',
     'Edit SGF Properties…': '编辑SGF属性',
     'Rotate Anticlockwise': '逆时针旋转棋盘',
@@ -120,7 +124,7 @@ module.exports = {
     'Toggle Full Screen': '进入/离开全屏',
     'Show Coordinates': '显示坐标',
     'Show Move Numbers': '显示手数',
-    'Show Move Colorization': '',
+    'Show Move Colorization': '颜色标记评注',
     'Show Next Moves': '用圆点显示下一手',
     'Show Sibling Variations': '用圆点显示该手的其它变化',
     'Show Heatmap': '显示热点图',
@@ -138,7 +142,7 @@ module.exports = {
   },
   'menu.help': {
     'Help': '帮助',
-    '${appName} v${version}': '${appName} v${version}',
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
     'Check for Updates': '检查更新',
     'GitHub Repository': 'GitHub 主页',
     'Report Issue': '报告问题'
@@ -168,7 +172,7 @@ module.exports = {
   },
   'EngineSyncer': {
     'GTP engines don’t support invalid board positions.': 'GTP对弈引擎不支持非法的棋盘坐标点',
-    'GTP engines only support board sizes that don’t exceed ${length}.': 'GTP对弈引擎仅支持不超过 ${length} 的棋盘尺寸',
+    'GTP engines only support board sizes that don’t exceed ${length}.': p => `GTP对弈引擎仅支持不超过 ${p.length} 的棋盘尺寸`,
     'Current board arrangement can’t be recreated on the GTP engine.': 'GTP对弈引擎加载当前棋盘状态失败',
     'GTP engine can’t be synced to current state.': 'GTP对弈引擎与当前棋盘状态同步失败'
   },
@@ -176,10 +180,10 @@ module.exports = {
     'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': '当前GTP对弈引擎日志文件目录无法写入，请确保设置的对弈引擎日志文件目录存在且具有写入权限，或者请关闭对弈引擎日志记录'
   },
   'sabaki.window': {
-    'Game ${gameNumber}': '对局 ${gameNumber}'
+    'Game ${gameNumber}': p => `对局 ${p.gameNumber}`
   },
   'sabaki.file': {
-    'All Files': '全部文件',
+    'All Files': '所有文件',
     'This file is unreadable.': '无法读取该文件',
     'Your changes will be lost if you close this file without saving.': '如果您不保存就关闭，您做的更改将丢失',
     'Save': '保存',
@@ -199,8 +203,8 @@ module.exports = {
   },
   'sabaki.engine': {
     'Connection Failed': '连接失败',
-    '${engine} has failed to generate a move.': '${engine} 生成下一手失败',
-    '${engine} has resigned.': '${engine} 认输了',
+    '${engine} has failed to generate a move.': p => `${p.engine} 生成下一手失败`,
+    '${engine} has resigned.': p => `${p.engine} 认输了`,
     'Please attach one or more engines first.': '请先载入一个或多个对弈引擎',
     'The selected engine does not support analysis.': '当前选择的对弈引擎不支持棋局分析'
   },
@@ -235,8 +239,8 @@ module.exports = {
     'Generate Move': '生成下一手',
     'Set as Analyzer': '设置为分析器',
     'Set as Black Player': '设置为黑棋玩家',
-    'Set as White Player': '设置为白旗玩家',
-    'Go to Engine': '选择引擎'
+    'Set as White Player': '设置为白棋玩家',
+    'Go to Engine': '选择对弈引擎'
   },
   'AutoplayBar': {
     'sec per move': '每秒步数'
@@ -283,11 +287,11 @@ module.exports = {
     'Toggle group status.': '点选'
   },
   'AdvancedPropertiesDrawer': {
-    'Remove': '',
-    'Enter property name': '',
-    'This property has been blocked.': '',
-    'Add': '',
-    'Close': ''
+    'Remove': '删除',
+    'Enter property name': '输入属性名',
+    'This property has been blocked.': '禁止编辑该属性',
+    'Add': '新增',
+    'Close': '关闭'
   },
   'CleanMarkupDrawer': {
     'From Current Position': '仅删除当前节点的标记',
@@ -309,7 +313,7 @@ module.exports = {
   },
   'GameChooserDrawer': {
     'Black': '黑棋',
-    'White': '白旗',
+    'White': '白棋',
     'Remove Game': '删除对局',
     'Do you really want to remove this game permanently?': '您确定要删除这个对局吗？',
     'Cancel': '取消',
@@ -323,7 +327,7 @@ module.exports = {
     'Black Player': '黑棋玩家名称',
     'White Player': '白棋玩家名称',
     'Black Rank': '黑棋段位',
-    'White Rank': '白旗段位',
+    'White Rank': '白棋段位',
     'Game Name': '对局名称',
     'Game Event': '赛事名称',
     'Date': '日期',
@@ -357,7 +361,7 @@ module.exports = {
     'Komi': '贴目',
     'Handicap': '让子',
     'No stones': '无',
-    '${stones} stones': '${stones} 子',
+    '${stones} stones': p => `${p.stones} 子`,
     'Board Size': '棋盘尺寸',
     'OK': '确定',
     'Cancel': '取消'
@@ -369,8 +373,8 @@ module.exports = {
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Instantly play out analysis variations on board': 'Instantly play out analysis variations on board',
-    'Show automatic move titles': 'Show automatic move titles',
+    'Instantly play out analysis variations on board': '分析模式下立即显示完整变化',
+    'Show automatic move titles': '显示落子术语',
     'Show ko warning': '非法劫提示',
     'Show suicide warning': '自杀手提示',
     'Show remove node warning': '删除节点时提示确认',
@@ -400,7 +404,7 @@ module.exports = {
     'Default': '默认',
     'Install Theme…': '安装主题...',
     'Get more themes…': '获取更多主题...',
-    'by ${author}': '作者：${author}',
+    'by ${author}': p => `作者：${p.author}`,
     'Homepage': '主页',
     'All Files': '所有文件',
     'Remove': '删除',
@@ -416,7 +420,7 @@ module.exports = {
   },
   'ScoreDrawer': {
     'Black': '黑棋',
-    'White': '白旗',
+    'White': '白棋',
     'Draw': '平局',
     'Area': '数子',
     'Territory': '数目',
@@ -429,8 +433,8 @@ module.exports = {
     'Close': '关闭'
   },
   'CommentBox': {
-    'Result: ${result}': '对局结果：${result}',
-    '${a}-${b} Point': '${a}-${b} 目',
+    'Result: ${result}': p => `对局结果：${p.result}`,
+    '${a}-${b} Point':  p => `${p.a}-${p.b}`,
     'View article on Sensei’s Library': '在 Sensei’s Library 上查看文章',
     'Bad move': '臭棋',
     'Very bad move': '大臭棋',
@@ -464,7 +468,7 @@ module.exports = {
   },
   'WinrateGraph': {
     'Black': '黑棋',
-    'White': '白旗',
+    'White': '白棋',
     'Black Winrate:': '黑棋胜率',
     'White Winrate:': '白棋胜率'
   },
