@@ -9,7 +9,9 @@ const package = require('../package.json')
 
 let sabakiPackage = require('../.tmp/Sabaki/package.json')
 
-package.version = sabakiPackage.version
+if (!package.version.startsWith(sabakiPackage.version)) {
+  package.version = `${sabakiPackage.version}-0`
+}
 
 writeFileSync(
   path.resolve(__dirname, '../package.json'),

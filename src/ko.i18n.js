@@ -19,25 +19,26 @@ module.exports = {
     'View Changelog': '변경 내역 보기',
     'Not Now': '나중에',
     '${appName} v${version} is available now.': p =>
-    `${p.appName} v${p.version}을 내려받을 수 있습니다.`,
+      `${p.appName} v${p.version}을 내려받을 수 있습니다.`,
     'OK': '확인',
     'No updates available': '가능한 업데이트가 없습니다.',
     '${appName} v${version} is the latest version.': p =>
-    `${p.appName} v${p.version}은 최신 버전입니다.`
+      `${p.appName} v${p.version}은 최신 버전입니다.`
   },
   'exception': {
     '${appName} v${version}': p => `${p.appName} v${p.version}`,
     'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': p =>
-    [
-      `Something weird happened. ${p.appName}이 종료됩니다.`,
-      `가능하다면, ${p.appName}의 GitHub 저장소에 보고해 주십시오.`
-    ].join(' ')
+      [
+        `Something weird happened. ${p.appName}이 종료됩니다.`,
+        `가능하다면, ${p.appName}의 GitHub 저장소에 보고해 주십시오.`
+      ].join(' ')
   },
   'menu.play': {
     'Play': '두기',
     'Toggle Player': '흑/백 바꾸기',
     'Select Point': '지점 선택',
-    'Enter a coordinate to select a point': '좌표를 입력하여 둘 지점을 선택하십시오.',
+    'Enter a coordinate to select a point':
+      '좌표를 입력하여 둘 지점을 선택하십시오.',
     'Pass': '착수 넘김',
     'Resign': '기권',
     'Estimate': '형세분석',
@@ -101,17 +102,13 @@ module.exports = {
     'Toggle Analysis': '분석 켜기/끄기',
     'None of the attached engines support analysis.':
       '연결한 엔진 중 분석을 지원하는 것이 없습니다.',
-    'Start Engine vs. Engine Game': 
-      '엔진 대 엔진 대국 시작',
-    'Stop Engine vs. Engine Game':
-      '엔진 대 엔진 대국 중단',
+    'Start Engine vs. Engine Game': '엔진 대 엔진 대국 시작',
+    'Stop Engine vs. Engine Game': '엔진 대 엔진 대국 중단',
     'Generate Move': '다음 수 두기',
-    'Please assign an engine to the player first.': 
+    'Please assign an engine to the player first.':
       '먼저 대국자로 엔진을 지정해 주십시오.',
-    'Manage Engines…':
-      '엔진 관리',
-    'Clear Console':
-      '콘솔 내역 지우기'
+    'Manage Engines…': '엔진 관리',
+    'Clear Console': '콘솔 내역 지우기'
   },
   'menu.tools': {
     'Tools': '도구',
@@ -160,8 +157,8 @@ module.exports = {
     'Open Settings Folder': '설정 폴더 열기',
     'Toggle Developer Tools': '개발자 도구 켜기/끄기',
     'Load Language File…': '언어 파일 불러오기',
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 
-    '언어 파일은 기본적으로 JavaScript 파일로, 임의의 코드를 실행하는 데 사용될 수 있습니다..\n\n매우 위험할 수 있으므로, 믿을 수 있는 제작자의 언어 파일만을 불러오기를 권장합니다.',
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
+      '언어 파일은 기본적으로 JavaScript 파일로, 임의의 코드를 실행하는 데 사용될 수 있습니다..\n\n매우 위험할 수 있으므로, 믿을 수 있는 제작자의 언어 파일만을 불러오기를 권장합니다.',
     'I understand': '이해했습니다',
     'JavaScript Files': 'JavaScript 파일',
     'Unload Language File': '불러온 언어 파일 해제'
@@ -170,7 +167,8 @@ module.exports = {
     'Text': '텍스트'
   },
   'App': {
-    'Press Esc to exit full screen mode': '전체 화면 모드를 나가려면 Esc 키를 누르십시오.',
+    'Press Esc to exit full screen mode':
+      '전체 화면 모드를 나가려면 Esc 키를 누르십시오.',
     'Press Alt to show menu bar': '메뉴 바를 보려면 Alt 키를 누르십시오'
   },
   'ContentDisplay': {
@@ -180,7 +178,7 @@ module.exports = {
     'OK': '확인'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': 
+    'GTP engines don’t support invalid board positions.':
       'GTP 엔진이 규칙에 어긋난 수를 지원하지 않습니다.',
     'GTP engines only support board sizes that don’t exceed ${length}.': p =>
       `GTP 엔진이 ${p.length}를 넘지 않는 크기의 바둑판 크기만 지원합니다.`,
@@ -199,15 +197,16 @@ module.exports = {
   'sabaki.file': {
     'All Files': '모든 파일',
     'This file is unreadable.': '읽을 수 없는 파일입니다.',
-    'Your changes will be lost if you close this file without saving.': '저장하지 않고 닫으면 변경 사항이 모두 사라집니다.',
+    'Your changes will be lost if you close this file without saving.':
+      '저장하지 않고 닫으면 변경 사항이 모두 사라집니다.',
     'Save': '저장',
     'Don’t Save': '저장하지 않기',
     'Cancel': '취소',
     'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': p =>
-    [
-      `이 파일은 ${p.appName}가 아닌 다른 곳에서 변경되었습니다.`,
-      '파일을 다시 불러오시겠습니까? 변경 사항은 모두 사라집니다.'
-    ].join('\n'),
+      [
+        `이 파일은 ${p.appName}가 아닌 다른 곳에서 변경되었습니다.`,
+        '파일을 다시 불러오시겠습니까? 변경 사항은 모두 사라집니다.'
+      ].join('\n'),
     'Reload': '다시 불러오기',
     'Don’t Reload': '다시 불러오지 않기'
   },
@@ -224,17 +223,20 @@ module.exports = {
   'sabaki.engine': {
     'Connection Failed': '연결에 실패했습니다.',
     '${engine} has failed to generate a move.': p =>
-    `${p.engine}이 다음 수를 두는 데 실패했습니다.`,
+      `${p.engine}이 다음 수를 두는 데 실패했습니다.`,
     '${engine} has resigned.': p => `${p.engine}이/가 기권했습니다.`,
-    'Please attach one or more engines first.': '먼저 하나 이상의 엔진을 연결해 주십시오.',
-    'The selected engine does not support analysis.': '선택한 엔진은 분석을 지원하지 않습니다.'
+    'Please attach one or more engines first.':
+      '먼저 하나 이상의 엔진을 연결해 주십시오.',
+    'The selected engine does not support analysis.':
+      '선택한 엔진은 분석을 지원하지 않습니다.'
   },
   'sabaki.node': {
     'Do you really want to remove this node?':
       '정말 이 노드를 제거하시겠습니까?',
     'Remove Node': '노드 제거',
     'Cancel': '취소',
-    'Do you really want to remove all other variations?': '정말 다른 모든 변화도를 삭제하시겠습니까?',
+    'Do you really want to remove all other variations?':
+      '정말 다른 모든 변화도를 삭제하시겠습니까?',
     'Remove Variations': '변화도 삭제'
   },
   'menu.comment': {
@@ -251,7 +253,7 @@ module.exports = {
   },
   'menu.variation': {
     'Add Variation': '변화도 추가',
-    'The root node cannot have sibling nodes.': 
+    'The root node cannot have sibling nodes.':
       '뿌리 노드는 자매 노드를 가질 수 없습니다.'
   },
   'menu.engineAction': {
@@ -285,7 +287,7 @@ module.exports = {
     'Previous': '이전'
   },
   'GuessBar': {
-    'Click on the board to guess the next move.': 
+    'Click on the board to guess the next move.':
       '바둑판을 클릭해 다음 수를 맞추십시오.'
   },
   'PlayBar': {
@@ -312,10 +314,8 @@ module.exports = {
   },
   'AdvancedPropertiesDrawer': {
     'Remove': '제거',
-    'Enter property name':
-      '속성 이름을 입력하십시오',
-    'This property has been blocked.': 
-      '이 속성은 입력할 수 없습니다.',
+    'Enter property name': '속성 이름을 입력하십시오',
+    'This property has been blocked.': '이 속성은 입력할 수 없습니다.',
     'Add': '추가',
     'Close': '닫기'
   },
@@ -341,18 +341,17 @@ module.exports = {
     'Black': '흑',
     'White': '백',
     'Remove Game': '이 판 제거',
-    'Do you really want to remove this game permanently?': 
+    'Do you really want to remove this game permanently?':
       '이 판을 영구히 제거하시겠습니까?',
     'Cancel': '취소',
     'Remove Other Games': '다른 판 제거',
-    'Do you really want to remove all other games permanently?': 
+    'Do you really want to remove all other games permanently?':
       '다른 판을 영구히 제거하시겠습니까?',
     'Remove Games': '대국 제거',
     'Add New Game': '새 대국 추가',
     'Add Existing Files…': '파일로부터 추가',
     'All Files': '모든 파일',
-    'Some files are unreadable.': 
-      '읽을 수 없는 파일이 있습니다.',
+    'Some files are unreadable.': '읽을 수 없는 파일이 있습니다.',
     'Black Player': '흑 대국자',
     'White Player': '백 대국자',
     'Black Rank': '흑 단급',
@@ -400,38 +399,30 @@ module.exports = {
     'Check for updates at startup': '시작할 때 업데이트 확인',
     'Enable sounds': '소리 켜기',
     'Jump to end after loading file': '파일을 연 후 맨 끝으로 이동',
-    'Fuzzy stone placement': 
-      '돌 비껴 놓기',
-    'Animate fuzzy placement':
-      '비껴 놓을 때 움직이기',
+    'Fuzzy stone placement': '돌 비껴 놓기',
+    'Animate fuzzy placement': '비껴 놓을 때 움직이기',
     'Instantly play out analysis variations on board':
       '엔진 분석 변화도를 판에 한번에 보여주기',
-    'Show automatic move titles': 
-      '행마 이름 보기',
-    'Show ko warning': 
-      '패 경고 보기',
-    'Show suicide warning': 
-      '자살수 경고 보기',
-    'Show remove node warning': 
-      '노드 제거 경고 보기',
-    'Show remove other variations warning': 
-      '다른 변화도를 삭제할 때 경고 보기',
-    'Offer to reload file if changed externally': 
-      '파일이 외부에서 변경된 경우 다시 불러오기',
-    'Click last played stone to remove': 
-      '마지막으로 둔 수를 클릭해 제거',
-    'Invert winrate graph': 
-      '승률 그래프 반전',
-    'Game Tree Style:': 
-      '게임 트리 모양',
+    'Language:': null,
+    'Game Tree Style:': '게임 트리 모양',
     'Compact': '작게',
     'Spacious': '넓게',
     'Big': '크게',
+    'Show automatic move titles': '행마 이름 보기',
+    'Show ko warning': '패 경고 보기',
+    'Show suicide warning': '자살수 경고 보기',
+    'Show remove node warning': '노드 제거 경고 보기',
+    'Show remove other variations warning': '다른 변화도를 삭제할 때 경고 보기',
+    'Offer to reload file if changed externally':
+      '파일이 외부에서 변경된 경우 다시 불러오기',
+    'Click last played stone to remove': '마지막으로 둔 수를 클릭해 제거',
+    'Invert winrate graph': '승률 그래프 반전',
     'Path': '경로',
     'Browse…': '찾아보기',
     'Directory not found': '디렉토리를 찾을 수 없습니다',
     'File not found': '파일을 찾을 수 없습니다',
-    'Do you really want to uninstall this theme?': '이 테마를 정말 제거하시겠습니까?',
+    'Do you really want to uninstall this theme?':
+      '이 테마를 정말 제거하시겠습니까?',
     'Uninstall': '제거',
     'Cancel': '취소',
     'Uninstallation failed.': '제거에 실패했습니다.',
@@ -442,6 +433,7 @@ module.exports = {
     'White stone image:': '백돌 이미지',
     'Board image:': '바둑판 이미지',
     'Background image:': '배경 이미지',
+    'Current Theme': null,
     'Default': '기본값',
     'Install Theme…': '테마 설치',
     'Get more themes…': '더 많은 테마 얻기',
@@ -450,10 +442,8 @@ module.exports = {
     'All Files': '모든 파일',
     'Remove': '제거',
     '(Unnamed Engine)': '(이름 없는 엔진)',
-    'No arguments': 
-      '전달 인자 없음',
-    'Initial commands (;-separated)': 
-      '시작 시 명령어(;로 구분됨)',
+    'No arguments': '전달 인자 없음',
+    'Initial commands (;-separated)': '시작 시 명령어(;로 구분됨)',
     'Enable GTP logging to directory:': '디렉토리에 GTP 기록 쓰기',
     'Add': '추가',
     'General': '일반',
@@ -465,6 +455,7 @@ module.exports = {
     'Black': '흑',
     'White': '백',
     'Draw': '무승부',
+    'Score': null,
     'Area': '집+돌',
     'Territory': '집',
     'Captures': '사석',
@@ -506,10 +497,8 @@ module.exports = {
     'Plays as Black': '흑으로 두는 중',
     'Plays as White': '백으로 두는 중',
     'Attach Engine…': '엔진 연결',
-    'Start Engine vs. Engine Game':
-      '엔진 대 엔진 대국 시작',
-    'Stop Engine vs. Engine Game':
-      '엔진 대 엔진 대국 중단'
+    'Start Engine vs. Engine Game': '엔진 대 엔진 대국 시작',
+    'Stop Engine vs. Engine Game': '엔진 대 엔진 대국 중단'
   },
   'WinrateGraph': {
     'Black': '흑',
@@ -566,6 +555,14 @@ module.exports = {
     'Large Knight': '눈목자',
     'Shoulder Hit': '어깨짚음',
     'Diagonal Jump': '밭전자',
-    '4-4 Point': '화점'
+    '4-4 Point': '화점',
+    'Pass': null,
+    'Take': null,
+    'Atari': null,
+    'Suicide': null,
+    'Fill': null,
+    'Connect': null,
+    'Tengen': null,
+    'Hoshi': null
   }
 }
