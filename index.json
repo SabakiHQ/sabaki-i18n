@@ -9,6 +9,16 @@
       "unusedFlags": 0
     }
   },
+    "ru": {
+    "name": "Russian",
+    "nativeName": "русский",
+    "stats": {
+      "totalStringsCount": 445,
+      "translatedStringsCount": 0,
+      "progress": 0,
+      "unusedFlags": 0
+    }
+  },
   "ja": {
     "name": "Japanese",
     "nativeName": "日本語",
