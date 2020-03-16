@@ -1,4 +1,4 @@
-# Sabaki I18n ![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)
+# Sabaki I18n [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)](https://github.com/SabakiHQ/sabaki-i18n/actions)
 
 Home of Sabaki's translation efforts.
 
