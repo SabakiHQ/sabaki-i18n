@@ -388,13 +388,15 @@ module.exports = {
     'Cancel': '取消'
   },
   'PreferencesDrawer': {
-    'Enable hardware acceleration if possible': '硬件加速（若支持）',
+    'Enable hardware acceleration if possible':
+      '硬件加速（若支持）',
     'Check for updates at startup': '启动程序时检查更新',
     'Enable sounds': '打开声音',
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Instantly play out analysis variations on board': '分析模式下立即显示完整变化',
+    'Instantly play out analysis variations on board':
+      '分析模式下立即显示完整变化',
     'Language:': '语言:',
     'Game Tree Style:': '对局变化树样式',
     'Compact': '紧凑',
@@ -404,8 +406,10 @@ module.exports = {
     'Show ko warning': '非法劫提示',
     'Show suicide warning': '自杀手提示',
     'Show remove node warning': '删除节点时提示确认',
-    'Show remove other variations warning': '删除其它变化时提示确认',
-    'Offer to reload file if changed externally': '文件被外部程序修改后提示重新载入',
+    'Show remove other variations warning':
+      '删除其它变化时提示确认',
+    'Offer to reload file if changed externally':
+      '文件被外部程序修改后提示重新载入',
     'Click last played stone to remove': '点击最后一手棋可删除该手',
     'Invert winrate graph': '翻转胜率图',
     'Path': '路径',
