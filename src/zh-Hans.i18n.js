@@ -185,7 +185,7 @@ module.exports = {
       '当前GTP引擎日志文件目录设置错误，请确保设置的引擎日志文件目录存在且具有写入权限，否则请关闭引擎日志记录。'
   },
   'sabaki.window': {
-    'Game ${gameNumber}':  p => `对局 ${p.gameNumber}`
+    'Game ${gameNumber}': p => `对局 ${p.gameNumber}`
   },
   'sabaki.file': {
     'All Files': '全部文件',
@@ -388,25 +388,30 @@ module.exports = {
     'Cancel': '取消'
   },
   'PreferencesDrawer': {
-    'Enable hardware acceleration if possible': '硬件加速（若支持）',
+    'Enable hardware acceleration if possible':
+      '硬件加速（若支持）',
     'Check for updates at startup': '启动程序时检查更新',
     'Enable sounds': '打开声音',
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Instantly play out analysis variations on board': '分析模式下立即显示完整变化',
-    'Show automatic move titles': '显示落子术语',
-    'Show ko warning': '非法劫提示',
-    'Show suicide warning': '自杀手提示',
-    'Show remove node warning': '删除节点时提示确认',
-    'Show remove other variations warning': '删除其它变化时提示确认',
-    'Offer to reload file if changed externally': '文件被外部程序修改后提示重新载入',
-    'Click last played stone to remove': '点击最后一手棋可删除该手',
-    'Invert winrate graph': '翻转胜率图',
+    'Instantly play out analysis variations on board':
+      '分析模式下立即显示完整变化',
+    'Language:': '语言:',
     'Game Tree Style:': '对局变化树样式',
     'Compact': '紧凑',
     'Spacious': '大间距',
     'Big': '大图标',
+    'Show automatic move titles': '显示落子术语',
+    'Show ko warning': '非法劫提示',
+    'Show suicide warning': '自杀手提示',
+    'Show remove node warning': '删除节点时提示确认',
+    'Show remove other variations warning':
+      '删除其它变化时提示确认',
+    'Offer to reload file if changed externally':
+      '文件被外部程序修改后提示重新载入',
+    'Click last played stone to remove': '点击最后一手棋可删除该手',
+    'Invert winrate graph': '翻转胜率图',
     'Path': '路径',
     'Browse…': '浏览...',
     'Directory not found': '未找到文件夹',
@@ -423,6 +428,7 @@ module.exports = {
     'White stone image:': '白棋子图片',
     'Board image:': '棋盘图片',
     'Background image:': '背景图片',
+    'Current Theme': '当前主题',
     'Default': '默认',
     'Install Theme…': '安装主题...',
     'Get more themes…': '获取更多主题...',
@@ -444,6 +450,7 @@ module.exports = {
     'Black': '黑棋',
     'White': '白棋',
     'Draw': '平局',
+    'Score': '点目',
     'Area': '子数',
     'Territory': '目数',
     'Captures': '提子',
@@ -543,6 +550,14 @@ module.exports = {
     'Large Knight': '大飞',
     'Shoulder Hit': '尖冲',
     'Diagonal Jump': '象飞',
-    '4-4 Point': '星位'
+    '4-4 Point': '星位',
+    'Pass': '停一手',
+    'Take': '提子',
+    'Atari': '打',
+    'Suicide': '自杀',
+    'Fill': '填',
+    'Connect': '粘',
+    'Tengen': '天元',
+    'Hoshi': '星'
   }
 }
