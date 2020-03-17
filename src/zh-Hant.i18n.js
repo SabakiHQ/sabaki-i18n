@@ -105,6 +105,7 @@
     'Generate Move': '生成一手棋',
     'Please assign an engine to the player first.': 
       '請先為當前玩家分配一個引擎',
+	'(Unnamed Engine)': '(未命名的引擎)',
     'Manage Engines…': '管理引擎...',
     'Clear Console': '清空'
   },
@@ -432,7 +433,7 @@
     'Homepage': '主頁',
     'All Files': '所有檔',
     'Remove': '刪除',
-    '(Unnamed Engine)': '（未命名的引擎）',
+    '(Unnamed Engine)': '(未命名的引擎)',
     'No arguments': '無運行參數',
     'Initial commands (;-separated)': '啟動參數(用;分隔)',
     'Enable GTP logging to directory:': 'GTP日誌保存目錄：',

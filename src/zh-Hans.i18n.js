@@ -105,6 +105,7 @@ module.exports = {
     'Generate Move': '生成一手棋',
     'Please assign an engine to the player first.': 
       '请先为当前玩家分配一个引擎',
+	'(Unnamed Engine)': '(未命名的引擎)',
     'Manage Engines…': '管理引擎...',
     'Clear Console': '清空'
   },
@@ -436,7 +437,7 @@ module.exports = {
     'Homepage': '主页',
     'All Files': '所有文件',
     'Remove': '删除',
-    '(Unnamed Engine)': '（未命名的引擎）',
+    '(Unnamed Engine)': '(未命名的引擎)',
     'No arguments': '无运行参数',
     'Initial commands (;-separated)': '启动参数(用;分隔)',
     'Enable GTP logging to directory:': 'GTP日志保存目录：',
