@@ -138,13 +138,13 @@ module.exports = {
     'Show Win Rate': 'Показывать % выигрыша',
     'Show Score Lead': 'Показывать счёт',
     'Show Winrate Graph': 'Показывать график % выигрыша',
-    'Show Game Tree': 'Показывать дерево вариантов',
+    'Show Game Tree': 'Показывать дерево игры',
     'Show Comments': 'Показывать комментарии',
     'Zoom': 'Масштабирование',
     'Increase': 'Увеличить',
     'Decrease': 'Уменьшить',
     'Reset': 'Сбросить',
-    'Transform Board': 'Трансформация доски'
+    'Transform Board': 'Преобразование доски'
   },
   'menu.help': {
     'Help': 'Справка',
@@ -406,7 +406,7 @@ module.exports = {
     'Instantly play out analysis variations on board':
       'Показывать варианты анализа без анимации',
     'Language:': 'Язык:',
-    'Game Tree Style:': 'Вид древа игры',
+    'Game Tree Style:': 'Вид дерева игры',
     'Compact': 'Компактный',
     'Spacious': 'Просторный',
     'Big': 'Большой',
@@ -468,7 +468,7 @@ module.exports = {
     'Handicap': 'Фора',
     'Total': 'Всего',
     'Result:': 'Результат:',
-    'Update Result': 'Обновить результат:',
+    'Update Result': 'Обновить результат',
     'Close': 'Закрыть'
   },
   'CommentBox': {
