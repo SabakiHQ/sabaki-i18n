@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier \"**/*.{js,json,md}\" --write",
-    "update-readme": "node ./ci/updateReadme.js"
+    "update-readme": "node ./ci/updateReadme.js",
+    "bump": "node ./ci/bumpVersion.js"
   },
   "repository": {
     "type": "git",

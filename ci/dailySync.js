@@ -1,5 +1,5 @@
 const {spawnSync} = require('child_process')
-const {readFileSync, writeFileSync} = require('fs')
+const {writeFileSync} = require('fs')
 const path = require('path')
 const globby = require('globby')
 const index = require('../index.json')
