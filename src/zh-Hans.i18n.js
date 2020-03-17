@@ -40,7 +40,7 @@ module.exports = {
     'Pass': '&P停一手',
     'Resign': '&n认输',
     'Estimate': '&E形势判断',
-    'Score': '&r数子'
+    'Score': '&r计算胜负'
   },
   'menu.edit': {
     'Edit': '&E编辑',
@@ -90,7 +90,7 @@ module.exports = {
     'Go to Previous Variation': '&V上一变化',
     'Go to Next Variation': '&r下一变化',
     'Go to Move Number': '&u第...手',
-    'Enter a move number to go to': '到指定手数',
+    'Enter a move number to go to': '请输入手数',
     'Go to Next Game': '&x下一个对局',
     'Go to Previous Game': '&s上一个对局'
   },
@@ -261,7 +261,7 @@ module.exports = {
     'Go to Engine': '&G转到引擎控制台'
   },
   'AutoplayBar': {
-    'sec per move': '步每秒'
+    'sec per move': '秒每步'
   },
   'EditBar': {
     'Stone Tool': '棋子',
@@ -287,7 +287,7 @@ module.exports = {
     'Pass': '&P停一手',
     'Resign': '&R认输',
     'Estimate': '&t形势判断',
-    'Score': '&S数子',
+    'Score': '&S计算胜负',
     'Edit': '&E编辑',
     'Find': '&F查找',
     'Info': '&I对局信息',
@@ -444,8 +444,8 @@ module.exports = {
     'Black': '黑棋',
     'White': '白棋',
     'Draw': '平局',
-    'Area': '数子',
-    'Territory': '数目',
+    'Area': '子数',
+    'Territory': '目数',
     'Captures': '提子',
     'Komi': '贴目',
     'Handicap': '让子',
