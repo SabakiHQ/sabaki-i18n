@@ -302,7 +302,7 @@ module.exports = {
   'ScoringBar': {
     'Details': '查看详细',
     'Draw': '平局',
-    'Please select dead stones.': '请点选死棋',
+    'Please select dead stones.': '请点击设置活棋/死棋',
     'Toggle group status.': '请点击设置活棋/死棋'
   },
   'AdvancedPropertiesDrawer': {
@@ -437,7 +437,7 @@ module.exports = {
     'Add': '新增',
     'General': '一般',
     'Themes': '主题',
-    'Engines': '对弈引擎',
+    'Engines': '引擎',
     'Close': '关闭'
   },
   'ScoreDrawer': {
@@ -449,7 +449,7 @@ module.exports = {
     'Captures': '提子',
     'Komi': '贴目',
     'Handicap': '让子',
-    'Total': '总目数',
+    'Total': '总分数',
     'Result:': '对局结果',
     'Update Result': '更新对局结果',
     'Close': '关闭'
@@ -462,17 +462,17 @@ module.exports = {
     'Very bad move': '大臭棋',
     'Doubtful move': '问题手',
     'Very doubtful move': '严重的问题手',
-    'Interesting move': '有意思的一手',
-    'Very interesting move': '很有意思的一手',
+    'Interesting move': '有趣的一手',
+    'Very interesting move': '很有趣的一手',
     'Good move': '好棋',
     'Very good move': '妙手',
-    'Good for White': '白形势好',
-    'Very good for White': '白形势大好',
-    'Even position': '形势均衡',
-    'Very even position': '形势特别均衡',
-    'Good for Black': '黑形势好',
-    'Very good for Black': '黑形势大好',
-    'Unclear position': '形势不明朗',
+    'Good for White': '白好',
+    'Very good for White': '白大好',
+    'Even position': '均势',
+    'Very even position': '完全均势',
+    'Good for Black': '黑好',
+    'Very good for Black': '黑大好',
+    'Unclear position': '形势不明',
     'Very unclear position': '形势特别不明朗',
     'Edit': '编辑',
     'Title': '注释标题',
@@ -484,7 +484,7 @@ module.exports = {
     'Analyzer': '分析器',
     'Plays as Black': '执黑',
     'Plays as White': '执白',
-    'Attach Engine…': '加载对弈引擎...',
+    'Attach Engine…': '加载引擎...',
     'Start Engine vs. Engine Game': '开始引擎之间的对局',
     'Stop Engine vs. Engine Game': '停止引擎之间的对局'
   },
