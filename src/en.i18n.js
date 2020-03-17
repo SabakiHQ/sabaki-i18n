@@ -107,6 +107,7 @@ module.exports = {
     'Generate Move': 'Generate &Move',
     'Please assign an engine to the player first.':
       'Please assign an engine to the player first.',
+    '(Unnamed Engine)': '(Unnamed Engine)',
     'Manage Engines…': 'Manage &Engines…',
     'Clear Console': '&Clear Console'
   },

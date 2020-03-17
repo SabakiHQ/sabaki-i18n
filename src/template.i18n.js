@@ -98,6 +98,7 @@ module.exports = {
     'Stop Engine vs. Engine Game': null,
     'Generate Move': null,
     'Please assign an engine to the player first.': null,
+    '(Unnamed Engine)': null,
     'Manage Engines…': null,
     'Clear Console': null
   },

@@ -1,4 +1,4 @@
-﻿module.exports = {
+module.exports = {
   'menu.file': {
     'New Window': 'Создать окно',
     'File': 'Файл',
@@ -18,10 +18,12 @@
     'Download Update': 'Скачать обновление',
     'View Changelog': 'Журнал изменений',
     'Not Now': 'Не сейчас',
-    '${appName} v${version} is available now.': p => `${p.appName} ${p.version} уже доступна.`,
+    '${appName} v${version} is available now.': p =>
+      `${p.appName} ${p.version} уже доступна.`,
     'OK': 'OK',
     'No updates available': 'Нет обновлений',
-    '${appName} v${version} is the latest version.': p => `${p.appName} ${p.version} это последняя версия.`
+    '${appName} v${version} is the latest version.': p =>
+      `${p.appName} ${p.version} это последняя версия.`
   },
   'exception': {
     '${appName} v${version}': p => `${p.appName} ${p.version}`,
@@ -35,7 +37,8 @@
     'Play': 'Игра',
     'Toggle Player': 'Смена игрока',
     'Select Point': 'Выбранная точка',
-    'Enter a coordinate to select a point': 'Введите координаты для выбранной точки',
+    'Enter a coordinate to select a point':
+      'Введите координаты для выбранной точки',
     'Pass': 'Пас',
     'Resign': 'Сдаться',
     'Estimate': 'Оценка счёта',
@@ -97,14 +100,16 @@
     'Engines': 'Программы',
     'Show Engines Sidebar': 'Показать панель программ',
     'Toggle Analysis': 'Анализ',
-    'None of the attached engines support analysis.': 'Ни одна из программ не поддерживает анализ.',
+    'None of the attached engines support analysis.':
+      'Ни одна из программ не поддерживает анализ.',
     'Start Engine vs. Engine Game': 'Запустить игру программы с программой',
     'Stop Engine vs. Engine Game': 'Остановить игру программы с программой',
     'Generate Move': 'Сделать ход',
-    'Please assign an engine to the player first.': 'Сначала назначьте программу игроку.',
+    'Please assign an engine to the player first.':
+      'Сначала назначьте программу игроку.',
+    '(Unnamed Engine)': '(Безымянная программа)',
     'Manage Engines…': 'Управление программами',
-    'Clear Console': 'Очистить консоль',
-    '(Unnamed Engine)': '(Безымянная программа)'
+    'Clear Console': 'Очистить консоль'
   },
   'menu.tools': {
     'Tools': 'Инструменты',
@@ -153,7 +158,8 @@
     'Open Settings Folder': 'Открыть папку настроек',
     'Toggle Developer Tools': 'Инструменты разработчика',
     'Load Language File…': 'Загрузить файл перевода…',
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 'Файл перевода является файлом JavaScript и может быть использован для выполнения произвольного кода на вашем компьютере.\nЭто может быть крайне опасно, поэтому рекомендуется загружать только файлы от авторов, которым вы доверяете.',
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
+      'Файл перевода является файлом JavaScript и может быть использован для выполнения произвольного кода на вашем компьютере.\nЭто может быть крайне опасно, поэтому рекомендуется загружать только файлы от авторов, которым вы доверяете.',
     'I understand': 'Я понимаю',
     'JavaScript Files': 'JavaScript файл',
     'Unload Language File': 'Выгрузить файл перевода'
@@ -162,7 +168,8 @@
     'Text': 'Текст'
   },
   'App': {
-    'Press Esc to exit full screen mode': 'Нажмите Esc для выхода из полноэкранного режима',
+    'Press Esc to exit full screen mode':
+      'Нажмите Esc для выхода из полноэкранного режима',
     'Press Alt to show menu bar': 'Нажмите Alt для отображения меню'
   },
   'ContentDisplay': {
@@ -172,13 +179,18 @@
     'OK': 'OK'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': 'GTP программа не поддерживает неправильную позицию на доске',
-    'GTP engines only support board sizes that don’t exceed ${length}.': p => `GTP программа поддерживает только размеры доски, которые не превышают ${p.length}.`,
-    'Current board arrangement can’t be recreated on the GTP engine.': 'Текущая позиция на доске не может быть воссоздана на GTP программе',
-    'GTP engine can’t be synced to current state.': 'GTP программа не может быть синхронизирована с текущим состоянием.'
+    'GTP engines don’t support invalid board positions.':
+      'GTP программа не поддерживает неправильную позицию на доске',
+    'GTP engines only support board sizes that don’t exceed ${length}.': p =>
+      `GTP программа поддерживает только размеры доски, которые не превышают ${p.length}.`,
+    'Current board arrangement can’t be recreated on the GTP engine.':
+      'Текущая позиция на доске не может быть воссоздана на GTP программе',
+    'GTP engine can’t be synced to current state.':
+      'GTP программа не может быть синхронизирована с текущим состоянием.'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 'У вас неправильный каталог для журнала консоли GTP в ваших настройках.\nУбедитесь, что каталог журнала правильный и доступен для записи, или отключите ведение журнала консоли GTP.'
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.':
+      'У вас неправильный каталог для журнала консоли GTP в ваших настройках.\nУбедитесь, что каталог журнала правильный и доступен для записи, или отключите ведение журнала консоли GTP.'
   },
   'sabaki.window': {
     'Game ${gameNumber}': p => `Игра ${p.gameNumber}`
@@ -186,7 +198,8 @@
   'sabaki.file': {
     'All Files': 'Все файлы',
     'This file is unreadable.': 'Этот файл не читается.',
-    'Your changes will be lost if you close this file without saving.': 'Вы хотите сохранить изменения в файле?',
+    'Your changes will be lost if you close this file without saving.':
+      'Вы хотите сохранить изменения в файле?',
     'Save': 'Сохранить',
     'Don’t Save': 'Не сохранять',
     'Cancel': 'Отмена',
@@ -201,23 +214,30 @@
   'sabaki.play': {
     'Edit Label': 'Редактировать метку',
     'Enter label text': 'Введите текст метки',
-    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': 'Вы собираетесь сделать ход, который повторяет предыдущую позицию на доске.\nЭто недопустимо в некоторых правилах.',
+    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.':
+      'Вы собираетесь сделать ход, который повторяет предыдущую позицию на доске.\nЭто недопустимо в некоторых правилах.',
     'Play Anyway': 'Сделать ход',
     'Don’t Play': 'Не делать ход',
-    'You are about to play a suicide move.\nThis is invalid in some rulesets.': 'Вы собираетесь сделать самоубийственный ход.\nЭто недопустимо в некоторых правилах.'
+    'You are about to play a suicide move.\nThis is invalid in some rulesets.':
+      'Вы собираетесь сделать самоубийственный ход.\nЭто недопустимо в некоторых правилах.'
   },
   'sabaki.engine': {
     'Connection Failed': 'Подключение не удалось',
-    '${engine} has failed to generate a move.': p => `${p.engine} не удалось сгенерировать ход.`,
+    '${engine} has failed to generate a move.': p =>
+      `${p.engine} не удалось сгенерировать ход.`,
     '${engine} has resigned.': p => `${p.engine} сдаётся.`,
-    'Please attach one or more engines first.': 'Сначала прикрепите одну или несколько программ.',
-    'The selected engine does not support analysis.': 'Выбранная программа не поддерживает анализ.'
+    'Please attach one or more engines first.':
+      'Сначала прикрепите одну или несколько программ.',
+    'The selected engine does not support analysis.':
+      'Выбранная программа не поддерживает анализ.'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?': 'Вы действительно хотите удалить этот ход?',
+    'Do you really want to remove this node?':
+      'Вы действительно хотите удалить этот ход?',
     'Remove Node': 'Удалить',
     'Cancel': 'Отмена',
-    'Do you really want to remove all other variations?': 'Вы действительно хотите удалить все другие ветви?',
+    'Do you really want to remove all other variations?':
+      'Вы действительно хотите удалить все другие ветви?',
     'Remove Variations': 'Удалить'
   },
   'menu.comment': {
@@ -234,7 +254,8 @@
   },
   'menu.variation': {
     'Add Variation': 'Добавить ветвь',
-    'The root node cannot have sibling nodes.': 'Корневой узел не может иметь родственных узлов.'
+    'The root node cannot have sibling nodes.':
+      'Корневой узел не может иметь родственных узлов.'
   },
   'menu.engineAction': {
     'Start': 'Запустить',
@@ -267,7 +288,8 @@
     'Previous': 'Ранее'
   },
   'GuessBar': {
-    'Click on the board to guess the next move.': 'Нажмите на доску, чтобы угадать следующий ход.'
+    'Click on the board to guess the next move.':
+      'Нажмите на доску, чтобы угадать следующий ход.'
   },
   'PlayBar': {
     'Pass': 'Пас',
@@ -320,10 +342,12 @@
     'Black': 'Чёрные',
     'White': 'Белые',
     'Remove Game': 'Удалить игру',
-    'Do you really want to remove this game permanently?': 'Вы действительно хотите удалить эту игру?',
+    'Do you really want to remove this game permanently?':
+      'Вы действительно хотите удалить эту игру?',
     'Cancel': 'Отмена',
     'Remove Other Games': 'Удалить другие игры',
-    'Do you really want to remove all other games permanently?': 'Вы действительно хотите удалить все остальные игры?',
+    'Do you really want to remove all other games permanently?':
+      'Вы действительно хотите удалить все остальные игры?',
     'Remove Games': 'Удалить',
     'Add New Game': 'Добавить новую игру',
     'Add Existing Files…': 'Добавить файл…',
@@ -372,31 +396,37 @@
     'Cancel': 'Отмена'
   },
   'PreferencesDrawer': {
-    'Enable hardware acceleration if possible': 'Включить аппаратное ускорение, если возможно',
+    'Enable hardware acceleration if possible':
+      'Включить аппаратное ускорение, если возможно',
     'Check for updates at startup': 'Проверять наличие обновлений при запуске',
     'Enable sounds': 'Включить звуки',
     'Jump to end after loading file': 'Конечная позиция после загрузки файла',
     'Fuzzy stone placement': 'Неровная постановка камня',
     'Animate fuzzy placement': 'Анимация постановки камня',
-    'Instantly play out analysis variations on board': 'Показывать варианты анализа без анимации',
-    'Show automatic move titles': 'Показывать названия ходов',
-    'Show ko warning': 'Предупреждение при повторении позиции',
-    'Show suicide warning': 'Предупреждение при самоубийственном ходе',
-    'Show remove node warning': 'Предупреждение при удалении хода',
-    'Show remove other variations warning': 'Предупреждение при удалении других ветвей',
-    'Offer to reload file if changed externally': 'Предупреждение если файл был изменен извне',
-    'Click last played stone to remove': 'Удалять последний ход при нажатии на камень',
-    'Invert winrate graph': 'Инвертировать график % выигрыша',
+    'Instantly play out analysis variations on board':
+      'Показывать варианты анализа без анимации',
     'Language:': 'Язык:',
     'Game Tree Style:': 'Вид древа игры',
     'Compact': 'Компактный',
     'Spacious': 'Просторный',
     'Big': 'Большой',
+    'Show automatic move titles': 'Показывать названия ходов',
+    'Show ko warning': 'Предупреждение при повторении позиции',
+    'Show suicide warning': 'Предупреждение при самоубийственном ходе',
+    'Show remove node warning': 'Предупреждение при удалении хода',
+    'Show remove other variations warning':
+      'Предупреждение при удалении других ветвей',
+    'Offer to reload file if changed externally':
+      'Предупреждение если файл был изменен извне',
+    'Click last played stone to remove':
+      'Удалять последний ход при нажатии на камень',
+    'Invert winrate graph': 'Инвертировать график % выигрыша',
     'Path': 'Путь',
     'Browse…': 'Просмотр…',
     'Directory not found': 'Каталог не найден',
     'File not found': 'Файл не найден',
-    'Do you really want to uninstall this theme?': 'Вы действительно хотите удалить это оформление?',
+    'Do you really want to uninstall this theme?':
+      'Вы действительно хотите удалить это оформление?',
     'Uninstall': 'Удалить',
     'Cancel': 'Отмена',
     'Uninstallation failed.': 'Удаление не удалось.',
@@ -418,7 +448,8 @@
     '(Unnamed Engine)': '(Безымянная программа)',
     'No arguments': 'Нет заданных параметров',
     'Initial commands (;-separated)': 'Начальные команды (;-разделитель)',
-    'Enable GTP logging to directory:': 'Включить ведение журнала GTP в каталог:',
+    'Enable GTP logging to directory:':
+      'Включить ведение журнала GTP в каталог:',
     'Add': 'Добавить',
     'General': 'Основные',
     'Themes': 'Оформление',
