@@ -1,6 +1,6 @@
 {
   "name": "@sabaki/i18n",
-  "version": "0.50.1",
+  "version": "0.50.1-1",
   "description": "Home of Sabaki's translation efforts",
   "main": "./src/index.js",
   "scripts": {

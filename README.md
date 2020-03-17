@@ -1,4 +1,4 @@
-# Sabaki I18n ![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)
+# Sabaki I18n [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)](https://github.com/SabakiHQ/sabaki-i18n/actions)
 
 Home of Sabaki's translation efforts.
 
@@ -10,7 +10,8 @@ Home of Sabaki's translation efforts.
 | ------------------------------ | ----------------- | -------- |
 | English (English)              | `en.i18n.js`      | 100%     |
 | 日本語 (Japanese)              | `ja.i18n.js`      | 0%       |
-| 한국어 (Korean)                | `ko.i18n.js`      | 0%       |
+| 한국어 (Korean)                | `ko.i18n.js`      | 97%      |
+| русский (Russian)              | `ru.i18n.js`      | 96%      |
 | 简体中文 (Simplified Chinese)  | `zh-Hans.i18n.js` | 0%       |
 | 繁體中文 (Traditional Chinese) | `zh-Hant.i18n.js` | 0%       |
 
@@ -51,6 +52,9 @@ Make sure you have Sabaki v0.50.1 or higher installed and
 [developer mode turned on](https://github.com/SabakiHQ/Sabaki/blob/master/docs/guides/debugging.md).
 Once you start Sabaki, choose 'Developer' > 'Load Language File…' from the main
 menu. Dismiss the warning and you can choose your language file.
+
+This feature is just for convenience. Unfortunately, not all strings can be
+replaced on runtime, so prepare for inconsistencies.
 
 #### Guidelines
 
