@@ -44,8 +44,8 @@
     "nativeName": "简体中文",
     "stats": {
       "totalStringsCount": 446,
-      "translatedStringsCount": 0,
-      "progress": 0,
+      "translatedStringsCount": 446,
+      "progress": 1,
       "unusedFlags": 0
     }
   },
@@ -54,8 +54,8 @@
     "nativeName": "繁體中文",
     "stats": {
       "totalStringsCount": 446,
-      "translatedStringsCount": 0,
-      "progress": 0,
+      "translatedStringsCount": 446,
+      "progress": 1,
       "unusedFlags": 0
     }
   }

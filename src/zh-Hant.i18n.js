@@ -1,4 +1,4 @@
-﻿module.exports = {
+module.exports = {
   'menu.file': {
     'New Window': '新窗口',
     'File': '文件',
@@ -18,10 +18,12 @@
     'Download Update': '下載更新',
     'View Changelog': '查看更新日誌',
     'Not Now': '現在不',
-    '${appName} v${version} is available now.': p => `新版本 ${p.appName} v${p.version} 可下載。`,
+    '${appName} v${version} is available now.': p =>
+      `新版本 ${p.appName} v${p.version} 可下載。`,
     'OK': '好',
     'No updates available': '沒有新版本',
-    '${appName} v${version} is the latest version.': p => `${p.appName} v${p.version} 已是最新版本。`
+    '${appName} v${version} is the latest version.': p =>
+      `${p.appName} v${p.version} 已是最新版本。`
   },
   'exception': {
     '${appName} v${version}': p => `${p.appName} v${p.version}`,
@@ -35,8 +37,7 @@
     'Play': '對局',
     'Toggle Player': '切換玩家（黑/白）',
     'Select Point': '輸入座標',
-    'Enter a coordinate to select a point':
-      '輸入座標來選點',
+    'Enter a coordinate to select a point': '輸入座標來選點',
     'Pass': '停一手',
     'Resign': '認輸',
     'Estimate': '形勢判斷',
@@ -98,14 +99,14 @@
     'Engines': '引擎',
     'Show Engines Sidebar': '顯示引擎側邊欄',
     'Toggle Analysis': '開始/停止分析',
-    'None of the attached engines support analysis.': 
+    'None of the attached engines support analysis.':
       '載入的引擎不支援分析模式',
     'Start Engine vs. Engine Game': '開始引擎間的對戰',
     'Stop Engine vs. Engine Game': '停止引擎間的對戰',
     'Generate Move': '生成一手棋',
-    'Please assign an engine to the player first.': 
+    'Please assign an engine to the player first.':
       '請先為當前玩家分配一個引擎',
-	'(Unnamed Engine)': '(未命名的引擎)',
+    '(Unnamed Engine)': '(未命名的引擎)',
     'Manage Engines…': '管理引擎...',
     'Clear Console': '清空'
   },
@@ -146,7 +147,7 @@
   },
   'menu.help': {
     'Help': '幫助',
-    '${appName} v${version}':  p => `${p.appName} v${p.version}`,
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
     'Check for Updates': '檢查更新',
     'GitHub Repository': 'GitHub 主頁',
     'Report Issue': '回饋問題'
@@ -156,7 +157,7 @@
     'Open Settings Folder': '流覽設定檔夾',
     'Toggle Developer Tools': '顯示/隱藏開發者工具',
     'Load Language File…': '載入語言包...',
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
       '語言包是一個JaveScript檔，可能在您的電腦上執行任何指令，所以請不要載入任何不可信來源的語言包檔。',
     'I understand': '我瞭解',
     'JavaScript Files': 'JavaScript 文件',
@@ -176,13 +177,17 @@
     'OK': 'OK'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': 'GTP引擎不支援非法的棋盤座標點',
-    'GTP engines only support board sizes that don’t exceed ${length}.': p => `GTP引擎僅支援不超過 ${p.length} 的棋盤尺寸`,
-    'Current board arrangement can’t be recreated on the GTP engine.': 'GTP引擎載入當前棋盤狀態失敗',
-    'GTP engine can’t be synced to current state.': 'GTP引擎與當前棋盤狀態同步失敗'
+    'GTP engines don’t support invalid board positions.':
+      'GTP引擎不支援非法的棋盤座標點',
+    'GTP engines only support board sizes that don’t exceed ${length}.': p =>
+      `GTP引擎僅支援不超過 ${p.length} 的棋盤尺寸`,
+    'Current board arrangement can’t be recreated on the GTP engine.':
+      'GTP引擎載入當前棋盤狀態失敗',
+    'GTP engine can’t be synced to current state.':
+      'GTP引擎與當前棋盤狀態同步失敗'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.':
       '當前GTP引擎日誌檔目錄設置錯誤，請確保設置的引擎日誌檔目錄存在且具有寫入許可權，否則請關閉引擎日誌記錄。'
   },
   'sabaki.window': {
@@ -191,27 +196,27 @@
   'sabaki.file': {
     'All Files': '全部檔',
     'This file is unreadable.': '無法讀取該文件',
-    'Your changes will be lost if you close this file without saving.': 
+    'Your changes will be lost if you close this file without saving.':
       '如果您不保存就關閉，您做的更改將丟失。',
     'Save': '保存',
     'Don’t Save': '不保存',
     'Cancel': '取消',
     'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': p =>
-    [
-      `該文件被外部應用修改。`,
-      '是否重新打開該檔? 你當前所做的改變會丟失。'
-    ].join('\n'),
+      [
+        `該文件被外部應用修改。`,
+        '是否重新打開該檔? 你當前所做的改變會丟失。'
+      ].join('\n'),
     'Reload': '重新打開',
     'Don’t Reload': '不重新打開'
   },
   'sabaki.play': {
     'Edit Label': '編輯字母/文字',
     'Enter label text': '請輸入標記字母/文字',
-    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': 
+    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.':
       '您輸入的這一手將導致棋盤狀態與之前某一手後狀態完全一致，在許多圍棋規則中這是不允許的。',
     'Play Anyway': '仍然下這一手',
     'Don’t Play': '取消',
-    'You are about to play a suicide move.\nThis is invalid in some rulesets.': 
+    'You are about to play a suicide move.\nThis is invalid in some rulesets.':
       '您的這一手是自殺，在許多圍棋規則中這是不允許的。'
   },
   'sabaki.engine': {
@@ -219,17 +224,15 @@
     '${engine} has failed to generate a move.': p =>
       `${p.engine} 引擎生成下一手棋失敗。`,
     '${engine} has resigned.': p => `${p.engine} 認輸了。`,
-    'Please attach one or more engines first.': 
-      '請先載入一個或多個引擎。',
-    'The selected engine does not support analysis.': 
+    'Please attach one or more engines first.': '請先載入一個或多個引擎。',
+    'The selected engine does not support analysis.':
       '當前選擇的引擎不支援分析模式。'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?': 
-      '您確定要刪除該節點嗎？',
+    'Do you really want to remove this node?': '您確定要刪除該節點嗎？',
     'Remove Node': '刪除節點',
     'Cancel': '取消',
-    'Do you really want to remove all other variations?': 
+    'Do you really want to remove all other variations?':
       '您確定要刪除所有其它變化嗎？',
     'Remove Variations': '刪除變化'
   },
@@ -247,8 +250,7 @@
   },
   'menu.variation': {
     'Add Variation': '新增變化',
-    'The root node cannot have sibling nodes.': 
-      '根節點不能有旁系分支節點'
+    'The root node cannot have sibling nodes.': '根節點不能有旁系分支節點'
   },
   'menu.engineAction': {
     'Start': '開始',
@@ -281,8 +283,7 @@
     'Previous': '上一個'
   },
   'GuessBar': {
-    'Click on the board to guess the next move.': 
-      '點擊棋盤猜下一手。'
+    'Click on the board to guess the next move.': '點擊棋盤猜下一手。'
   },
   'PlayBar': {
     'Pass': '停一手',
@@ -335,11 +336,11 @@
     'Black': '黑棋',
     'White': '白棋',
     'Remove Game': '刪除對局',
-    'Do you really want to remove this game permanently?': 
+    'Do you really want to remove this game permanently?':
       '您確定要刪除這個對局嗎？',
     'Cancel': '取消',
     'Remove Other Games': '刪除除此之外的所有對局',
-    'Do you really want to remove all other games permanently?': 
+    'Do you really want to remove all other games permanently?':
       '您確定要刪除除此之外的所有對局嗎？',
     'Remove Games': '刪除對局',
     'Add New Game': '增加新對局',
@@ -383,7 +384,7 @@
     'Komi': '貼目',
     'Handicap': '讓子',
     'No stones': '無',
-    '${stones} stones':  p => `${p.stones} 子`,
+    '${stones} stones': p => `${p.stones} 子`,
     'Board Size': '棋盤尺寸',
     'OK': '確定',
     'Cancel': '取消'
@@ -395,7 +396,8 @@
     'Jump to end after loading file': '打開對局文件後跳轉至對局末尾',
     'Fuzzy stone placement': '棋子顯示位置不必嚴格地位於棋盤交叉線上',
     'Animate fuzzy placement': '落子時棋子顯示位置動態效果',
-    'Instantly play out analysis variations on board': '分析模式下立即顯示完整變化',
+    'Instantly play out analysis variations on board':
+      '分析模式下立即顯示完整變化',
     'Language:': '語言:',
     'Game Tree Style:': '對局變化樹樣式',
     'Compact': '緊湊',
@@ -406,15 +408,15 @@
     'Show suicide warning': '自殺手提示',
     'Show remove node warning': '刪除節點時提示確認',
     'Show remove other variations warning': '刪除其它變化時提示確認',
-    'Offer to reload file if changed externally': '檔被外部程式修改後提示重新載入',
+    'Offer to reload file if changed externally':
+      '檔被外部程式修改後提示重新載入',
     'Click last played stone to remove': '點擊最後一手棋可刪除該手',
     'Invert winrate graph': '翻轉勝率圖',
     'Path': '路徑',
     'Browse…': '流覽...',
     'Directory not found': '未找到資料夾',
     'File not found': '未找到文件',
-    'Do you really want to uninstall this theme?': 
-      '您確定要卸載該主題嗎？',
+    'Do you really want to uninstall this theme?': '您確定要卸載該主題嗎？',
     'Uninstall': '卸載',
     'Cancel': '取消',
     'Uninstallation failed.': '卸載失敗',
@@ -460,7 +462,7 @@
   },
   'CommentBox': {
     'Result: ${result}': p => `對局結果：${p.result}`,
-    '${a}-${b} Point':  p => `${p.a}-${p.b}`,
+    '${a}-${b} Point': p => `${p.a}-${p.b}`,
     'View article on Sensei’s Library': '在 Sensei’s Library 上查看文章',
     'Bad move': '臭棋',
     'Very bad move': '大臭棋',
@@ -558,4 +560,3 @@
     'Hoshi': '星'
   }
 }
-
