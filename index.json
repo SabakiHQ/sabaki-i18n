@@ -24,8 +24,8 @@
     "nativeName": "日本語",
     "stats": {
       "totalStringsCount": 446,
-      "translatedStringsCount": 0,
-      "progress": 0,
+      "translatedStringsCount": 446,
+      "progress": 1,
       "unusedFlags": 0
     }
   },

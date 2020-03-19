@@ -168,8 +168,10 @@ module.exports = {
     'Text': 'テキスト'
   },
   'App': {
-    'Press Esc to exit full screen mode': 'フルスクリーンモードを抜けるにはEscを押してください',
-    'Press Alt to show menu bar': 'メニューバーを表示するにはAltを押してください'
+    'Press Esc to exit full screen mode':
+      'フルスクリーンモードを抜けるにはEscを押してください',
+    'Press Alt to show menu bar':
+      'メニューバーを表示するにはAltを押してください'
   },
   'ContentDisplay': {
     'Jump to Move Number': '手数の局面に移動'
@@ -231,8 +233,7 @@ module.exports = {
       '選択されたエンジンは解析をサポートしていません。'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?':
-      'このノードを削除しますか？',
+    'Do you really want to remove this node?': 'このノードを削除しますか？',
     'Remove Node': 'ノードを削除',
     'Cancel': 'キャンセル',
     'Do you really want to remove all other variations?':
@@ -413,8 +414,7 @@ module.exports = {
     'Show ko warning': 'コウの警告を表示',
     'Show suicide warning': '自殺手の警告を表示',
     'Show remove node warning': 'ノード削除の警告を表示',
-    'Show remove other variations warning':
-      '他の変化削除の警告を表示',
+    'Show remove other variations warning': '他の変化削除の警告を表示',
     'Offer to reload file if changed externally':
       '外部で変更された場合、ファイルの再読み込みを促す',
     'Click last played stone to remove': '最後に着手した石をクリックすると削除',
