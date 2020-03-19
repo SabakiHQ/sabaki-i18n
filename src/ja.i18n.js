@@ -101,7 +101,7 @@ module.exports = {
     'Show Engines Sidebar': 'エンジンサイドバーを表示',
     'Toggle Analysis': '解析モードを切替',
     'None of the attached engines support analysis.':
-      '登録エンジンのどれも解析をサポートしていません。',
+      '接続したエンジンのどれも解析をサポートしていません。',
     'Start Engine vs. Engine Game': 'エンジン対エンジン対局を開始',
     'Stop Engine vs. Engine Game': 'エンジン対エンジン対局を停止',
     'Generate Move': '着手を生成',
@@ -228,9 +228,9 @@ module.exports = {
       `${p.engine}は着手の生成に失敗しました。`,
     '${engine} has resigned.': p => `${p.engine}が投了しました。`,
     'Please attach one or more engines first.':
-      '最初にエンジンを登録してください。',
+      '最初にエンジンを接続してください。',
     'The selected engine does not support analysis.':
-      '選択されたエンジンは解析をサポートしていません。'
+      '接続したエンジンは解析をサポートしていません。'
   },
   'sabaki.node': {
     'Do you really want to remove this node?': 'このノードを削除しますか？',
@@ -243,7 +243,7 @@ module.exports = {
   'menu.comment': {
     'Clear Annotations': '注釈をクリア',
     'Good for Black': '黒良し',
-    'Unclear Position': 'はっきりしない局面',
+    'Unclear Position': 'はっきりしない',
     'Even Position': '互角',
     'Good for White': '白良し',
     'Good Move': '好手',
@@ -260,12 +260,12 @@ module.exports = {
   'menu.engineAction': {
     'Start': '開始',
     'Stop': '停止',
-    'Detach': '登録解除',
+    'Detach': '接続解除',
     'Synchronize': '同期',
     'Generate Move': '着手を生成',
-    'Set as Analyzer': '解析器として設定',
-    'Set as Black Player': '黒番に設定',
-    'Set as White Player': '白番に設定',
+    'Set as Analyzer': '解析器に指定',
+    'Set as Black Player': '黒番に指定',
+    'Set as White Player': '白番に指定',
     'Go to Engine': 'エンジンに移動'
   },
   'AutoplayBar': {
@@ -371,7 +371,7 @@ module.exports = {
   'InfoDrawer': {
     'Manual': 'マニュアル',
     '(Unnamed Engine)': '(無名のエンジン)',
-    'Attach Engine': 'エンジンを登録',
+    'Attach Engine': 'エンジンを接続',
     'Manage Engines…': 'エンジンを管理…',
     'Previous Month': '先月',
     'Next Month': '来月',
@@ -419,7 +419,7 @@ module.exports = {
       '外部で変更された場合、ファイルの再読み込みを促す',
     'Click last played stone to remove': '最後に着手した石をクリックすると削除',
     'Invert winrate graph': '勝率グラフを反転',
-    'Path': 'パス',
+    'Path': 'パスを入力してください',
     'Browse…': 'ブラウズ…',
     'Directory not found': 'フォルダーが見つかりません',
     'File not found': 'ファイルが見つかりません',
@@ -486,8 +486,8 @@ module.exports = {
     'Very even position': '互角',
     'Good for Black': '黒良し',
     'Very good for Black': '黒優勢',
-    'Unclear position': 'はっきりしない局面',
-    'Very unclear position': '全くはっきりしない局面',
+    'Unclear position': 'はっきりしない',
+    'Very unclear position': '全くはっきりしない',
     'Edit': '編集',
     'Title': '表題',
     'Comment': 'コメント'
@@ -498,7 +498,7 @@ module.exports = {
     'Analyzer': '解析器',
     'Plays as Black': '黒を持つ',
     'Plays as White': '白を持つ',
-    'Attach Engine…': 'エンジンを登録…',
+    'Attach Engine…': 'エンジンを接続…',
     'Start Engine vs. Engine Game': 'エンジン対エンジン対局を開始',
     'Stop Engine vs. Engine Game': 'エンジン対エンジン対局を停止'
   },
@@ -517,7 +517,7 @@ module.exports = {
   'boardmatcher': {
     'Low Chinese Opening': '低い中国流',
     'High Chinese Opening': '高い中国流',
-    'Orthodox Opening': 'Orthodox Opening',
+    'Orthodox Opening': 'オーソドックス布石',
     'Enclosure Opening': 'シマリ布石',
     'Kobayashi Opening': '小林流',
     'Small Chinese Opening': 'ミニ中国流',
