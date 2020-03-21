@@ -158,7 +158,7 @@ module.exports = {
   },
   'menu.developer': {
     'Developer': 'Разработка',
-    'Open Settings Folder': 'Открыть папку настроек',
+    'Open Settings Folder': 'Открыть папку настроек…',
     'Toggle Developer Tools': 'Инструменты разработчика',
     'Load Language File…': 'Загрузить файл перевода…',
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
