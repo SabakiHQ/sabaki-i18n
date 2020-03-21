@@ -153,8 +153,8 @@ module.exports = {
     'Help': 'Справка',
     '${appName} v${version}': p => `${p.appName} ${p.version}`,
     'Check for Updates': 'Проверить обновления',
-    'GitHub Repository': 'GitHub репозиторий',
-    'Report Issue': 'Сообщить об ошибке'
+    'GitHub Repository': 'GitHub репозиторий…',
+    'Report Issue': 'Сообщить об ошибке…'
   },
   'menu.developer': {
     'Developer': 'Разработка',
