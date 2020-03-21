@@ -130,9 +130,9 @@ module.exports = {
     'Toggle Full Screen': '전체화면 켜기/끄기',
     'Show Coordinates': '좌표 보기',
     'Don’t Show': '보이지 않기',
-    'A1 (Default)': null,
-    '1-1': null,
-    'Relative': null,
+    'A1 (Default)': 'A1 (기본값)',
+    '1-1': '1-1',
+    'Relative': '상대적',
     'Show Move Numbers': '수순 보기',
     'Show Move Colorization': '착점 색상 보기',
     'Show Next Moves': '다음 수 보기',
@@ -399,7 +399,8 @@ module.exports = {
     'Cancel': '취소'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.': null,
+    'Please restart ${appName} to apply your language setting.': p =>
+      '언어 설정을 적용하려면 ${p.appName}을 다시 시작해 주십시오.',
     'Enable hardware acceleration if possible': '가능하다면 하드웨어 가속 사용',
     'Check for updates at startup': '시작할 때 업데이트 확인',
     'Enable sounds': '소리 켜기',
