@@ -1,4 +1,4 @@
-# Sabaki I18n ![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)
+# Sabaki I18n [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)](https://github.com/SabakiHQ/sabaki-i18n/actions)
 
 Home of Sabaki's translation efforts.
 
@@ -9,10 +9,11 @@ Home of Sabaki's translation efforts.
 | Language                       | File              | Progress |
 | ------------------------------ | ----------------- | -------- |
 | English (English)              | `en.i18n.js`      | 100%     |
-| 日本語 (Japanese)              | `ja.i18n.js`      | 0%       |
-| 한국어 (Korean)                | `ko.i18n.js`      | 94%      |
-| 简体中文 (Simplified Chinese)  | `zh-Hans.i18n.js` | 0%       |
-| 繁體中文 (Traditional Chinese) | `zh-Hant.i18n.js` | 0%       |
+| 日本語 (Japanese)              | `ja.i18n.js`      | 99%      |
+| 한국어 (Korean)                | `ko.i18n.js`      | 96%      |
+| русский (Russian)              | `ru.i18n.js`      | 95%      |
+| 简体中文 (Simplified Chinese)  | `zh-Hans.i18n.js` | 99%      |
+| 繁體中文 (Traditional Chinese) | `zh-Hant.i18n.js` | 99%      |
 
 <!-- end-progress-table -->
 
@@ -38,8 +39,8 @@ module.exports = {
 ```
 
 Entries that don't have a translation will have the value `null` and you can
-replace it with an actual translation. Look at `en.i18n.js` for a model
-translation file.
+replace it with an actual translation. String interpolation need a special
+syntax, please look at `en.i18n.js` for a model translation file.
 
 Once you finish translating, commit your work, and open a pull request to this
 repository. Once your work gets merged, the translation will be available in the

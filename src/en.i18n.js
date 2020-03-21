@@ -107,6 +107,7 @@ module.exports = {
     'Generate Move': 'Generate &Move',
     'Please assign an engine to the player first.':
       'Please assign an engine to the player first.',
+    '(Unnamed Engine)': '(Unnamed Engine)',
     'Manage Engines…': 'Manage &Engines…',
     'Clear Console': '&Clear Console'
   },
@@ -128,12 +129,15 @@ module.exports = {
     'Toggle Menu Bar': 'Toggle Menu &Bar',
     'Toggle Full Screen': 'Toggle &Full Screen',
     'Show Coordinates': 'Show &Coordinates',
+    'Don’t Show': '&Don’t Show',
+    'A1 (Default)': '&A1 (Default)',
+    '1-1': '&1-1',
+    'Relative': '&Relative',
     'Show Move Numbers': 'Show Move N&umbers',
     'Show Move Colorization': 'Show Move Colori&zation',
     'Show Next Moves': 'Show &Next Moves',
     'Show Sibling Variations': 'Show &Sibling Variations',
     'Show Heatmap': 'Show &Heatmap',
-    'Don’t Show': '&Don’t Show',
     'Show Win Rate': 'Show &Win Rate',
     'Show Score Lead': 'Show &Score Lead',
     'Show Winrate Graph': 'Show &Winrate Graph',
@@ -394,6 +398,8 @@ module.exports = {
     'Cancel': 'Cancel'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': p =>
+      `Please restart ${p.appName} to apply your language setting.`,
     'Enable hardware acceleration if possible':
       'Enable hardware acceleration if possible',
     'Check for updates at startup': 'Check for updates at startup',

@@ -98,6 +98,7 @@ module.exports = {
     'Stop Engine vs. Engine Game': null,
     'Generate Move': null,
     'Please assign an engine to the player first.': null,
+    '(Unnamed Engine)': null,
     'Manage Engines…': null,
     'Clear Console': null
   },
@@ -119,12 +120,15 @@ module.exports = {
     'Toggle Menu Bar': null,
     'Toggle Full Screen': null,
     'Show Coordinates': null,
+    'Don’t Show': null,
+    'A1 (Default)': null,
+    '1-1': null,
+    'Relative': null,
     'Show Move Numbers': null,
     'Show Move Colorization': null,
     'Show Next Moves': null,
     'Show Sibling Variations': null,
     'Show Heatmap': null,
-    'Don’t Show': null,
     'Show Win Rate': null,
     'Show Score Lead': null,
     'Show Winrate Graph': null,
@@ -363,6 +367,7 @@ module.exports = {
     'Cancel': null
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': null,
     'Enable hardware acceleration if possible': null,
     'Check for updates at startup': null,
     'Enable sounds': null,

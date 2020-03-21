@@ -107,9 +107,9 @@ module.exports = {
     'Generate Move': '다음 수 두기',
     'Please assign an engine to the player first.':
       '먼저 대국자로 엔진을 지정해 주십시오.',
+    '(Unnamed Engine)': '(이름 없는 엔진)',
     'Manage Engines…': '엔진 관리',
-    'Clear Console': '콘솔 내역 지우기',
-    '(Unnamed Engine)': '(이름 없는 엔진)'
+    'Clear Console': '콘솔 내역 지우기'
   },
   'menu.tools': {
     'Tools': '도구',
@@ -129,12 +129,15 @@ module.exports = {
     'Toggle Menu Bar': '메뉴 바 켜기/끄기',
     'Toggle Full Screen': '전체화면 켜기/끄기',
     'Show Coordinates': '좌표 보기',
+    'Don’t Show': '보이지 않기',
+    'A1 (Default)': null,
+    '1-1': null,
+    'Relative': null,
     'Show Move Numbers': '수순 보기',
     'Show Move Colorization': '착점 색상 보기',
     'Show Next Moves': '다음 수 보기',
     'Show Sibling Variations': '다른 변화도 보기',
     'Show Heatmap': '히트맵 보기',
-    'Don’t Show': '보이지 않기',
     'Show Win Rate': '승률 보기',
     'Show Score Lead': '집 차이 보기',
     'Show Winrate Graph': '승률 그래프 보기',
@@ -396,6 +399,7 @@ module.exports = {
     'Cancel': '취소'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': null,
     'Enable hardware acceleration if possible': '가능하다면 하드웨어 가속 사용',
     'Check for updates at startup': '시작할 때 업데이트 확인',
     'Enable sounds': '소리 켜기',
