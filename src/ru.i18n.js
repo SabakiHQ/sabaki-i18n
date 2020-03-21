@@ -447,7 +447,7 @@ module.exports = {
     'Install Theme…': 'Установить тему…',
     'Get more themes…': 'Получить больше тем…',
     'by ${author}': p => `Автор ${p.author}`,
-    'Homepage': 'Домашняя страница',
+    'Homepage': 'Домашняя страница…',
     'All Files': 'Все файлы',
     'Remove': 'Удалить',
     '(Unnamed Engine)': '(Безымянная программа)',
