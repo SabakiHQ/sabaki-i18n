@@ -129,12 +129,15 @@ module.exports = {
     'Toggle Menu Bar': 'Показывать меню',
     'Toggle Full Screen': 'Полноэкранный режим',
     'Show Coordinates': 'Показывать координаты',
+    'Don’t Show': 'Не показывать',
+    'A1 (Default)': null,
+    '1-1': null,
+    'Relative': null,
     'Show Move Numbers': 'Показывать номера ходов',
     'Show Move Colorization': 'Показывать цвета ходов',
     'Show Next Moves': 'Показывать следующий ход',
     'Show Sibling Variations': 'Показывать ход в других ветвях',
     'Show Heatmap': 'Показывать предложение хода',
-    'Don’t Show': 'Не показывать',
     'Show Win Rate': 'Показывать % выигрыша',
     'Show Score Lead': 'Показывать счёт',
     'Show Winrate Graph': 'Показывать график % выигрыша',
@@ -396,6 +399,7 @@ module.exports = {
     'Cancel': 'Отмена'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': null,
     'Enable hardware acceleration if possible':
       'Включить аппаратное ускорение, если возможно',
     'Check for updates at startup': 'Проверять наличие обновлений при запуске',

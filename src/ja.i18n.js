@@ -129,12 +129,15 @@ module.exports = {
     'Toggle Menu Bar': 'メニューバーを切替',
     'Toggle Full Screen': 'フルスクリーンを切替',
     'Show Coordinates': '座標を表示',
+    'Don’t Show': '表示しない',
+    'A1 (Default)': null,
+    '1-1': null,
+    'Relative': null,
     'Show Move Numbers': '手数を表示',
     'Show Move Colorization': '着手の色付け表示',
     'Show Next Moves': '次の着手を表示',
     'Show Sibling Variations': '関連変化を表示',
     'Show Heatmap': 'ヒートマップを表示',
-    'Don’t Show': '表示しない',
     'Show Win Rate': '勝率を表示',
     'Show Score Lead': '地合を表示',
     'Show Winrate Graph': '勝率グラフを表示',
@@ -396,6 +399,7 @@ module.exports = {
     'Cancel': 'キャンセル'
   },
   'PreferencesDrawer': {
+    'Please restart ${appName} to apply your language setting.': null,
     'Enable hardware acceleration if possible':
       '可能ならハードウェアアクセラレーションを有効にする',
     'Check for updates at startup': '起動時にアップデートを確認',
