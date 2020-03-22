@@ -14,8 +14,8 @@
     "nativeName": "русский",
     "stats": {
       "totalStringsCount": 450,
-      "translatedStringsCount": 429,
-      "progress": 0.9533333333333334,
+      "translatedStringsCount": 437,
+      "progress": 0.9711111111111111,
       "unusedFlags": 0
     }
   },
@@ -34,8 +34,8 @@
     "nativeName": "한국어",
     "stats": {
       "totalStringsCount": 450,
-      "translatedStringsCount": 434,
-      "progress": 0.9644444444444444,
+      "translatedStringsCount": 438,
+      "progress": 0.9733333333333334,
       "unusedFlags": 0
     }
   },
