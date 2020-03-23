@@ -400,8 +400,10 @@ module.exports = {
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Instantly play out analysis variations on board':
-      '分析模式下立即显示完整变化',
+    'Variation Replay Mode:': null,
+    'Disabled': null,
+    'Move by Move': null,
+    'Instantly': null,
     'Language:': '语言:',
     'Game Tree Style:': '对局变化树样式',
     'Compact': '紧凑',
@@ -447,7 +449,9 @@ module.exports = {
     'General': '一般',
     'Themes': '主题',
     'Engines': '引擎',
-    'Close': '关闭'
+    'Close': '关闭',
+    /* unused */ 'Instantly play out analysis variations on board':
+      '分析模式下立即显示完整变化'
   },
   'ScoreDrawer': {
     'Black': '黑棋',

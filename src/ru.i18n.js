@@ -130,9 +130,9 @@ module.exports = {
     'Toggle Full Screen': 'Полноэкранный режим',
     'Show Coordinates': 'Показывать координаты',
     'Don’t Show': 'Не показывать',
-    'A1 (Default)': null,
+    'A1 (Default)': 'A-1',
     '1-1': null,
-    'Relative': null,
+    'Relative': 'Относительные',
     'Show Move Numbers': 'Показывать номера ходов',
     'Show Move Colorization': 'Показывать цвета ходов',
     'Show Next Moves': 'Показывать следующий ход',
@@ -153,12 +153,12 @@ module.exports = {
     'Help': 'Справка',
     '${appName} v${version}': p => `${p.appName} ${p.version}`,
     'Check for Updates': 'Проверить обновления',
-    'GitHub Repository': 'GitHub репозиторий',
-    'Report Issue': 'Сообщить об ошибке'
+    'GitHub Repository': 'GitHub репозиторий…',
+    'Report Issue': 'Сообщить об ошибке…'
   },
   'menu.developer': {
     'Developer': 'Разработка',
-    'Open Settings Folder': 'Открыть папку настроек',
+    'Open Settings Folder': 'Открыть папку настроек…',
     'Toggle Developer Tools': 'Инструменты разработчика',
     'Load Language File…': 'Загрузить файл перевода…',
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
@@ -399,7 +399,8 @@ module.exports = {
     'Cancel': 'Отмена'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.': null,
+    'Please restart ${appName} to apply your language setting.': p =>
+      `Перезапустите ${p.appName} для изменения языка.`,
     'Enable hardware acceleration if possible':
       'Включить аппаратное ускорение, если возможно',
     'Check for updates at startup': 'Проверять наличие обновлений при запуске',
@@ -407,8 +408,10 @@ module.exports = {
     'Jump to end after loading file': 'Конечная позиция после загрузки файла',
     'Fuzzy stone placement': 'Неровная постановка камня',
     'Animate fuzzy placement': 'Анимация постановки камня',
-    'Instantly play out analysis variations on board':
-      'Показывать варианты анализа без анимации',
+    'Variation Replay Mode:': null,
+    'Disabled': null,
+    'Move by Move': null,
+    'Instantly': null,
     'Language:': 'Язык:',
     'Game Tree Style:': 'Вид дерева игры',
     'Compact': 'Компактный',
@@ -430,23 +433,23 @@ module.exports = {
     'Directory not found': 'Каталог не найден',
     'File not found': 'Файл не найден',
     'Do you really want to uninstall this theme?':
-      'Вы действительно хотите удалить это оформление?',
+      'Вы действительно хотите удалить эту тему?',
     'Uninstall': 'Удалить',
     'Cancel': 'Отмена',
     'Uninstallation failed.': 'Удаление не удалось.',
-    'Sabaki Themes': 'Sabaki оформление',
+    'Sabaki Themes': 'Sabaki тема',
     'Installation failed.': 'Установка не удалась.',
     'Custom Images': 'Настраиваемые изображения',
     'Black stone image:': 'Чёрный камень',
     'White stone image:': 'Белый камень',
     'Board image:': 'Доска',
     'Background image:': 'Фон',
-    'Current Theme': 'Текущее оформление',
+    'Current Theme': 'Текущая тема',
     'Default': 'По умолчанию',
-    'Install Theme…': 'Установить оформление…',
-    'Get more themes…': 'Получить больше оформлений…',
+    'Install Theme…': 'Установить тему…',
+    'Get more themes…': 'Получить больше тем…',
     'by ${author}': p => `Автор ${p.author}`,
-    'Homepage': 'Домашняя страница',
+    'Homepage': 'Домашняя страница…',
     'All Files': 'Все файлы',
     'Remove': 'Удалить',
     '(Unnamed Engine)': '(Безымянная программа)',
@@ -456,9 +459,11 @@ module.exports = {
       'Включить ведение журнала GTP в каталог:',
     'Add': 'Добавить',
     'General': 'Основные',
-    'Themes': 'Оформление',
+    'Themes': 'Темы',
     'Engines': 'Программы',
-    'Close': 'Закрыть'
+    'Close': 'Закрыть',
+    /* unused */ 'Instantly play out analysis variations on board':
+      'Показывать варианты анализа без анимации'
   },
   'ScoreDrawer': {
     'Black': 'Чёрные',
@@ -552,7 +557,7 @@ module.exports = {
     'Hane': 'Ханэ',
     'Cut': 'Кири',
     'Square': null,
-    'Throwing Star': null,
+    'Throwing Star': 'Сюрикэн',
     'Parallelogram': null,
     'Dog’s Head': null,
     'Horse’s Head': null,
@@ -566,11 +571,11 @@ module.exports = {
     'Diagonal Jump': 'Хазама тоби',
     '4-4 Point': 'Хоси',
     'Pass': 'Пас',
-    'Take': null,
+    'Take': 'Тори',
     'Atari': 'Атари',
-    'Suicide': null,
-    'Fill': null,
-    'Connect': null,
+    'Suicide': 'Самоубийственный ход',
+    'Fill': 'Тсуги',
+    'Connect': 'Рэнраку',
     'Tengen': 'Тэнгэн',
     'Hoshi': 'Хоси'
   }

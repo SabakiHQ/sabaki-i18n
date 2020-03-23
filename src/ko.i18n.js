@@ -407,8 +407,10 @@ module.exports = {
     'Jump to end after loading file': '파일을 연 후 맨 끝으로 이동',
     'Fuzzy stone placement': '돌 비껴 놓기',
     'Animate fuzzy placement': '비껴 놓을 때 움직이기',
-    'Instantly play out analysis variations on board':
-      '엔진 분석 변화도를 판에 한번에 보여주기',
+    'Variation Replay Mode:': null,
+    'Disabled': null,
+    'Move by Move': null,
+    'Instantly': null,
     'Language:': '언어',
     'Game Tree Style:': '게임 트리 모양',
     'Compact': '작게',
@@ -455,7 +457,9 @@ module.exports = {
     'General': '일반',
     'Themes': '테마',
     'Engines': '엔진',
-    'Close': '닫기'
+    'Close': '닫기',
+    /* unused */ 'Instantly play out analysis variations on board':
+      '엔진 분석 변화도를 판에 한번에 보여주기'
   },
   'ScoreDrawer': {
     'Black': '흑',

@@ -3,8 +3,8 @@
     "name": "English",
     "nativeName": "English",
     "stats": {
-      "totalStringsCount": 450,
-      "translatedStringsCount": 450,
+      "totalStringsCount": 453,
+      "translatedStringsCount": 453,
       "progress": 1,
       "unusedFlags": 0
     }
@@ -13,50 +13,50 @@
     "name": "Russian",
     "nativeName": "русский",
     "stats": {
-      "totalStringsCount": 450,
-      "translatedStringsCount": 429,
-      "progress": 0.9533333333333334,
-      "unusedFlags": 0
+      "totalStringsCount": 454,
+      "translatedStringsCount": 437,
+      "progress": 0.9625550660792952,
+      "unusedFlags": 1
     }
   },
   "ja": {
     "name": "Japanese",
     "nativeName": "日本語",
     "stats": {
-      "totalStringsCount": 450,
+      "totalStringsCount": 454,
       "translatedStringsCount": 446,
-      "progress": 0.9911111111111112,
-      "unusedFlags": 0
+      "progress": 0.9823788546255506,
+      "unusedFlags": 1
     }
   },
   "ko": {
     "name": "Korean",
     "nativeName": "한국어",
     "stats": {
-      "totalStringsCount": 450,
-      "translatedStringsCount": 434,
-      "progress": 0.9644444444444444,
-      "unusedFlags": 0
+      "totalStringsCount": 454,
+      "translatedStringsCount": 438,
+      "progress": 0.9647577092511013,
+      "unusedFlags": 1
     }
   },
   "zh-Hans": {
     "name": "Simplified Chinese",
     "nativeName": "简体中文",
     "stats": {
-      "totalStringsCount": 450,
+      "totalStringsCount": 454,
       "translatedStringsCount": 446,
-      "progress": 0.9911111111111112,
-      "unusedFlags": 0
+      "progress": 0.9823788546255506,
+      "unusedFlags": 1
     }
   },
   "zh-Hant": {
     "name": "Traditional Chinese",
     "nativeName": "繁體中文",
     "stats": {
-      "totalStringsCount": 450,
+      "totalStringsCount": 454,
       "translatedStringsCount": 446,
-      "progress": 0.9911111111111112,
-      "unusedFlags": 0
+      "progress": 0.9823788546255506,
+      "unusedFlags": 1
     }
   }
 }

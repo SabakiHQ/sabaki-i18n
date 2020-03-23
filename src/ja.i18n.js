@@ -407,8 +407,10 @@ module.exports = {
     'Jump to end after loading file': 'ファイルを読み込んだ後最終局面に移動',
     'Fuzzy stone placement': 'ファジーな石の置き方',
     'Animate fuzzy placement': 'ファジーな置き方をアニメーションする',
-    'Instantly play out analysis variations on board':
-      '碁盤上で解析変化を即プレイアウト',
+    'Variation Replay Mode:': null,
+    'Disabled': null,
+    'Move by Move': null,
+    'Instantly': null,
     'Language:': '言語:',
     'Game Tree Style:': '棋譜ツリースタイル:',
     'Compact': 'コンパクト',
@@ -455,7 +457,9 @@ module.exports = {
     'General': '一般',
     'Themes': 'テーマ',
     'Engines': 'エンジン',
-    'Close': '閉じる'
+    'Close': '閉じる',
+    /* unused */ 'Instantly play out analysis variations on board':
+      '碁盤上で解析変化を即プレイアウト'
   },
   'ScoreDrawer': {
     'Black': '黒',
