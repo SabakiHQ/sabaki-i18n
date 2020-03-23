@@ -407,8 +407,10 @@ module.exports = {
     'Jump to end after loading file': 'Jump to end after loading file',
     'Fuzzy stone placement': 'Fuzzy stone placement',
     'Animate fuzzy placement': 'Animate fuzzy placement',
-    'Instantly play out analysis variations on board':
-      'Instantly play out analysis variations on board',
+    'Variation Replay Mode:': 'Variation Replay Mode:',
+    'Disabled': 'Disabled',
+    'Move by Move': 'Move by Move',
+    'Instantly': 'Instantly',
     'Language:': 'Language:',
     'Game Tree Style:': 'Game Tree Style:',
     'Compact': 'Compact',
