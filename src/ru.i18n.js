@@ -408,10 +408,10 @@ module.exports = {
     'Jump to end after loading file': 'Конечная позиция после загрузки файла',
     'Fuzzy stone placement': 'Неровная постановка камня',
     'Animate fuzzy placement': 'Анимация постановки камня',
-    'Variation Replay Mode:': null,
-    'Disabled': null,
-    'Move by Move': null,
-    'Instantly': null,
+    'Variation Replay Mode:': 'Показывать варианты анализа',
+    'Disabled': 'Не показывать',
+    'Move by Move': 'Ход за ходом',
+    'Instantly': 'Мгновенно',
     'Language:': 'Язык:',
     'Game Tree Style:': 'Вид дерева игры',
     'Compact': 'Компактный',
@@ -461,9 +461,7 @@ module.exports = {
     'General': 'Основные',
     'Themes': 'Темы',
     'Engines': 'Программы',
-    'Close': 'Закрыть',
-    /* unused */ 'Instantly play out analysis variations on board':
-      'Показывать варианты анализа без анимации'
+    'Close': 'Закрыть'
   },
   'ScoreDrawer': {
     'Black': 'Чёрные',
