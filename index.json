@@ -13,10 +13,10 @@
     "name": "Russian",
     "nativeName": "русский",
     "stats": {
-      "totalStringsCount": 454,
-      "translatedStringsCount": 437,
-      "progress": 0.9625550660792952,
-      "unusedFlags": 1
+      "totalStringsCount": 453,
+      "translatedStringsCount": 440,
+      "progress": 0.9713024282560706,
+      "unusedFlags": 0
     }
   },
   "ja": {
@@ -34,8 +34,8 @@
     "nativeName": "한국어",
     "stats": {
       "totalStringsCount": 454,
-      "translatedStringsCount": 438,
-      "progress": 0.9647577092511013,
+      "translatedStringsCount": 442,
+      "progress": 0.973568281938326,
       "unusedFlags": 1
     }
   },
