@@ -104,7 +104,7 @@ module.exports = {
   },
   'menu.tools': {
     'Tools': 'Outils',
-    'Toggle Autoplay Mode': null,
+    'Toggle Autoplay Mode': 'Basculer en Mode Autoplay',
     'Toggle Guess Mode': null,
     'Clean Markup…': null,
     'Edit SGF Properties…': null,
