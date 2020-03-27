@@ -62,5 +62,11 @@
   "fr": {
     "name": "French",
     "nativeName": "Français",
+    "stats": {
+      "totalStringsCount": 453,
+      "translatedStringsCount": 0,
+      "progress": 0,
+      "unusedFlags": 0
+    }
   },
 }
