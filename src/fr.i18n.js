@@ -18,14 +18,20 @@ module.exports = {
     'Download Update': 'Télécharger la Mise à Jour',
     'View Changelog': 'Voir les Modifications',
     'Not Now': 'Plus Tard',
-    '${appName} v${version} is available now.': '${appName} v${version} est disponible.',
+    '${appName} v${version} is available now.': p =>
+      `${p.appName} v${p.version} est disponible.`,
     'OK': 'OK',
     'No updates available': 'Pas de mise à jour disponible',
-    '${appName} v${version} is the latest version.': '${appName} v${version} est la dernière version.'
+    '${appName} v${version} is the latest version.': p =>
+      `${p.appName} v${p.version} est la dernière version.`
   },
   'exception': {
-    '${appName} v${version}': '${appName} v${version}',
-    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': 'Quelque chose d’innhabituel s’est passé. ${appName} va se fermer. Si possible, veuillez rapporter ceci sur le dépôt GitHub de ${appName}.
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
+    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': p =>
+      [
+        `Quelque chose d’innhabituel s’est produit. ${appName} va se fermer.`,
+        `Si possible, veuillez signalerer ceci sur le dépôt GitHub de ${appName}.`
+      ].join(' ')
   },
   'menu.play': {
     'Play': 'Jouer',
@@ -104,94 +110,99 @@ module.exports = {
   },
   'menu.tools': {
     'Tools': 'Outils',
-    'Toggle Autoplay Mode': 'Basculer en Mode Autoplay',
-    'Toggle Guess Mode': null,
-    'Clean Markup…': null,
-    'Edit SGF Properties…': null,
-    'Rotate Anticlockwise': null,
-    'Rotate Clockwise': null,
-    'Flip Horizontally': null,
-    'Flip Vertically': null,
-    'Invert Colors': null,
-    'Reset': null
+    'Toggle Autoplay Mode': 'Basculer en Mode Lecture Automatique',
+    'Toggle Guess Mode': 'Basculer en Mode Deviner',
+    'Clean Markup…': 'Effacer les Annotations',
+    'Edit SGF Properties…': 'Editer les Propriétés SGF',
+    'Rotate Anticlockwise': 'Rotation Antihoraire',
+    'Rotate Clockwise': 'Rotation Horaire',
+    'Flip Horizontally': 'Symétrie Axe Vertical',
+    'Flip Vertically': 'Symétrie Axe Horizontal',
+    'Invert Colors': 'Inversement des Couleurs',
+    'Reset': 'Réinitialiser'
   },
   'menu.view': {
-    'View': null,
-    'Toggle Menu Bar': null,
-    'Toggle Full Screen': null,
-    'Show Coordinates': null,
-    'Don’t Show': null,
-    'A1 (Default)': null,
-    '1-1': null,
-    'Relative': null,
-    'Show Move Numbers': null,
-    'Show Move Colorization': null,
-    'Show Next Moves': null,
-    'Show Sibling Variations': null,
-    'Show Heatmap': null,
-    'Show Win Rate': null,
-    'Show Score Lead': null,
-    'Show Winrate Graph': null,
-    'Show Game Tree': null,
-    'Show Comments': null,
-    'Zoom': null,
-    'Increase': null,
-    'Decrease': null,
-    'Reset': null,
-    'Transform Board': null
+    'View': 'Affichage',
+    'Toggle Menu Bar': 'Afficher la Barre de Menus',
+    'Toggle Full Screen': 'Basculer en Mode Plein Écran',
+    'Show Coordinates': 'Afficher les Coordonnées',
+    'Don’t Show': 'Ne Pas Montrer',
+    'A1 (Default)': 'A1 (Défaut)',
+    '1-1': '1-1',
+    'Relative': 'Relatif',
+    'Show Move Numbers': 'Afficher les Numéros des Coups',
+    'Show Move Colorization': 'Afficher la Couleur des Coups',
+    'Show Next Moves': 'Afficher les Coups Suivants',
+    'Show Sibling Variations': 'Afficher les Variations Alternatives',
+    'Show Heatmap': 'Afficher les Points Chauds',
+    'Show Win Rate': 'Afficher la Probabilité de Victoire',
+    'Show Score Lead': 'Afficher le Nombre de Points d’Écart',
+    'Show Winrate Graph': 'Afficher le Graphique de la Probabilité de Victoire',
+    'Show Game Tree': 'Afficher l’Arbre de Jeu',
+    'Show Comments': 'Afficher les Commentaires',
+    'Zoom': 'Zoom',
+    'Increase': 'Agrandir',
+    'Decrease': 'Rétrécir',
+    'Reset': 'Réinitialiser',
+    'Transform Board': 'Transformer le Goban'
   },
   'menu.help': {
-    'Help': null,
-    '${appName} v${version}': null,
-    'Check for Updates': null,
-    'GitHub Repository': null,
-    'Report Issue': null
+    'Help': 'Aide',
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
+    'Check for Updates': 'Vérifier les Mises à Jours',
+    'GitHub Repository': 'Dépôt GitHub',
+    'Report Issue': 'Signaler un Problème'
   },
   'menu.developer': {
-    'Developer': null,
-    'Open Settings Folder': null,
-    'Toggle Developer Tools': null,
-    'Load Language File…': null,
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': null,
-    'I understand': null,
-    'JavaScript Files': null,
-    'Unload Language File': null
+    'Developer': 'Développeur',
+    'Open Settings Folder': 'Ouvrir le Dossier de Configuration',
+    'Toggle Developer Tools': 'Afficher les Outils de Développeur',
+    'Load Language File…': 'Charger le Fichier de Langue…',
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 'Un fichier de langue est un fichier JavaScript et peut être utilisé pour exécuter du code arbitraire sur votre ordinateur.\n\nCela peut être extrêmement dangereux, il est donc recommandé de ne charger uniquement des fichiers de langue d’auteurs en qui vous avez confiance.',
+    'I understand': 'J’ai compris',
+    'JavaScript Files': 'Fichiers JavaScript',
+    'Unload Language File': 'Décharger le Fichier de Langue'
   },
   'menu.macos': {
-    'Text': null
+    'Text': 'Texte'
   },
   'App': {
-    'Press Esc to exit full screen mode': null,
-    'Press Alt to show menu bar': null
+    'Press Esc to exit full screen mode': 'Appuyez sur la touche Esc pour quitter le mode plein écran',
+    'Press Alt to show menu bar': 'Appuyez sur la touche Alt pour afficher la barre de menus'
   },
   'ContentDisplay': {
-    'Jump to Move Number': null
+    'Jump to Move Number': 'Aller au Coup Numéro'
   },
   'dialog': {
-    'OK': null
+    'OK': 'OK'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': null,
-    'GTP engines only support board sizes that don’t exceed ${length}.': null,
-    'Current board arrangement can’t be recreated on the GTP engine.': null,
-    'GTP engine can’t be synced to current state.': null
+    'GTP engines don’t support invalid board positions.': 'Les moteurs GTP ne supportent pas les positions de goban non réglementaire.',
+    'GTP engines only support board sizes that don’t exceed ${length}.': p =>
+      `Les moteurs GTP supportent uniquement les goban qui n’excèdent pas ${length}.`,
+    'Current board arrangement can’t be recreated on the GTP engine.': 'La position de goban actuelle ne peut pas être recréée sur le moteur GTP.',
+    'GTP engine can’t be synced to current state.': 'Le moteur GTP ne peut pas être synchronisé avec l’état actuel.'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': null
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 'Le dossier du journal de console GTP est invalide dans vos réglages.\n\nVeuillez vous assurer que le dossier du journal GTP est valide et modifiable, ou bien désactivez le journal de console GTP.'
   },
   'sabaki.window': {
-    'Game ${gameNumber}': null
+    'Game ${gameNumber}': p => `Partie ${p.gameNumber}`
   },
   'sabaki.file': {
-    'All Files': null,
-    'This file is unreadable.': null,
-    'Your changes will be lost if you close this file without saving.': null,
-    'Save': null,
-    'Don’t Save': null,
-    'Cancel': null,
-    'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': null,
-    'Reload': null,
-    'Don’t Reload': null
+    'All Files': 'Tous les Fichiers',
+    'This file is unreadable.': 'Ce fichier n’est pas lisible.',
+    'Your changes will be lost if you close this file without saving.': 'Vos modifications seront perdues si vous fermez ce fichier sans sauvegarder.',
+    'Save': 'Sauvegarder',
+    'Don’t Save': 'Ne pas Sauvegarder',
+    'Cancel': 'Annuler',
+    'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': p =>
+      [
+        `Ce fichier a été modifié en dehors de ${p.appName}.`,
+        'Voulez-vous recharger ce fichier? Vos modifications seront perdues.'
+      ].join('\n'),
+    'Reload': 'Recharger',
+    'Don’t Reload': 'Ne pas Recharger'
   },
   'sabaki.play': {
     'Edit Label': null,
