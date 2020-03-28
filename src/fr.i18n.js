@@ -539,14 +539,14 @@ module.exports = {
     'Large Knight': null,
     'Shoulder Hit': null,
     'Diagonal Jump': null,
-    '4-4 Point': null,
-    'Pass': null,
-    'Take': null,
-    'Atari': null,
-    'Suicide': null,
-    'Fill': null,
-    'Connect': null,
-    'Tengen': null,
-    'Hoshi': null
+    '4-4 Point': 'Point 4-4',
+    'Pass': 'Passe',
+    'Take': 'Prend',
+    'Atari': 'Atari',
+    'Suicide': 'Suicide',
+    'Fill': 'Rempli',
+    'Connect': 'Connecte',
+    'Tengen': 'Tengen',
+    'Hoshi': 'Hoshi'
   }
 }
