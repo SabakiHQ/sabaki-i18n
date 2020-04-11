@@ -223,7 +223,7 @@ module.exports = {
     'Do you really want to remove this node?': 'Voulez-vous vraiment supprimer ce noeud?',
     'Remove Node': 'Supprimer le Noeud',
     'Cancel': 'Annuler',
-    'Do you really want to remove all other variations?': "Voulez-vous vraiment supprimer toutes les autres variations?',
+    'Do you really want to remove all other variations?': "Voulez-vous vraiment supprimer toutes les autres variations?",
     'Remove Variations': 'Supprimer les Variations'
   },
   'menu.comment': {
