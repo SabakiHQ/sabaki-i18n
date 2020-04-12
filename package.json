@@ -4,7 +4,7 @@
   "description": "Home of Sabaki's translation efforts",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./ci/test.js",
     "format": "prettier \"**/*.{js,json,md}\" --write",
     "update-readme": "node ./ci/updateReadme.js",
     "bump": "node ./ci/bumpVersion.js"
