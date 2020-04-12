@@ -99,11 +99,13 @@ module.exports = {
     'Engines': 'Moteurs de Jeu',
     'Show Engines Sidebar': 'Montrer la Fenêtre Moteurs',
     'Toggle Analysis': 'Basculer en Mode Analyse',
-    'None of the attached engines support analysis.': 'Aucun des moteurs attachés ne supporte le mode analyse',
+    'None of the attached engines support analysis.':
+      'Aucun des moteurs attachés ne supporte le mode analyse',
     'Start Engine vs. Engine Game': 'Commencer une Partie Moteur contre Moteur',
     'Stop Engine vs. Engine Game': 'Arrêter la Partie Moteur contre Moteur',
     'Generate Move': 'Générer un Coup',
-    'Please assign an engine to the player first.': 'Veuillez d’abord assigner un moteur au joueur.',
+    'Please assign an engine to the player first.':
+      'Veuillez d’abord assigner un moteur au joueur.',
     '(Unnamed Engine)': '(Moteur Sans Nom)',
     'Manage Engines…': 'Gérer les Moteurs…',
     'Clear Console': 'Effacer la Console'
@@ -158,7 +160,8 @@ module.exports = {
     'Open Settings Folder': 'Ouvrir le Dossier de Configuration',
     'Toggle Developer Tools': 'Afficher les Outils de Développeur',
     'Load Language File…': 'Charger le Fichier de Langue…',
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 'Un fichier de langue est un fichier JavaScript et peut être utilisé pour exécuter du code arbitraire sur votre ordinateur.\n\nCela peut être extrêmement dangereux, il est donc recommandé de ne charger uniquement des fichiers de langue d’auteurs en qui vous avez confiance.',
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
+      'Un fichier de langue est un fichier JavaScript et peut être utilisé pour exécuter du code arbitraire sur votre ordinateur.\n\nCela peut être extrêmement dangereux, il est donc recommandé de ne charger uniquement des fichiers de langue d’auteurs en qui vous avez confiance.',
     'I understand': 'J’ai compris',
     'JavaScript Files': 'Fichiers JavaScript',
     'Unload Language File': 'Décharger le Fichier de Langue'
@@ -167,8 +170,10 @@ module.exports = {
     'Text': 'Texte'
   },
   'App': {
-    'Press Esc to exit full screen mode': 'Appuyez sur la touche Esc pour quitter le mode plein écran',
-    'Press Alt to show menu bar': 'Appuyez sur la touche Alt pour afficher la barre de menus'
+    'Press Esc to exit full screen mode':
+      'Appuyez sur la touche Esc pour quitter le mode plein écran',
+    'Press Alt to show menu bar':
+      'Appuyez sur la touche Alt pour afficher la barre de menus'
   },
   'ContentDisplay': {
     'Jump to Move Number': 'Aller au Coup Numéro'
@@ -177,14 +182,18 @@ module.exports = {
     'OK': 'OK'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': 'Les moteurs GTP ne supportent pas les positions de goban non réglementaire.',
+    'GTP engines don’t support invalid board positions.':
+      'Les moteurs GTP ne supportent pas les positions de goban non réglementaire.',
     'GTP engines only support board sizes that don’t exceed ${length}.': p =>
       `Les moteurs GTP supportent uniquement les goban qui n’excèdent pas ${length}.`,
-    'Current board arrangement can’t be recreated on the GTP engine.': 'La position de goban actuelle ne peut pas être recréée sur le moteur GTP.',
-    'GTP engine can’t be synced to current state.': 'Le moteur GTP ne peut pas être synchronisé avec l’état actuel.'
+    'Current board arrangement can’t be recreated on the GTP engine.':
+      'La position de goban actuelle ne peut pas être recréée sur le moteur GTP.',
+    'GTP engine can’t be synced to current state.':
+      'Le moteur GTP ne peut pas être synchronisé avec l’état actuel.'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 'Le dossier du journal de console GTP est invalide dans vos réglages.\n\nVeuillez vous assurer que le dossier du journal GTP est valide et modifiable, ou bien désactivez le journal de console GTP.'
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.':
+      'Le dossier du journal de console GTP est invalide dans vos réglages.\n\nVeuillez vous assurer que le dossier du journal GTP est valide et modifiable, ou bien désactivez le journal de console GTP.'
   },
   'sabaki.window': {
     'Game ${gameNumber}': p => `Partie ${p.gameNumber}`
@@ -192,7 +201,8 @@ module.exports = {
   'sabaki.file': {
     'All Files': 'Tous les Fichiers',
     'This file is unreadable.': 'Ce fichier n’est pas lisible.',
-    'Your changes will be lost if you close this file without saving.': 'Vos modifications seront perdues si vous fermez ce fichier sans sauvegarder.',
+    'Your changes will be lost if you close this file without saving.':
+      'Vos modifications seront perdues si vous fermez ce fichier sans sauvegarder.',
     'Save': 'Sauvegarder',
     'Don’t Save': 'Ne pas Sauvegarder',
     'Cancel': 'Annuler',
@@ -207,23 +217,30 @@ module.exports = {
   'sabaki.play': {
     'Edit Label': 'Éditer la Marque',
     'Enter label text': 'Entrer le texte de la marque',
-    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': 'Vous êtes sur le point de jouer un coup qui répète une position de goban antérieure. Ce n’est pas valide selon certaines règles.',
+    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.':
+      'Vous êtes sur le point de jouer un coup qui répète une position de goban antérieure. Ce n’est pas valide selon certaines règles.',
     'Play Anyway': 'Jouer Quand Même',
     'Don’t Play': 'Ne pas Jouer',
-    'You are about to play a suicide move.\nThis is invalid in some rulesets.': 'Vous êtes sur le point de jouer un coup suicide. Ce n’est pas valide selon certaines règles.'
+    'You are about to play a suicide move.\nThis is invalid in some rulesets.':
+      'Vous êtes sur le point de jouer un coup suicide. Ce n’est pas valide selon certaines règles.'
   },
   'sabaki.engine': {
     'Connection Failed': 'La Connexion a Échoué',
-    '${engine} has failed to generate a move.': p => `${engine} a échoué a générer un coup.`,
+    '${engine} has failed to generate a move.': p =>
+      `${engine} a échoué a générer un coup.`,
     '${engine} has resigned.': p => `${engine} a résigné.`,
-    'Please attach one or more engines first.': 'Veuillez d’abord attacher un moteur.',
-    'The selected engine does not support analysis.': 'Le moteur choisi ne supporter pas l’analyse'
+    'Please attach one or more engines first.':
+      'Veuillez d’abord attacher un moteur.',
+    'The selected engine does not support analysis.':
+      'Le moteur choisi ne supporter pas l’analyse'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?': 'Voulez-vous vraiment supprimer ce noeud?',
+    'Do you really want to remove this node?':
+      'Voulez-vous vraiment supprimer ce noeud?',
     'Remove Node': 'Supprimer le Noeud',
     'Cancel': 'Annuler',
-    'Do you really want to remove all other variations?': "Voulez-vous vraiment supprimer toutes les autres variations?",
+    'Do you really want to remove all other variations?':
+      'Voulez-vous vraiment supprimer toutes les autres variations?',
     'Remove Variations': 'Supprimer les Variations'
   },
   'menu.comment': {
@@ -240,7 +257,8 @@ module.exports = {
   },
   'menu.variation': {
     'Add Variation': 'Ajouter une Variation',
-    'The root node cannot have sibling nodes.': 'La racine ne peut pas avoir de noeud alternatif.'
+    'The root node cannot have sibling nodes.':
+      'La racine ne peut pas avoir de noeud alternatif.'
   },
   'menu.engineAction': {
     'Start': 'Démarrer',
@@ -273,7 +291,8 @@ module.exports = {
     'Previous': 'Précédent'
   },
   'GuessBar': {
-    'Click on the board to guess the next move.': 'Cliquer sur le goban pour deviner le coup suivant.'
+    'Click on the board to guess the next move.':
+      'Cliquer sur le goban pour deviner le coup suivant.'
   },
   'PlayBar': {
     'Pass': 'Passer',
@@ -326,10 +345,12 @@ module.exports = {
     'Black': 'Noir',
     'White': 'Blanc',
     'Remove Game': 'Supprimer la Partie',
-    'Do you really want to remove this game permanently?': 'Voulez-vous vraiment supprimer cette partie définitivement?',
+    'Do you really want to remove this game permanently?':
+      'Voulez-vous vraiment supprimer cette partie définitivement?',
     'Cancel': 'Annuler',
     'Remove Other Games': 'Supprimer les Autres Parties',
-    'Do you really want to remove all other games permanently?': 'Voulez-vous vraiment supprimer toutes les autres parties définitivement?',
+    'Do you really want to remove all other games permanently?':
+      'Voulez-vous vraiment supprimer toutes les autres parties définitivement?',
     'Remove Games': 'Supprimer les Parties',
     'Add New Game': 'Ajouter une Nouvelle Partie',
     'Add Existing Files…': 'Ajouter un Fichier Existant…',
@@ -372,17 +393,20 @@ module.exports = {
     'Komi': 'Komi',
     'Handicap': 'Handicap',
     'No stones': 'Aucune Pierre',
-    '${stones} stones':  p => `${stones} Pierres`,
+    '${stones} stones': p => `${stones} Pierres`,
     'Board Size': 'Taille de Goban',
     'OK': 'OK',
     'Cancel': 'Annuler'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.':  p => `Veuillez redémarrer ${appName} pour appliquer votre réglage de langue.`,
-    'Enable hardware acceleration if possible': 'Activer l’accélération matérielle si possible',
+    'Please restart ${appName} to apply your language setting.': p =>
+      `Veuillez redémarrer ${appName} pour appliquer votre réglage de langue.`,
+    'Enable hardware acceleration if possible':
+      'Activer l’accélération matérielle si possible',
     'Check for updates at startup': 'Vérifier les mises à jour au démarrage',
     'Enable sounds': 'Activer les sons',
-    'Jump to end after loading file': 'Aller à la fin de partie après avoir chargé un fichier',
+    'Jump to end after loading file':
+      'Aller à la fin de partie après avoir chargé un fichier',
     'Fuzzy stone placement': 'Placement décentré des pierres',
     'Animate fuzzy placement': 'Animation du placement décentré',
     'Variation Replay Mode:': 'Mode Lecture de Variation',
@@ -397,16 +421,21 @@ module.exports = {
     'Show automatic move titles': 'Montrer automatiquement le nom des coups',
     'Show ko warning': 'Montrer les avertissement de ko',
     'Show suicide warning': 'Montrer les avertissement de suicide',
-    'Show remove node warning': 'Montrer les avertissement de suppression de noeuds',
-    'Show remove other variations warning': 'Montrer les avertissement de suppression des autres variations',
-    'Offer to reload file if changed externally': 'Proposer de relancer le fichier en cas de modification externe',
-    'Click last played stone to remove': 'Cliquer sur la dernière pierre pour l’enlever',
+    'Show remove node warning':
+      'Montrer les avertissement de suppression de noeuds',
+    'Show remove other variations warning':
+      'Montrer les avertissement de suppression des autres variations',
+    'Offer to reload file if changed externally':
+      'Proposer de relancer le fichier en cas de modification externe',
+    'Click last played stone to remove':
+      'Cliquer sur la dernière pierre pour l’enlever',
     'Invert winrate graph': 'Inverser le graphique de probabilité de victoire',
     'Path': 'Chemin',
     'Browse…': 'Parcourir…',
     'Directory not found': 'Dossier non trouvé',
     'File not found': 'Fichier non trouvé',
-    'Do you really want to uninstall this theme?': 'Voulez-vous vraiment désinstaller ce thème?',
+    'Do you really want to uninstall this theme?':
+      'Voulez-vous vraiment désinstaller ce thème?',
     'Uninstall': 'Désinstaller',
     'Cancel': 'Annuler',
     'Uninstallation failed.': 'Échec de la désinstalation',
@@ -427,8 +456,10 @@ module.exports = {
     'Remove': 'Supprimer',
     '(Unnamed Engine)': '(Moteur Sans Nom)',
     'No arguments': 'Pas d’argument',
-    'Initial commands (;-separated)': 'Commandes initiales (séparées par des ;)',
-    'Enable GTP logging to directory:': 'Activer le journal de console GTP dans le dossier',
+    'Initial commands (;-separated)':
+      'Commandes initiales (séparées par des ;)',
+    'Enable GTP logging to directory:':
+      'Activer le journal de console GTP dans le dossier',
     'Add': 'Ajouter',
     'General': 'Général',
     'Themes': 'Thèmes',
