@@ -64,8 +64,8 @@
     "nativeName": "Français",
     "stats": {
       "totalStringsCount": 453,
-      "translatedStringsCount": 0,
-      "progress": 0,
+      "translatedStringsCount": 453,
+      "progress": 1,
       "unusedFlags": 0
     }
   }
