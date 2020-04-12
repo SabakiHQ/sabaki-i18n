@@ -29,8 +29,8 @@ module.exports = {
     '${appName} v${version}': p => `${p.appName} v${p.version}`,
     'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': p =>
       [
-        `Quelque chose d’innhabituel s’est produit. ${appName} va se fermer.`,
-        `Si possible, veuillez signalerer ceci sur le dépôt GitHub de ${appName}.`
+        `Quelque chose d’innhabituel s’est produit. ${p.appName} va se fermer.`,
+        `Si possible, veuillez signalerer ceci sur le dépôt GitHub de ${p.appName}.`
       ].join(' ')
   },
   'menu.play': {
@@ -185,7 +185,7 @@ module.exports = {
     'GTP engines don’t support invalid board positions.':
       'Les moteurs GTP ne supportent pas les positions de goban non réglementaire.',
     'GTP engines only support board sizes that don’t exceed ${length}.': p =>
-      `Les moteurs GTP supportent uniquement les goban qui n’excèdent pas ${length}.`,
+      `Les moteurs GTP supportent uniquement les goban qui n’excèdent pas ${p.length}.`,
     'Current board arrangement can’t be recreated on the GTP engine.':
       'La position de goban actuelle ne peut pas être recréée sur le moteur GTP.',
     'GTP engine can’t be synced to current state.':
@@ -227,8 +227,8 @@ module.exports = {
   'sabaki.engine': {
     'Connection Failed': 'La Connexion a Échoué',
     '${engine} has failed to generate a move.': p =>
-      `${engine} a échoué a générer un coup.`,
-    '${engine} has resigned.': p => `${engine} a résigné.`,
+      `${p.engine} a échoué a générer un coup.`,
+    '${engine} has resigned.': p => `${p.engine} a résigné.`,
     'Please attach one or more engines first.':
       'Veuillez d’abord attacher un moteur.',
     'The selected engine does not support analysis.':
@@ -393,14 +393,14 @@ module.exports = {
     'Komi': 'Komi',
     'Handicap': 'Handicap',
     'No stones': 'Aucune Pierre',
-    '${stones} stones': p => `${stones} Pierres`,
+    '${stones} stones': p => `${p.stones} Pierres`,
     'Board Size': 'Taille de Goban',
     'OK': 'OK',
     'Cancel': 'Annuler'
   },
   'PreferencesDrawer': {
     'Please restart ${appName} to apply your language setting.': p =>
-      `Veuillez redémarrer ${appName} pour appliquer votre réglage de langue.`,
+      `Veuillez redémarrer ${p.appName} pour appliquer votre réglage de langue.`,
     'Enable hardware acceleration if possible':
       'Activer l’accélération matérielle si possible',
     'Check for updates at startup': 'Vérifier les mises à jour au démarrage',
@@ -450,7 +450,7 @@ module.exports = {
     'Default': 'Défaut',
     'Install Theme…': 'Installer le Thème…',
     'Get more themes…': 'Obtenir plus de thèmes',
-    'by ${author}': p => `par ${author}`,
+    'by ${author}': p => `par ${p.author}`,
     'Homepage': 'Page d’accueil',
     'All Files': 'Tous les Fichiers',
     'Remove': 'Supprimer',
@@ -482,8 +482,8 @@ module.exports = {
     'Close': 'Fermer'
   },
   'CommentBox': {
-    'Result: ${result}': p => `Résultat: ${result}`,
-    '${a}-${b} Point': p => `Point ${a}-${b}`,
+    'Result: ${result}': p => `Résultat: ${p.result}`,
+    '${a}-${b} Point': p => `Point ${p.a}-${p.b}`,
     'View article on Sensei’s Library': 'Voir l’article sur Sensei’s Library',
     'Bad move': 'Mauvais oup',
     'Very bad move': 'Très mauvais coup',
