@@ -68,8 +68,7 @@
       "progress": 1,
       "unusedFlags": 0
     }
-  }
-},
+  },
   "tr": {
     "name": "Turkish",
     "nativeName": "Türkçe",
@@ -80,3 +79,4 @@
       "unusedFlags": 0
     }
   }
+}
