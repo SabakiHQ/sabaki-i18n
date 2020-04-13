@@ -1,6 +1,6 @@
 module.exports = {
   'menu.file': {
-    'New Window': Yeni Pencere,
+    'New Window': 'Yeni Pencere',
     'File': 'Dosya',
     'New': 'Yeni',
     'Open…': 'Aç…',
@@ -25,7 +25,7 @@ module.exports = {
   },
   'exception': {
     '${appName} v${version}': '${appName} v${version}',
-    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': 'Garip bir şey oldu. ${appName} kendini kapatacak. Eğer mümkünse, lütfen bunu GitHub'da ${appName} deposunda bildirim.'
+    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': 'Garip bir şey oldu. ${appName} kendini kapatacak. Eğer mümkünse, lütfen bunu GitHub’da ${appName} deposunda bildirin.'
   },
   'menu.play': {
     'Play': 'Oyna',
