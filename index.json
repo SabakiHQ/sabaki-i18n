@@ -69,4 +69,14 @@
       "unusedFlags": 0
     }
   }
-}
+},
+  "tr": {
+    "name": "Turkish",
+    "nativeName": "Türkçe",
+    "stats": {
+      "totalStringsCount": 453,
+      "translatedStringsCount": 453,
+      "progress": 1,
+      "unusedFlags": 0
+    }
+  }
