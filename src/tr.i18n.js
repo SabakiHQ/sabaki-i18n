@@ -6,10 +6,10 @@ module.exports = {
     'Open…': 'Aç…',
     'Save': 'Kaydet',
     'Save As…': 'Farklı Kaydet…',
-    'Clipboard': null,
+    'Clipboard': 'Pano',
     'Load SGF': 'SGF Yükle',
     'Copy SGF': 'SGF Kopyala',
-    'Copy ASCII Diagram': null,
+    'Copy ASCII Diagram': 'ASCII Diyagramı Kopyala',
     'Game Info': 'Oyun Bilgisi',
     'Manage Games…': 'Oyunları Yönet…',
     'Preferences…': 'Tercihler…'
@@ -20,7 +20,7 @@ module.exports = {
     'Not Now': 'Şimdi Değil',
     '${appName} v${version} is available now.': '${appName} v${version} şimdi mevcut',
     'OK': 'Tamam',
-    'No updates available': 'Güncelleme mevcut değil'',
+    'No updates available': 'Güncelleme mevcut değil',
     '${appName} v${version} is the latest version.': '${appName} v${version} en son sürümdür'
   },
   'exception': {
@@ -45,7 +45,7 @@ module.exports = {
     'Select Tool': 'Araç Seç',
     'Stone Tool': 'Taş Aracı',
     'Cross Tool': 'Çarpı Aracı',
-    'Triangle Tool': ''Üçgen Aracı',
+    'Triangle Tool': 'Üçgen Aracı',
     'Square Tool': 'Kare Aracı',
     'Circle Tool': 'Daire Aracı',
     'Line Tool': 'Çizgi Aracı',
@@ -57,7 +57,7 @@ module.exports = {
     'Paste Variation': 'Varyasyonu Yapıştır',
     'Make Main Variation': 'Ana varyasyon Yap',
     'Shift Left': 'Sola Geç',
-    'Shift Right': Sağa Geç',
+    'Shift Right': 'Sağa Geç',
     'Flatten': 'Düzleştir',
     'Remove Node': 'Düğümü Kaldır',
     'Remove Other Variations': 'Diğer Varyasyonları Sil'
@@ -67,9 +67,9 @@ module.exports = {
     'Toggle Find Mode': 'Bulma Moduna Geç',
     'Find Next': 'Sonrakini Bul',
     'Find Previous': 'Öncekini Bul',
-    'Toggle Hotspot': null,
-    'Jump to Next Hotspot': null,
-    'Jump to Previous Hotspot': null
+    'Toggle Hotspot': 'Hotspot ->',
+    'Jump to Next Hotspot': 'Sonraki Hotspota Atla',
+    'Jump to Previous Hotspot': 'Önceki Hotspota Atla'
   },
   'menu.navigation': {
     'Navigation': 'Navigasyon',
@@ -171,13 +171,13 @@ module.exports = {
     'OK': 'OK'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': null,
-    'GTP engines only support board sizes that don’t exceed ${length}.': null,
-    'Current board arrangement can’t be recreated on the GTP engine.': null,
-    'GTP engine can’t be synced to current state.': null
+    'GTP engines don’t support invalid board positions.': 'GTP motorları geçersiz tahta pozisyonlarını desteklemez',
+    'GTP engines only support board sizes that don’t exceed ${length}.': 'GTP motorları yalnızca ${length} boyutlarını aşmayan tahta ölçülerini destekler.',
+    'Current board arrangement can’t be recreated on the GTP engine.': 'Mevcut tahta düzenlemesi GTP motorunda yeniden oluşturulamaz.',
+    'GTP engine can’t be synced to current state.': 'GTP motoru mevcut durumla senkronize edilemez.'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': null
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 'GTP komut loglaması için ayarlarınızda geçersiz bir dizin mevcut.\n\nLütfen loglama dizininin geçerli ve yazılabilir olduğundan emin olun, ya da GTP konsol loglamasını devre dışı bırakın.'
   },
   'sabaki.window': {
     'Game ${gameNumber}': 'Oyun ${gameNumber}'
@@ -194,8 +194,8 @@ module.exports = {
     'Don’t Reload': 'Tekrar Yükleme'
   },
   'sabaki.play': {
-    'Edit Label': null,
-    'Enter label text': null,
+    'Edit Label': 'Başlık Gir',
+    'Enter label text': 'Başlık metni gir',
     'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': 'Tahtayı bir önceki pozisyonuna getiren bir hamle oynuyorsunuz.\nBu bazı kural setlerinde geçersizdir.',
     'Play Anyway': 'Yine de oyna',
     'Don’t Play': 'Oynama',
@@ -225,7 +225,7 @@ module.exports = {
     'Interesting Move': 'İlginç Hamle',
     'Doubtful Move': 'Şüpheli Hamle',
     'Bad Move': 'Kötü Hamle',
-    'Hotspot': null
+    'Hotspot': 'Hotspot'
   },
   'menu.variation': {
     'Add Variation': 'Varyasyon Ekle',
@@ -239,7 +239,7 @@ module.exports = {
     'Generate Move': 'Hamle Yap',
     'Set as Analyzer': 'Analizci Olarak Ayarla',
     'Set as Black Player': 'Siyah Oyuncu Olarak Ayarla',
-    'Set as White Player': Beyaz Oyuncu Olarak Ayarla',
+    'Set as White Player': 'Beyaz Oyuncu Olarak Ayarla',
     'Go to Engine': 'Motora Git'
   },
   'AutoplayBar': {
@@ -272,7 +272,7 @@ module.exports = {
     'Edit': 'Düzenle',
     'Find': 'Bul',
     'Info': 'Bilgi',
-    'Hotspot': null,
+    'Hotspot': 'Hotspot',
     'Engine': 'Motor',
     'Black': 'Siyah',
     'Change Player': 'Oyuncuyu Değiştir',
@@ -288,8 +288,8 @@ module.exports = {
   },
   'AdvancedPropertiesDrawer': {
     'Remove': 'Sil',
-    'Enter property name': null,
-    'This property has been blocked.': null,
+    'Enter property name': 'Nitelik ismi gir',
+    'This property has been blocked.': 'Bu nitelik devre dışı',
     'Add': 'Ekle',
     'Close': 'Kapat'
   },
@@ -305,9 +305,9 @@ module.exports = {
     'Arrow markers': 'Ok işaretler',
     'Label markers': 'Yazı işaretler',
     'Comments': 'Yorumlar',
-    'Annotations': null,
-    'Hotspots markers': null,
-    'Winrate data': null,
+    'Annotations': 'Notlar',
+    'Hotspots markers': 'Hotspot işaretleri',
+    'Winrate data': 'Kazanma Oranı verisi',
     'Remove': 'Sil',
     'Close': 'Kapat'
   },
@@ -348,7 +348,7 @@ module.exports = {
     'Next Month': 'Sonraki Ay',
     'Rank': 'Seviye',
     'Black': 'Siyah',
-    'Swap': null,
+    'Swap': 'Takas',
     'White': 'Beyaz',
     'Name': 'İsim',
     '(Unnamed)': '(İsimsiz)',
@@ -417,7 +417,7 @@ module.exports = {
     '(Unnamed Engine)': '(İsimsiz Motor)',
     'No arguments': 'Argüman yok',
     'Initial commands (;-separated)': 'İlk komutlar (;-ayrılmış)',
-    'Enable GTP logging to directory:': null,
+    'Enable GTP logging to directory:': 'Dizine GTP loglamayı etkinleştir',
     'Add': 'Ekle',
     'General': 'Genel',
     'Themes': 'Temalar',
@@ -442,7 +442,7 @@ module.exports = {
   'CommentBox': {
     'Result: ${result}': 'Sonuç: ${result}',
     '${a}-${b} Point': '${a}-${b} Puan',
-    'View article on Sensei’s Library': 'Sensei's Library'de makaleyi görüntüle',
+    'View article on Sensei’s Library': 'Sensei’s Library’de makaleyi görüntüle',
     'Bad move': 'Kötü hamle',
     'Very bad move': 'Çok kötü hamle',
     'Doubtful move': 'Şüpheli hamle',
@@ -489,7 +489,7 @@ module.exports = {
     'Low Chinese Opening': 'Alçak Çin Açılışı',
     'High Chinese Opening': 'Yüksek Çin Açılışı',
     'Orthodox Opening': 'Orthodox Açılışı',
-    'Enclosure Opening': null,
+    'Enclosure Opening': 'Kuşatma Açılışı',
     'Kobayashi Opening': 'Kobayashi Açılışı',
     'Small Chinese Opening': 'Küçük Çin Açılışı',
     'Micro Chinese Opening': 'Mikro Çin Açılışı',
@@ -499,35 +499,35 @@ module.exports = {
     '3-3 Point': '3-3 Noktası',
     'Low Approach': 'Alçak Yaklaşma',
     'High Approach': 'Yüksek Yaklaşma',
-    'Low Enclosure': null,
-    'High Enclosure': null,
-    'Mouth Shape': null,
+    'Low Enclosure': 'Alçak Kuşatma',
+    'High Enclosure': 'Yüksek Kuşatma',
+    'Mouth Shape': 'Ağız Şekli',
     'Table Shape': 'Masa Şekli',
-    'Tippy Table': null,
+    'Tippy Table': 'Bozuk Masa',
     'Bamboo Joint': 'Bambu Bağı',
-    'Trapezium': null,
+    'Trapezium': 'Yamuk',
     'Diamond': 'Elmas',
     'Tiger’s Mouth': 'Kaplan Ağzı',
     'Empty Triangle': 'Boş Üçgen',
     'Turn': 'Dönüş',
-    'Stretch': null,
-    'Diagonal': null,
-    'Wedge': null,
+    'Stretch': 'Uzama',
+    'Diagonal': 'Çapraz',
+    'Wedge': 'Kama',
     'Hane': 'Hane',
     'Cut': 'Kes',
     'Square': 'Kare',
-    'Throwing Star': null,
-    'Parallelogram': null,
+    'Throwing Star': 'Ninja Yıldızı',
+    'Parallelogram': 'Paralelkenar',
     'Dog’s Head': 'Köpek Kafası',
     'Horse’s Head': 'At Kafası',
-    'Attachment': null,
+    'Attachment': 'Dokunma',
     'One-Point Jump': 'Bir Zıplama',
-    'Big Bulge': null,
+    'Big Bulge': 'Büyük Tepe',
     'Small Knight': 'Küçük At',
     'Two-Point Jump': 'İki Zıplama',
     'Large Knight': 'Geniş At',
-    'Shoulder Hit': 'Omuz',
-    'Diagonal Jump': null,
+    'Shoulder Hit': 'Omuz Hamlesi',
+    'Diagonal Jump': 'Çapraz Atlama',
     '4-4 Point': '4-4 Noktası',
     'Pass': 'Pas',
     'Take': 'Al',
