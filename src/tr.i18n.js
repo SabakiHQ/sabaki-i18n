@@ -85,7 +85,7 @@ module.exports = {
     'Go to Previous Variation': 'Önceki Varyasyona Git',
     'Go to Next Variation': 'Sonraki Varyasyona Git',
     'Go to Move Number': 'Hamle Numarasına Git',
-    'Enter a move number to go to': 'Gitmek için bir hamle numarası girin,
+    'Enter a move number to go to': 'Gitmek için bir hamle numarası girin',
     'Go to Next Game': 'Sonraki Oyuna Git',
     'Go to Previous Game': 'Önceki Oyuna Git'
   },
