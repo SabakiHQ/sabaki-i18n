@@ -1,37 +1,44 @@
 module.exports = {
   'menu.file': {
-    'New Window': 'Yeni Pencere',
-    'File': 'Dosya',
-    'New': 'Yeni',
-    'Open…': 'Aç…',
-    'Save': 'Kaydet',
-    'Save As…': 'Farklı Kaydet…',
-    'Clipboard': 'Pano',
-    'Load SGF': 'SGF Yükle',
-    'Copy SGF': 'SGF Kopyala',
-    'Copy ASCII Diagram': 'ASCII Diyagramı Kopyala',
-    'Game Info': 'Oyun Bilgisi',
-    'Manage Games…': 'Oyunları Yönet…',
-    'Preferences…': 'Tercihler…'
+    'New Window': 'Yeni &Pencere',
+    'File': '&Dosya',
+    'New': '&Yeni',
+    'Open…': '&Aç…',
+    'Save': '&Kaydet',
+    'Save As…': '&Farklı Kaydet…',
+    'Clipboard': '&Pano',
+    'Load SGF': 'SGF &Yükle',
+    'Copy SGF': 'SGF K&opyala',
+    'Copy ASCII Diagram': '&ASCII Diyagramı Kopyala',
+    'Game Info': 'Oyun &Bilgisi',
+    'Manage Games…': 'Oyun&ları Yönet…',
+    'Preferences…': '&Tercihler…'
   },
   'updater': {
     'Download Update': 'Güncellemeyi İndir',
     'View Changelog': 'Değişiklikleri Görüntüle',
     'Not Now': 'Şimdi Değil',
-    '${appName} v${version} is available now.': '${appName} v${version} şimdi mevcut',
+    '${appName} v${version} is available now.': p =>
+      `${p.appName} v${p.version} zaten yüklü`,
     'OK': 'Tamam',
     'No updates available': 'Güncelleme mevcut değil',
-    '${appName} v${version} is the latest version.': '${appName} v${version} en son sürümdür'
+    '${appName} v${version} is the latest version.': p =>
+      `${p.appName} v${p.version} en son sürüm.`
   },
   'exception': {
-    '${appName} v${version}': '${appName} v${version}',
-    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': 'Garip bir şey oldu. ${appName} kendini kapatacak. Eğer mümkünse, lütfen bunu GitHub’da ${appName} deposunda bildirin.'
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
+    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': p =>
+      [
+        `Garip bir şey oldu. ${p.appName} kendini kapatacak.`,
+        `Eğer mümkünse, lütfen bunu GitHub’da ${p.appName} deposunda bildirin.`
+      ].join(' ')
   },
   'menu.play': {
     'Play': 'Oyna',
     'Toggle Player': 'Oyuncu Değiştir',
     'Select Point': 'Nokta Seçin',
-    'Enter a coordinate to select a point': 'Nokta seçmek için koordinat girin',
+    'Enter a coordinate to select a point':
+      'Nokta seçmek için koordinat girin',
     'Pass': 'Pas',
     'Resign': 'Terk',
     'Estimate': 'Tahmin',
@@ -41,7 +48,7 @@ module.exports = {
     'Edit': 'Düzenle',
     'Undo': 'Geri Al',
     'Redo': 'İleri Git',
-    'Toggle Edit Mode': 'Düzenleme Moduna Geç',
+    'Toggle Edit Mode': 'Düzenleme Modu Geçişi',
     'Select Tool': 'Araç Seç',
     'Stone Tool': 'Taş Aracı',
     'Cross Tool': 'Çarpı Aracı',
@@ -50,26 +57,26 @@ module.exports = {
     'Circle Tool': 'Daire Aracı',
     'Line Tool': 'Çizgi Aracı',
     'Arrow Tool': 'Ok Aracı',
-    'Label Tool': 'Yazı Aracı',
+    'Label Tool': 'Harf Aracı',
     'Number Tool': 'Sayı Aracı',
     'Copy Variation': 'Varyasyonu Kopyala',
     'Cut Variation': 'Varyasyonu Kes',
     'Paste Variation': 'Varyasyonu Yapıştır',
     'Make Main Variation': 'Ana varyasyon Yap',
-    'Shift Left': 'Sola Geç',
-    'Shift Right': 'Sağa Geç',
+    'Shift Left': 'Sola Kaydır',
+    'Shift Right': 'Sağa Kaydır',
     'Flatten': 'Düzleştir',
     'Remove Node': 'Düğümü Kaldır',
     'Remove Other Variations': 'Diğer Varyasyonları Sil'
   },
   'menu.find': {
     'Find': 'Bul',
-    'Toggle Find Mode': 'Bulma Moduna Geç',
+    'Toggle Find Mode': 'Bulma Modu Geçişi',
     'Find Next': 'Sonrakini Bul',
     'Find Previous': 'Öncekini Bul',
-    'Toggle Hotspot': 'Hotspot ->',
-    'Jump to Next Hotspot': 'Sonraki Hotspota Atla',
-    'Jump to Previous Hotspot': 'Önceki Hotspota Atla'
+    'Toggle Hotspot': 'Önemli Nokta Geçişi',
+    'Jump to Next Hotspot': 'Sonraki Önemli Noktaya Atla',
+    'Jump to Previous Hotspot': 'Önceki Önemli Noktaya Atla'
   },
   'menu.navigation': {
     'Navigation': 'Navigasyon',
@@ -92,20 +99,22 @@ module.exports = {
   'menu.engines': {
     'Engines': 'Motorlar',
     'Show Engines Sidebar': 'Motor Kenar Çubuğunu Göster',
-    'Toggle Analysis': 'Analize Geç',
-    'None of the attached engines support analysis.': 'İlişkilendirilmiş motorlardan hiç biri analizi desteklemiyor.',
+    'Toggle Analysis': 'Analiz Geçişi',
+    'None of the attached engines support analysis.':
+      'İlişkilendirilmiş motorlardan hiç biri analizi desteklemiyor.',
     'Start Engine vs. Engine Game': 'Motor vs. Motor Oyunu Başlat',
     'Stop Engine vs. Engine Game': 'Motor vs. Motor Oyununu Durdur',
     'Generate Move': 'Hamle Yap',
-    'Please assign an engine to the player first.': 'Lütfen önce oyuncuyla bir motoru ilişkilendirin.',
+    'Please assign an engine to the player first.':
+      'Lütfen önce oyuncuyla bir motoru ilişkilendirin.',
     '(Unnamed Engine)': '(İsimsiz Motor)',
     'Manage Engines…': 'Motorları Yönet…',
     'Clear Console': 'Komut Satırını Temizle'
   },
   'menu.tools': {
     'Tools': 'Araçlar',
-    'Toggle Autoplay Mode': 'Otomatik Oynama Modu',
-    'Toggle Guess Mode': 'Tahmin Modu',
+    'Toggle Autoplay Mode': 'Otomatik Oynama Modu Geçişi',
+    'Toggle Guess Mode': 'Tahmin Modu Geçişi',
     'Clean Markup…': 'İşaretleri Temizle…',
     'Edit SGF Properties…': 'SGF Özelliklerini Düzenle',
     'Rotate Anticlockwise': 'Saat Yönünün Tersine Çevir',
@@ -117,8 +126,8 @@ module.exports = {
   },
   'menu.view': {
     'View': 'Görüntüle',
-    'Toggle Menu Bar': 'Menü Çubuğu',
-    'Toggle Full Screen': 'Tam Ekran Modu',
+    'Toggle Menu Bar': 'Menü Çubuğu Geçişi',
+    'Toggle Full Screen': 'Tam Ekran Modu Geçişi',
     'Show Coordinates': 'Koordinatları Göster',
     'Don’t Show': 'Gösterme',
     'A1 (Default)': 'A1 (Varsayılan)',
@@ -142,7 +151,7 @@ module.exports = {
   },
   'menu.help': {
     'Help': 'Yardım',
-    '${appName} v${version}': '${appName} v${version}',
+    '${appName} v${version}': p => `${p.appName} v${p.version}`,
     'Check for Updates': 'Güncellemeleri Kontrol Et',
     'GitHub Repository': 'GitHub Deposu',
     'Report Issue': 'Sorun Bildir'
@@ -150,9 +159,10 @@ module.exports = {
   'menu.developer': {
     'Developer': 'Geliştirici',
     'Open Settings Folder': 'Ayarlar Klasörünü Aç',
-    'Toggle Developer Tools': 'Geliştirici Araçları',
+    'Toggle Developer Tools': 'Geliştirici Araçları Geçişi',
     'Load Language File…': 'Dil Dosyasını Yükle…',
-    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.': 'Dil dosyası basitçe bir JavaScript dosyasıdır ve bilgisayarınızda keyfi kodlar çalıştırmak için kullanılabilir.\n\nÇok tehlikeli olabilir, bu yüzden yalnızca güvendiğiniz kaynaklardan aldığınız dil dosyalarını yüklemeniz önerilir.',
+    'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
+      'Dil dosyası basitçe bir JavaScript dosyasıdır ve bilgisayarınızda keyfi kodlar çalıştırmak için kullanılabilir.\n\nÇok tehlikeli olabilir, bu yüzden yalnızca güvendiğiniz kaynaklardan aldığınız dil dosyalarını yüklemeniz önerilir.',
     'I understand': 'Anladım',
     'JavaScript Files': 'JavaScript Dosyaları',
     'Unload Language File': 'Yüklenen Dil Dosyasını Kaldır'
@@ -168,51 +178,68 @@ module.exports = {
     'Jump to Move Number': 'Hamle Numarasına Atla'
   },
   'dialog': {
-    'OK': 'OK'
+    'OK': 'Tamam'
   },
   'EngineSyncer': {
-    'GTP engines don’t support invalid board positions.': 'GTP motorları geçersiz tahta pozisyonlarını desteklemez',
-    'GTP engines only support board sizes that don’t exceed ${length}.': 'GTP motorları yalnızca ${length} boyutlarını aşmayan tahta ölçülerini destekler.',
-    'Current board arrangement can’t be recreated on the GTP engine.': 'Mevcut tahta düzenlemesi GTP motorunda yeniden oluşturulamaz.',
-    'GTP engine can’t be synced to current state.': 'GTP motoru mevcut durumla senkronize edilemez.'
+    'GTP engines don’t support invalid board positions.':
+      'GTP motorları geçersiz tahta pozisyonlarını desteklemez',
+    'GTP engines only support board sizes that don’t exceed ${length}.': p =>
+      `GTP motorları yalnızca ${p.length} boyutlarını aşmayan tahta ölçülerini destekler.`,
+    'Current board arrangement can’t be recreated on the GTP engine.':
+      'Mevcut tahta düzenlemesi GTP motorunda yeniden oluşturulamaz.',
+    'GTP engine can’t be synced to current state.':
+      'GTP motoru mevcut durumla senkronize edilemez.'
   },
   'gtplogger': {
-    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.': 'GTP komut loglaması için ayarlarınızda geçersiz bir dizin mevcut.\n\nLütfen loglama dizininin geçerli ve yazılabilir olduğundan emin olun, ya da GTP konsol loglamasını devre dışı bırakın.'
+    'You have an invalid log folder for GTP console logging in your settings.\n\nPlease make sure the log directory is valid and writable, or disable GTP console logging.':
+      'GTP komut loglaması için ayarlarınızda geçersiz bir dizin mevcut.\n\nLütfen loglama dizininin geçerli ve yazılabilir olduğundan emin olun, ya da GTP konsol loglamasını devre dışı bırakın.'
   },
   'sabaki.window': {
-    'Game ${gameNumber}': 'Oyun ${gameNumber}'
+    'Game ${gameNumber}': p => `Oyun ${p.gameNumber}`
   },
   'sabaki.file': {
     'All Files': 'Tüm Dosyalar',
     'This file is unreadable.': 'Bu dosya okunamıyor',
-    'Your changes will be lost if you close this file without saving.': 'Bu dosyayı kaydetmeden kapatırsanız değişiklikleriniz kaybolacaktır.',
+    'Your changes will be lost if you close this file without saving.':
+      'Bu dosyayı kaydetmeden kapatırsanız değişiklikleriniz kaybolacaktır.',
     'Save': 'Kaydet',
     'Don’t Save': 'Kaydetme',
     'Cancel': 'İptal',
-    'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': 'Bu dosya ${appName} dışında değiştirildi.\nDosyayı tekrar yüklemek ister misiniz? Değişiklikleriniz kaybolacak.',
+    'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': p =>
+      [
+        `Bu dosya ${p.appName} dışında değiştirildi.`,
+        'Dosyayı tekrar yüklemek ister misiniz? Değişiklikleriniz kaybolacaktır.'
+      ].join('\n'),
     'Reload': 'Tekrar Yükle',
     'Don’t Reload': 'Tekrar Yükleme'
   },
   'sabaki.play': {
-    'Edit Label': 'Başlık Gir',
+    'Edit Label': 'Başlığı Düzenle',
     'Enter label text': 'Başlık metni gir',
-    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.': 'Tahtayı bir önceki pozisyonuna getiren bir hamle oynuyorsunuz.\nBu bazı kural setlerinde geçersizdir.',
+    'You are about to play a move which repeats a previous board position.\nThis is invalid in some rulesets.':
+      'Tahtayı bir önceki pozisyonuna getiren bir hamle oynuyorsunuz.\nBu bazı kural setlerinde geçersizdir.',
     'Play Anyway': 'Yine de oyna',
     'Don’t Play': 'Oynama',
-    'You are about to play a suicide move.\nThis is invalid in some rulesets.': 'Bir intihar hamlesi oynamaktasınız.\nBu bazı kural setlerinde geçersizdir.',
+    'You are about to play a suicide move.\nThis is invalid in some rulesets.':
+      'Bir intihar hamlesi oynamaktasınız.\nBu bazı kural setlerinde geçersizdir.',
   },
   'sabaki.engine': {
     'Connection Failed': 'Bağlantı Başarısız Oldu',
-    '${engine} has failed to generate a move.': '${engine} hamle oluşturmakta başarısız oldu.',
-    '${engine} has resigned.': '${engine} terk etti.',
-    'Please attach one or more engines first.': 'Lütfen bir ya da daha fazla motor ilişkilendirin.',
-    'The selected engine does not support analysis.': 'Seçilen motor analizi desteklemiyor'
+    '${engine} has failed to generate a move.': p =>
+      `${p.engine} hamle yapmakta başarısız oldu.`,
+    '${engine} has resigned.': p => `${p.engine}  terk etti.`,
+    'Please attach one or more engines first.':
+      'Lütfen bir ya da daha fazla motor ilişkilendirin.',
+    'The selected engine does not support analysis.':
+      'Seçilen motor analizi desteklemiyor'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?': 'Bu düğümü gerçekten silmek istiyor musunuz?',
+    'Do you really want to remove this node?':
+      'Gerçekten bu düğümü silmek istiyor musunuz?',
     'Remove Node': 'Düğümü Sil',
     'Cancel': 'İptal',
-    'Do you really want to remove all other variations?': 'Diğer tüm varyasyonları gerçekten silmek istiyor musunuz?',
+    'Do you really want to remove all other variations?':
+      'Gerçekten diğer tüm varyasyonları silmek istiyor musunuz?',
     'Remove Variations': 'Varyasyonları Sil'
   },
   'menu.comment': {
@@ -225,11 +252,12 @@ module.exports = {
     'Interesting Move': 'İlginç Hamle',
     'Doubtful Move': 'Şüpheli Hamle',
     'Bad Move': 'Kötü Hamle',
-    'Hotspot': 'Hotspot'
+    'Hotspot': 'Önemli Nokta'
   },
   'menu.variation': {
     'Add Variation': 'Varyasyon Ekle',
-    'The root node cannot have sibling nodes.': 'Kök düğümün kardeş düğümleri olamaz'
+    'The root node cannot have sibling nodes.':
+      'Kök düğümün kardeş düğümleri olamaz'
   },
   'menu.engineAction': {
     'Start': 'Başlat',
@@ -253,7 +281,7 @@ module.exports = {
     'Circle Tool': 'Daire Aracı',
     'Line Tool': 'Çizgi Aracı',
     'Arrow Tool': 'Ok Aracı',
-    'Label Tool': 'Yazı Aracı',
+    'Label Tool': 'Harf Aracı',
     'Number Tool': 'Sayı Aracı'
   },
   'FindBar': {
@@ -262,7 +290,8 @@ module.exports = {
     'Previous': 'Önceki'
   },
   'GuessBar': {
-    'Click on the board to guess the next move.': 'Sonraki hamleyi tahmin etmek için tahta üzerine tıklayın'
+    'Click on the board to guess the next move.':
+      'Sonraki hamleyi tahmin etmek için tahta üzerine tıklayın'
   },
   'PlayBar': {
     'Pass': 'Pas',
@@ -272,7 +301,7 @@ module.exports = {
     'Edit': 'Düzenle',
     'Find': 'Bul',
     'Info': 'Bilgi',
-    'Hotspot': 'Hotspot',
+    'Hotspot': 'Önemli Nokta',
     'Engine': 'Motor',
     'Black': 'Siyah',
     'Change Player': 'Oyuncuyu Değiştir',
@@ -284,12 +313,12 @@ module.exports = {
     'Details': 'Detay',
     'Draw': 'Berabere',
     'Please select dead stones.': 'Lütfen ölü taşları seçin.',
-    'Toggle group status.': 'Grup Statüsünü Değiştir'
+    'Toggle group status.': 'Grup statüsü geçişi.'
   },
   'AdvancedPropertiesDrawer': {
     'Remove': 'Sil',
-    'Enter property name': 'Nitelik ismi gir',
-    'This property has been blocked.': 'Bu nitelik devre dışı',
+    'Enter property name': 'Özellik ismi gir',
+    'This property has been blocked.': 'Bu özellik devre dışı',
     'Add': 'Ekle',
     'Close': 'Kapat'
   },
@@ -297,16 +326,16 @@ module.exports = {
     'From Current Position': 'Mevcut Pozisyondan',
     'From Entire Game': 'Tüm Oyundan',
     'Clean Markup': 'İşaretleri Sil',
-    'Cross markers': 'Çarpı işaretler',
-    'Triangle markers': 'Üçgen işaretler',
-    'Square markers': 'Kare işaretler',
-    'Circle markers': 'Daire işaretler',
-    'Line markers': 'Çizgi işaretler',
-    'Arrow markers': 'Ok işaretler',
-    'Label markers': 'Yazı işaretler',
+    'Cross markers': 'Çarpı işaretçileri',
+    'Triangle markers': 'Üçgen işaretçileri',
+    'Square markers': 'Kare işaretçileri',
+    'Circle markers': 'Daire işaretçileri',
+    'Line markers': 'Çizgi işaretçileri',
+    'Arrow markers': 'Ok işaretçileri',
+    'Label markers': 'Harf işaretçileri',
     'Comments': 'Yorumlar',
     'Annotations': 'Notlar',
-    'Hotspots markers': 'Hotspot işaretleri',
+    'Hotspots markers': 'Önemli Nokta işaretçileri',
     'Winrate data': 'Kazanma Oranı verisi',
     'Remove': 'Sil',
     'Close': 'Kapat'
@@ -315,10 +344,12 @@ module.exports = {
     'Black': 'Siyah',
     'White': 'Beyaz',
     'Remove Game': 'Oyunu Sil',
-    'Do you really want to remove this game permanently?': 'Bu oyunu kalıcı olarak silmek istiyor musunuz?',
+    'Do you really want to remove this game permanently?':
+      'Gerçekten bu oyunu kalıcı olarak silmek istiyor musunuz?',
     'Cancel': 'İptal',
     'Remove Other Games': 'Diğer Oyunlari Sil',
-    'Do you really want to remove all other games permanently?': 'Diğer oyunları kalıcı olarak silmek istiyor musunuz?',
+    'Do you really want to remove all other games permanently?':
+      'Gerçekte diğer oyunları kalıcı olarak silmek istiyor musunuz?',
     'Remove Games': 'Oyunları Sil',
     'Add New Game': 'Yeni Oyun Ekle',
     'Add Existing Files…': 'Mevcut Dosyaları Ekle…',
@@ -348,7 +379,7 @@ module.exports = {
     'Next Month': 'Sonraki Ay',
     'Rank': 'Seviye',
     'Black': 'Siyah',
-    'Swap': 'Takas',
+    'Swap': 'Yer Değiştir',
     'White': 'Beyaz',
     'Name': 'İsim',
     '(Unnamed)': '(İsimsiz)',
@@ -360,26 +391,28 @@ module.exports = {
     'Show': 'Göster',
     'Komi': 'Komi',
     'Handicap': 'Handikap',
-    'No stones': 'Taş yok',
-    '${stones} stones': '${stones} taş',
+    'No stones': 'Yok',
+    '${stones} stones': p => `${p.stones} taş`,
     'Board Size': 'Tahta Boyutu',
     'OK': 'Tamam',
     'Cancel': 'İptal'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.': 'Dil ayarlarının etkin olması için $(appName) yeniden başlatılmalı.',
-    'Enable hardware acceleration if possible': 'Kullanılabiliyorsa donanım ivmelendirmesini etkinleştir',
+    'Please restart ${appName} to apply your language setting.': p =>
+      `Dil ayarlarının etkin olması için ${p.appName} yeniden başlatılmalı.`,
+    'Enable hardware acceleration if possible':
+      'Kullanılabiliyorsa donanım ivmelendirmesini etkinleştir',
     'Check for updates at startup': 'Başlangıçta güncellemeleri denetle',
     'Enable sounds': 'Sesleri etkinleştir',
     'Jump to end after loading file': 'Dosya yüklendikten sonra sona atla',
     'Fuzzy stone placement': 'Belirsiz taş yerleştirme',
     'Animate fuzzy placement': 'Belirsiz yerleştirmeyi hareketlendir',
-    'Variation Replay Mode:': 'Varyasyon Yeniden Oynatma Modu',
+    'Variation Replay Mode:': 'Varyasyon Yeniden Oynatma Modu:',
     'Disabled': 'Devredışı',
     'Move by Move': 'Hamle Hamle',
     'Instantly': 'Anında',
-    'Language:': 'Dil',
-    'Game Tree Style:': 'Oyun Ağacı Stili',
+    'Language:': 'Dil:',
+    'Game Tree Style:': 'Oyun Ağacı Stili:',
     'Compact': 'Sıkışık',
     'Spacious': 'Geniş',
     'Big': 'Büyük',
@@ -387,37 +420,40 @@ module.exports = {
     'Show ko warning': 'Ko uyarısı göster',
     'Show suicide warning': 'İntihar uyarısı göster',
     'Show remove node warning': 'Düğüm silme uyarısı göster',
-    'Show remove other variations warning': 'Diğer varyasyon silme uyarısı göster',
-    'Offer to reload file if changed externally': 'Dosya dış kaynak tarafından değiştirilmişse tekrar yüklemeyi öner',
+    'Show remove other variations warning':
+      'Diğer varyasyon silme uyarısı göster',
+    'Offer to reload file if changed externally':
+      'Dosya dış kaynak tarafından değiştirilmişse tekrar yüklemeyi öner',
     'Click last played stone to remove': 'Silmek için son oynanan taşa tıkla',
     'Invert winrate graph': 'Kazanma oranı grafiğini ters çevir',
     'Path': 'Yol',
     'Browse…': 'Gözat…',
     'Directory not found': 'Dizin bulunamadı',
     'File not found': 'Dosya bulunamadı',
-    'Do you really want to uninstall this theme?': 'Bu temayı gerçekten silmek istiyor musunuz?',
+    'Do you really want to uninstall this theme?':
+      'Gerçekten bu temayı silmek istiyor musunuz?',
     'Uninstall': 'Sil',
     'Cancel': 'İptal',
     'Uninstallation failed.': 'Silme başarısız oldu',
     'Sabaki Themes': 'Sabaki Temaları',
     'Installation failed.': 'Kurulum başarısız oldu',
     'Custom Images': 'Özel Görseller',
-    'Black stone image:': 'Siyah taş görseli',
-    'White stone image:': 'Beyaz taş görseli',
-    'Board image:': 'Tahta görseli',
-    'Background image:': 'Arkaplan görseli',
+    'Black stone image:': 'Siyah taş görseli:',
+    'White stone image:': 'Beyaz taş görseli:',
+    'Board image:': 'Tahta görseli:',
+    'Background image:': 'Arkaplan görseli:',
     'Current Theme': 'Mevcut Tema',
     'Default': 'Varsayılan',
     'Install Theme…': 'Tema Yükle…',
     'Get more themes…': 'Daha fazla tema…',
-    'by ${author}': 'by ${author}',
+    'by ${author}': p => `by ${p.author}`,
     'Homepage': 'Ana sayfa',
     'All Files': 'Tüm Dosyalar',
     'Remove': 'Sil',
     '(Unnamed Engine)': '(İsimsiz Motor)',
     'No arguments': 'Argüman yok',
     'Initial commands (;-separated)': 'İlk komutlar (;-ayrılmış)',
-    'Enable GTP logging to directory:': 'Dizine GTP loglamayı etkinleştir',
+    'Enable GTP logging to directory:': 'Dizine GTP loglamayı etkinleştir:',
     'Add': 'Ekle',
     'General': 'Genel',
     'Themes': 'Temalar',
@@ -435,13 +471,13 @@ module.exports = {
     'Komi': 'Komi',
     'Handicap': 'Handikap',
     'Total': 'Toplam',
-    'Result:': 'Sonuç',
+    'Result:': 'Sonuç:',
     'Update Result': 'Sonucu Güncelle',
     'Close': 'Kapat'
   },
   'CommentBox': {
-    'Result: ${result}': 'Sonuç: ${result}',
-    '${a}-${b} Point': '${a}-${b} Puan',
+    'Result: ${result}': p => `Sonuç: ${p.result}`,
+    '${a}-${b} Point': p => `${p.a}-${p.b} Nokta`,
     'View article on Sensei’s Library': 'Sensei’s Library’de makaleyi görüntüle',
     'Bad move': 'Kötü hamle',
     'Very bad move': 'Çok kötü hamle',
@@ -476,14 +512,14 @@ module.exports = {
   'WinrateGraph': {
     'Black': 'Siyah',
     'White': 'Beyaz',
-    'Black Winrate:': 'Siyah Kazanma Oranı',
-    'White Winrate:': 'Beyaz Kazanma Oranı'
+    'Black Winrate:': 'Siyah Kazanma Oranı:',
+    'White Winrate:': 'Beyaz Kazanma Oranı:'
   },
   'fileformats': {
     'Tygem GIB': 'Tygem GIB',
     'Game Records': 'Oyun Kayıtları',
     'wBaduk NGF': 'wBaduk NGF',
-    'Smart Game Format': 'Smart Game Format SGF'
+    'Smart Game Format': 'SGF'
   },
   'boardmatcher': {
     'Low Chinese Opening': 'Alçak Çin Açılışı',
@@ -518,8 +554,8 @@ module.exports = {
     'Square': 'Kare',
     'Throwing Star': 'Ninja Yıldızı',
     'Parallelogram': 'Paralelkenar',
-    'Dog’s Head': 'Köpek Kafası',
-    'Horse’s Head': 'At Kafası',
+    'Dog’s Head': 'Köpek Başı',
+    'Horse’s Head': 'At Başı',
     'Attachment': 'Dokunma',
     'One-Point Jump': 'Bir Zıplama',
     'Big Bulge': 'Büyük Tepe',
