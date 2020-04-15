@@ -37,8 +37,7 @@ module.exports = {
     'Play': 'Oyna',
     'Toggle Player': 'Oyuncu Değiştir',
     'Select Point': 'Nokta Seçin',
-    'Enter a coordinate to select a point':
-      'Nokta seçmek için koordinat girin',
+    'Enter a coordinate to select a point': 'Nokta seçmek için koordinat girin',
     'Pass': 'Pas',
     'Resign': 'Terk',
     'Estimate': 'Tahmin',
@@ -171,7 +170,8 @@ module.exports = {
     'Text': 'Metin'
   },
   'App': {
-    'Press Esc to exit full screen mode': 'Tam Ekran modundan çıkmak için Esc tuşuna basın',
+    'Press Esc to exit full screen mode':
+      'Tam Ekran modundan çıkmak için Esc tuşuna basın',
     'Press Alt to show menu bar': 'Menü barını göstermek için Alt tuşuna basın'
   },
   'ContentDisplay': {
@@ -221,7 +221,7 @@ module.exports = {
     'Play Anyway': 'Yine de oyna',
     'Don’t Play': 'Oynama',
     'You are about to play a suicide move.\nThis is invalid in some rulesets.':
-      'Bir intihar hamlesi oynamaktasınız.\nBu bazı kural setlerinde geçersizdir.',
+      'Bir intihar hamlesi oynamaktasınız.\nBu bazı kural setlerinde geçersizdir.'
   },
   'sabaki.engine': {
     'Connection Failed': 'Bağlantı Başarısız Oldu',
@@ -478,7 +478,8 @@ module.exports = {
   'CommentBox': {
     'Result: ${result}': p => `Sonuç: ${p.result}`,
     '${a}-${b} Point': p => `${p.a}-${p.b} Nokta`,
-    'View article on Sensei’s Library': 'Sensei’s Library’de makaleyi görüntüle',
+    'View article on Sensei’s Library':
+      'Sensei’s Library’de makaleyi görüntüle',
     'Bad move': 'Kötü hamle',
     'Very bad move': 'Çok kötü hamle',
     'Doubtful move': 'Şüpheli hamle',
