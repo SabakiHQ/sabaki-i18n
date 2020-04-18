@@ -9,6 +9,10 @@
       "unusedFlags": 0
     }
   },
+  "es": {
+    "name": "Spanish",
+    "nativeName": "Español"
+  },
   "ru": {
     "name": "Russian",
     "nativeName": "русский",
