@@ -11,7 +11,13 @@
   },
   "es": {
     "name": "Spanish",
-    "nativeName": "Español"
+    "nativeName": "Español",
+    "stats": {
+      "totalStringsCount": 453,
+      "translatedStringsCount": 453,
+      "progress": 1,
+      "unusedFlags": 0
+    }
   },
   "ru": {
     "name": "Russian",

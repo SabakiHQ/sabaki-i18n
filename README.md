@@ -9,6 +9,7 @@ Home of Sabaki's translation efforts.
 | Language                       | File              | Progress |
 | ------------------------------ | ----------------- | -------- |
 | English (English)              | `en.i18n.js`      | 100%     |
+| Español (Spanish)              | `es.i18n.js`      | 100%     |
 | Français (French)              | `fr.i18n.js`      | 100%     |
 | 日本語 (Japanese)              | `ja.i18n.js`      | 98%      |
 | 한국어 (Korean)                | `ko.i18n.js`      | 97%      |
