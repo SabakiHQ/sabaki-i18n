@@ -10,7 +10,7 @@ module.exports = {
     'Load SGF': '&Carregar SGF',
     'Copy SGF': '&Carregar SGF',
     'Copy ASCII Diagram': 'Copiar Diagrama &ASCII',
-    'Game Info': '&Informação do Jogo',
+    'Game Info': '&Informações do Jogo',
     'Manage Games…': '&Gerenciar Jogos…',
     'Preferences…': '&Preferências…'
   },
@@ -162,7 +162,7 @@ module.exports = {
     'Toggle Developer Tools': '&Alternar Ferramentas de Desenvolvimento',
     'Load Language File…': '&Carregar arquivos de Linguagem...',
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
-      'Um arquivo de linguagem é fundamentalmente um arquivo JavaScript que pode rodar código de forma arbritária em seu computador.\n\É recomendado que só carregue arquivos de autores confiáveis, pois do contrário pode ser muito perigoso.',
+      'Um arquivo de linguagem é fundamentalmente um arquivo JavaScript que pode rodar código de forma arbritária em seu computador.\nÉ recomendado que só carregue arquivos de autores confiáveis, pois do contrário pode ser muito perigoso.',
     'I understand': 'Eu entendo',
     'JavaScript Files': 'Arquivos JavaScript',
     'Unload Language File': '&Descarregar Arquivo JavaScript'
@@ -171,7 +171,8 @@ module.exports = {
     'Text': 'Texto'
   },
   'App': {
-    'Press Esc to exit full screen mode': 'Pressione Esc para sair do modo de tela-cheia',
+    'Press Esc to exit full screen mode':
+      'Pressione Esc para sair do modo de tela-cheia',
     'Press Alt to show menu bar': 'Pressione Alt para mostrar barra de menu'
   },
   'ContentDisplay': {
@@ -234,8 +235,7 @@ module.exports = {
       'O mecanismo selecionado não suporta análise.'
   },
   'sabaki.node': {
-    'Do you really want to remove this node?':
-      'Deseja mesmo remover este nó?',
+    'Do you really want to remove this node?': 'Deseja mesmo remover este nó?',
     'Remove Node': 'Remover Nó',
     'Cancel': 'Cancelar',
     'Do you really want to remove all other variations?':
@@ -377,9 +377,9 @@ module.exports = {
     'Manage Engines…': 'Gerenciar Mecanismos…',
     'Previous Month': 'Mês anterior',
     'Next Month': 'Próximo mês',
-    'Rank': 'Classificação',
+    'Rank': 'Rank',
     'Black': 'Pretas',
-    'Swap': 'Trocar',
+    'Swap': 'Alternar',
     'White': 'Brancas',
     'Name': 'Nome',
     '(Unnamed)': '(Sem nome)',
@@ -402,13 +402,15 @@ module.exports = {
       `Por favor, reinicie ${p.appName} para aplicar sua configuração de idioma.`,
     'Enable hardware acceleration if possible':
       'Habilite a aceleração de hardware, se possível',
-    'Check for updates at startup': 'Verifique se há atualizações na inicialização',
+    'Check for updates at startup':
+      'Verifique se há atualizações na inicialização',
     'Enable sounds': 'Habilitar sons',
-    'Jump to end after loading file': 'Ir para o final após o carregamento do arquivo',
+    'Jump to end after loading file':
+      'Ir para o final após o carregamento do arquivo',
     'Fuzzy stone placement': 'Colocação de pedra difusa',
     'Animate fuzzy placement': 'Animar posicionamento difuso',
     'Variation Replay Mode:': 'Modo de Repetição da Variação:',
-    'Disabled': 'Disabilitado',
+    'Disabled': 'Desabilitado',
     'Move by Move': 'Movimento por Movimento',
     'Instantly': 'Imediatamente',
     'Language:': 'Linguagem:',
@@ -416,7 +418,8 @@ module.exports = {
     'Compact': 'Compacto',
     'Spacious': 'Espaçoso',
     'Big': 'Grande',
-    'Show automatic move titles': 'Mostrar títulos de movimentos automaticamente',
+    'Show automatic move titles':
+      'Mostrar títulos de movimentos automaticamente',
     'Show ko warning': 'Mostrar aviso de KO',
     'Show suicide warning': 'Mostrar aviso de jogada suicida',
     'Show remove node warning': 'Mostrar aviso de remoção de nó',
@@ -424,7 +427,8 @@ module.exports = {
       'Mostrar aviso de remover outras variações',
     'Offer to reload file if changed externally':
       'Oferecer para recarregar o arquivo se alterado externamente',
-    'Click last played stone to remove': 'Clique na última peça jogada para remover',
+    'Click last played stone to remove':
+      'Clique na última peça jogada para remover',
     'Invert winrate graph': 'Inverter gráfico de taxa de vitória',
     'Path': 'Arquivo',
     'Browse…': 'Buscar…',
