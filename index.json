@@ -88,5 +88,9 @@
       "progress": 1,
       "unusedFlags": 0
     }
+  },
+  "pt-br": {
+    "name": "Brazilian Portuguese",
+    "nativeName": "Português Brasileiro"
   }
 }
