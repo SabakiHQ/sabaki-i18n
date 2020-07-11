@@ -91,6 +91,12 @@
   },
   "pt-br": {
     "name": "Brazilian Portuguese",
-    "nativeName": "Português Brasileiro"
+    "nativeName": "Português Brasileiro",
+    "stats": {
+      "totalStringsCount": 454,
+      "translatedStringsCount": 453,
+      "progress": 0.9977973568281938,
+      "unusedFlags": 1
+    }
   }
 }

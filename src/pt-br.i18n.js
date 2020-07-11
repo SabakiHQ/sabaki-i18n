@@ -245,14 +245,15 @@ module.exports = {
   'menu.comment': {
     'Clear Annotations': '&Limpar anotações',
     'Good for Black': '&Boa para as Pretras',
-    'Unclear position': '&Posição Pouco Clara',
+    'Unclear Position': null,
     'Even Position': '&Posição Justa para Ambos',
     'Good for White': '&Bom para as Brancas',
     'Good Move': '&Boa jogada',
     'Interesting Move': '&Movimento Interessante',
     'Doubtful Move': '&Movimento Duvidoso',
     'Bad Move': '&Mal Movimento',
-    'Hotspot': '&Ponto de acesso'
+    'Hotspot': '&Ponto de acesso',
+    /* unused */ 'Unclear position': '&Posição Pouco Clara'
   },
   'menu.variation': {
     'Add Variation': '&Adicionar variação',
