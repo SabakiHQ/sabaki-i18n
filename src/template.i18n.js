@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': null,
     'Game Info': null,
     'Manage Games…': null,
-    'Preferences…': null
+    'Preferences…': null,
+    'Quit': null
   },
   'updater': {
     'Download Update': null,

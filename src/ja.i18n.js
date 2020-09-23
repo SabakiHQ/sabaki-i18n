@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'ASCIIダイアグラムをコピー',
     'Game Info': '棋譜情報',
     'Manage Games…': '棋譜を管理…',
-    'Preferences…': '環境設定…'
+    'Preferences…': '環境設定…',
+    'Quit': null
   },
   'updater': {
     'Download Update': 'アップデートをダウンロード',

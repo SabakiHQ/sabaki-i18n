@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'SGF 다이어그램 복사',
     'Game Info': '대국 정보',
     'Manage Games…': '여러 판 관리',
-    'Preferences…': '환경 설정'
+    'Preferences…': '환경 설정',
+    'Quit': null
   },
   'updater': {
     'Download Update': '업데이트 다운로드',

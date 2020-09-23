@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': '&ASCII Diyagramı Kopyala',
     'Game Info': 'Oyun &Bilgisi',
     'Manage Games…': 'Oyun&ları Yönet…',
-    'Preferences…': '&Tercihler…'
+    'Preferences…': '&Tercihler…',
+    'Quit': null
   },
   'updater': {
     'Download Update': 'Güncellemeyi İndir',

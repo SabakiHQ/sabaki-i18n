@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'Copier Diagrammme ASCII',
     'Game Info': 'Propriétés de la Partie',
     'Manage Games…': 'Gestionnaire de Parties…',
-    'Preferences…': 'Paramètres…'
+    'Preferences…': 'Paramètres…',
+    'Quit': null
   },
   'updater': {
     'Download Update': 'Télécharger la Mise à Jour',

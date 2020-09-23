@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': '拷贝ASCII棋盘到剪贴板',
     'Game Info': '对局信息',
     'Manage Games…': '对局管理...',
-    'Preferences…': '首选项...'
+    'Preferences…': '首选项...',
+    'Quit': null
   },
   'updater': {
     'Download Update': '下载更新',

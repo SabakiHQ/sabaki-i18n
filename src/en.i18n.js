@@ -12,7 +12,8 @@ module.exports = {
     'Copy ASCII Diagram': 'Copy &ASCII Diagram',
     'Game Info': 'Game &Info',
     'Manage Games…': '&Manage Games…',
-    'Preferences…': '&Preferences…'
+    'Preferences…': '&Preferences…',
+    'Quit': '&Quit'
   },
   'updater': {
     'Download Update': 'Download Update',
