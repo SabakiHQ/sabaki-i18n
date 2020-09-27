@@ -9,15 +9,15 @@ Home of Sabaki's translation efforts.
 | Language                                    | File              | Progress |
 | ------------------------------------------- | ----------------- | -------- |
 | English (English)                           | `en.i18n.js`      | 100%     |
-| Español (Spanish)                           | `es.i18n.js`      | 99%      |
-| Français (French)                           | `fr.i18n.js`      | 99%      |
-| 日本語 (Japanese)                           | `ja.i18n.js`      | 98%      |
-| 한국어 (Korean)                             | `ko.i18n.js`      | 97%      |
-| Português Brasileiro (Brazilian Portuguese) | `pt-br.i18n.js`   | 99%      |
-| русский (Russian)                           | `ru.i18n.js`      | 100%     |
-| Türkçe (Turkish)                            | `tr.i18n.js`      | 99%      |
-| 简体中文 (Simplified Chinese)               | `zh-Hans.i18n.js` | 98%      |
-| 繁體中文 (Traditional Chinese)              | `zh-Hant.i18n.js` | 98%      |
+| Español (Spanish)                           | `es.i18n.js`      | 98%      |
+| Français (French)                           | `fr.i18n.js`      | 98%      |
+| 日本語 (Japanese)                           | `ja.i18n.js`      | 96%      |
+| 한국어 (Korean)                             | `ko.i18n.js`      | 95%      |
+| Português Brasileiro (Brazilian Portuguese) | `pt-br.i18n.js`   | 98%      |
+| русский (Russian)                           | `ru.i18n.js`      | 98%      |
+| Türkçe (Turkish)                            | `tr.i18n.js`      | 98%      |
+| 简体中文 (Simplified Chinese)               | `zh-Hans.i18n.js` | 96%      |
+| 繁體中文 (Traditional Chinese)              | `zh-Hant.i18n.js` | 96%      |
 
 <!-- end-progress-table -->
 
