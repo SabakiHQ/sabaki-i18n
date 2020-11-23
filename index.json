@@ -3,8 +3,8 @@
     "name": "English",
     "nativeName": "English",
     "stats": {
-      "totalStringsCount": 461,
-      "translatedStringsCount": 461,
+      "totalStringsCount": 462,
+      "translatedStringsCount": 462,
       "progress": 1,
       "unusedFlags": 0
     }
@@ -13,9 +13,9 @@
     "name": "Spanish",
     "nativeName": "Español",
     "stats": {
-      "totalStringsCount": 461,
+      "totalStringsCount": 462,
       "translatedStringsCount": 453,
-      "progress": 0.982646420824295,
+      "progress": 0.9805194805194806,
       "unusedFlags": 0
     }
   },
@@ -23,9 +23,9 @@
     "name": "Russian",
     "nativeName": "русский",
     "stats": {
-      "totalStringsCount": 461,
+      "totalStringsCount": 462,
       "translatedStringsCount": 461,
-      "progress": 1,
+      "progress": 0.9978354978354979,
       "unusedFlags": 0
     }
   },
@@ -33,9 +33,9 @@
     "name": "Japanese",
     "nativeName": "日本語",
     "stats": {
-      "totalStringsCount": 462,
+      "totalStringsCount": 463,
       "translatedStringsCount": 446,
-      "progress": 0.9653679653679653,
+      "progress": 0.9632829373650108,
       "unusedFlags": 1
     }
   },
@@ -43,9 +43,9 @@
     "name": "Korean",
     "nativeName": "한국어",
     "stats": {
-      "totalStringsCount": 462,
+      "totalStringsCount": 463,
       "translatedStringsCount": 442,
-      "progress": 0.9567099567099567,
+      "progress": 0.9546436285097192,
       "unusedFlags": 1
     }
   },
@@ -53,9 +53,9 @@
     "name": "Simplified Chinese",
     "nativeName": "简体中文",
     "stats": {
-      "totalStringsCount": 462,
+      "totalStringsCount": 463,
       "translatedStringsCount": 446,
-      "progress": 0.9653679653679653,
+      "progress": 0.9632829373650108,
       "unusedFlags": 1
     }
   },
@@ -63,9 +63,9 @@
     "name": "Traditional Chinese",
     "nativeName": "繁體中文",
     "stats": {
-      "totalStringsCount": 462,
+      "totalStringsCount": 463,
       "translatedStringsCount": 446,
-      "progress": 0.9653679653679653,
+      "progress": 0.9632829373650108,
       "unusedFlags": 1
     }
   },
@@ -73,9 +73,9 @@
     "name": "French",
     "nativeName": "Français",
     "stats": {
-      "totalStringsCount": 461,
+      "totalStringsCount": 462,
       "translatedStringsCount": 453,
-      "progress": 0.982646420824295,
+      "progress": 0.9805194805194806,
       "unusedFlags": 0
     }
   },
@@ -83,9 +83,9 @@
     "name": "Turkish",
     "nativeName": "Türkçe",
     "stats": {
-      "totalStringsCount": 461,
+      "totalStringsCount": 462,
       "translatedStringsCount": 453,
-      "progress": 0.982646420824295,
+      "progress": 0.9805194805194806,
       "unusedFlags": 0
     }
   },
@@ -93,9 +93,9 @@
     "name": "Brazilian Portuguese",
     "nativeName": "Português Brasileiro",
     "stats": {
-      "totalStringsCount": 462,
+      "totalStringsCount": 463,
       "translatedStringsCount": 453,
-      "progress": 0.9805194805194806,
+      "progress": 0.978401727861771,
       "unusedFlags": 1
     }
   }

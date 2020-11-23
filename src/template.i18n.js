@@ -484,7 +484,8 @@ module.exports = {
     'Tygem GIB': null,
     'Game Records': null,
     'wBaduk NGF': null,
-    'Smart Game Format': null
+    'Smart Game Format': null,
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': null,

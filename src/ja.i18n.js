@@ -521,7 +521,8 @@ module.exports = {
     'Tygem GIB': '東洋囲碁GIB',
     'Game Records': 'Game Records',
     'wBaduk NGF': '幽玄の間 NGF',
-    'Smart Game Format': 'Smart Game Format'
+    'Smart Game Format': 'Smart Game Format',
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': '低い中国流',

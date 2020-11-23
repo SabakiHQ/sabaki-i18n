@@ -526,7 +526,8 @@ module.exports = {
     'Tygem GIB': 'Tygem GIB',
     'Game Records': 'Game Records',
     'wBaduk NGF': 'wBaduk NGF',
-    'Smart Game Format': 'Smart Game Format'
+    'Smart Game Format': 'Smart Game Format',
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': 'Fuseki Chinois Bas',

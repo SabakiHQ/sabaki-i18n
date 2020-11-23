@@ -521,7 +521,8 @@ module.exports = {
     'Tygem GIB': '타이젬 GIB',
     'Game Records': '기보',
     'wBaduk NGF': '사이버오로 NGF',
-    'Smart Game Format': '스마트 게임 포맷(SGF)'
+    'Smart Game Format': '스마트 게임 포맷(SGF)',
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': '낮은 중국식 포석',
