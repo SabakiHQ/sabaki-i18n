@@ -10,15 +10,15 @@ module.exports = {
     'Load SGF': '從剪貼板載入SGF',
     'Copy SGF': '拷貝SGF到剪貼板',
     'Copy ASCII Diagram': '拷貝ASCII棋盤到剪貼板',
-    'Game Info': '對局信息',
+    'Game Info': '對局資訊',
     'Manage Games…': '對局管理...',
-    'Preferences…': '首選項...',
-    'Quit': null
+    'Preferences…': '偏好設定...',
+    'Quit': '離開'
   },
   'updater': {
     'Download Update': '下載更新',
     'View Changelog': '查看更新日誌',
-    'Not Now': '現在不',
+    'Not Now': '現在不要',
     '${appName} v${version} is available now.': p =>
       `新版本 ${p.appName} v${p.version} 可下載。`,
     'OK': '好',
@@ -39,7 +39,7 @@ module.exports = {
     'Toggle Player': '切換玩家（黑/白）',
     'Select Point': '輸入座標',
     'Enter a coordinate to select a point': '輸入座標來選點',
-    'Pass': '停一手',
+    'Pass': '虛手',
     'Resign': '認輸',
     'Estimate': '形勢判斷',
     'Score': '計算勝負'
@@ -119,7 +119,7 @@ module.exports = {
     'Edit SGF Properties…': '編輯SGF屬性',
     'Rotate Anticlockwise': '逆時針旋轉',
     'Rotate Clockwise': '順時針旋轉',
-    'Flip Horizontally': '水準翻轉',
+    'Flip Horizontally': '水平翻轉',
     'Flip Vertically': '垂直翻轉',
     'Invert Colors': '對調黑白',
     'Reset': '重置'
@@ -130,9 +130,9 @@ module.exports = {
     'Toggle Full Screen': '進入/取消全屏',
     'Show Coordinates': '顯示座標',
     'Don’t Show': '不顯示',
-    'A1 (Default)': null,
-    '1-1': null,
-    'Relative': null,
+    'A1 (Default)': 'A1 (預設)',
+    '1-1': '1-1',
+    'Relative': '相對',
     'Show Move Numbers': '顯示手數',
     'Show Move Colorization': '顏色標記評注',
     'Show Next Moves': '用圓點顯示下一手',
@@ -154,11 +154,11 @@ module.exports = {
     '${appName} v${version}': p => `${p.appName} v${p.version}`,
     'Check for Updates': '檢查更新',
     'GitHub Repository': 'GitHub 主頁',
-    'Report Issue': '回饋問題'
+    'Report Issue': '回報問題'
   },
   'menu.developer': {
     'Developer': '開發者',
-    'Open Settings Folder': '流覽設定檔夾',
+    'Open Settings Folder': '開啟設定檔案夾',
     'Toggle Developer Tools': '顯示/隱藏開發者工具',
     'Load Language File…': '載入語言包...',
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
@@ -171,7 +171,7 @@ module.exports = {
     'Text': '文本'
   },
   'App': {
-    'Press Esc to exit full screen mode': '按 ESC 鍵退出全屏',
+    'Press Esc to exit full screen mode': '按 ESC 鍵退出全螢幕模式',
     'Press Alt to show menu bar': '按 Alt 鍵顯示功能表列'
   },
   'ContentDisplay': {
@@ -198,7 +198,7 @@ module.exports = {
     'Game ${gameNumber}': p => `對局 ${p.gameNumber}`
   },
   'sabaki.file': {
-    'All Files': '全部檔',
+    'All Files': '全部檔案',
     'This file is unreadable.': '無法讀取該文件',
     'Your changes will be lost if you close this file without saving.':
       '如果您不保存就關閉，您做的更改將丟失。',
@@ -207,11 +207,11 @@ module.exports = {
     'Cancel': '取消',
     'This file has been changed outside of ${appName}.\nDo you want to reload the file? Your changes will be lost.': p =>
       [
-        `該文件被外部應用修改。`,
-        '是否重新打開該檔? 你當前所做的改變會丟失。'
+        `該文件被外部程式修改。`,
+        '是否重新載入該檔? 你當前所做的改變將會丟失。'
       ].join('\n'),
-    'Reload': '重新打開',
-    'Don’t Reload': '不重新打開'
+    'Reload': '重新載入',
+    'Don’t Reload': '不重新載入'
   },
   'sabaki.play': {
     'Edit Label': '編輯字母/文字',
@@ -290,13 +290,13 @@ module.exports = {
     'Click on the board to guess the next move.': '點擊棋盤猜下一手。'
   },
   'PlayBar': {
-    'Pass': '停一手',
+    'Pass': '虛手',
     'Resign': '認輸',
     'Estimate': '形勢判斷',
     'Score': '計算勝負',
     'Edit': '編輯',
     'Find': '查找',
-    'Info': '對局信息',
+    'Info': '對局資訊',
     'Hotspot': '焦點',
     'Engine': '引擎',
     'Black': '黑棋',
@@ -341,7 +341,7 @@ module.exports = {
     'White': '白棋',
     'Remove Game': '刪除對局',
     'Do you really want to remove this game permanently?':
-      '您確定要刪除這個對局嗎？',
+      '您確定要永遠刪除這個對局嗎？',
     'Cancel': '取消',
     'Remove Other Games': '刪除除此之外的所有對局',
     'Do you really want to remove all other games permanently?':
@@ -349,7 +349,7 @@ module.exports = {
     'Remove Games': '刪除對局',
     'Add New Game': '增加新對局',
     'Add Existing Files…': '打開文件...',
-    'All Files': '所有檔',
+    'All Files': '所有檔案',
     'Some files are unreadable.': '部分檔無法讀取',
     'Black Player': '黑棋玩家名稱',
     'White Player': '白棋玩家名稱',
@@ -394,16 +394,16 @@ module.exports = {
     'Cancel': '取消'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.': null,
+    'Please restart ${appName} to apply your language setting.': p => `請重新啟動 ${p.appName} 以套用您的語言設定。`,
     'Enable hardware acceleration if possible': '硬體加速（若支援）',
     'Check for updates at startup': '啟動程式時檢查更新',
     'Enable sounds': '打開聲音',
     'Jump to end after loading file': '打開對局文件後跳轉至對局末尾',
     'Fuzzy stone placement': '棋子顯示位置不必嚴格地位於棋盤交叉線上',
     'Animate fuzzy placement': '落子時棋子顯示位置動態效果',
-    'Variation Replay Mode:': null,
-    'Disabled': null,
-    'Move by Move': null,
+    'Variation Replay Mode:': '變化重播模式',
+    'Disabled': '停用',
+    'Move by Move': '逐步',
     'Instantly': null,
     'Language:': '語言:',
     'Game Tree Style:': '對局變化樹樣式',
@@ -413,14 +413,14 @@ module.exports = {
     'Show automatic move titles': '顯示落子術語',
     'Show ko warning': '非法劫提示',
     'Show suicide warning': '自殺手提示',
-    'Show remove node warning': '刪除節點時提示確認',
-    'Show remove other variations warning': '刪除其它變化時提示確認',
+    'Show remove node warning': '刪除節點時顯示警告',
+    'Show remove other variations warning': '刪除其它變化時顯示警告',
     'Offer to reload file if changed externally':
-      '檔被外部程式修改後提示重新載入',
+      '檔案被外部程式修改後提示重新載入',
     'Click last played stone to remove': '點擊最後一手棋可刪除該手',
     'Invert winrate graph': '翻轉勝率圖',
     'Path': '路徑',
-    'Browse…': '流覽...',
+    'Browse…': '瀏覽...',
     'Directory not found': '未找到資料夾',
     'File not found': '未找到文件',
     'Do you really want to uninstall this theme?': '您確定要卸載該主題嗎？',
@@ -440,7 +440,7 @@ module.exports = {
     'Get more themes…': '獲取更多主題...',
     'by ${author}': p => `作者：${p.author}`,
     'Homepage': '主頁',
-    'All Files': '所有檔',
+    'All Files': '所有檔案',
     'Remove': '刪除',
     '(Unnamed Engine)': '(未命名的引擎)',
     'No arguments': '無運行參數',
@@ -514,7 +514,7 @@ module.exports = {
     'Game Records': 'Game Records',
     'wBaduk NGF': 'wBaduk NGF',
     'Smart Game Format': 'Smart Game Format',
-    'PandaNET UGF': null
+    'PandaNET UGF': 'PandaNET UGF'
   },
   'boardmatcher': {
     'Low Chinese Opening': '低中國流',
@@ -556,18 +556,18 @@ module.exports = {
     'Small Knight': '飛',
     'Two-Point Jump': '大跳',
     'Large Knight': '大飛',
-    '3-3 Point Invasion': null,
+    '3-3 Point Invasion': '點三三',
     'Shoulder Hit': '尖沖',
     'Diagonal Jump': '象飛',
-    '3-4 Point': null,
+    '3-4 Point': '小目',
     '4-4 Point': '星位',
     '3-3 Point': '三三',
-    '3-5 Point': null,
-    '4-5 Point': null,
-    '6-3 Point': null,
-    '6-4 Point': null,
-    '5-5 Point': null,
-    'Pass': '停一手',
+    '3-5 Point': '目外',
+    '4-5 Point': '高目',
+    '6-3 Point': '6-3 點',
+    '6-4 Point': '6-4 點',
+    '5-5 Point': '五五',
+    'Pass': '虛手',
     'Take': '提子',
     'Atari': '打',
     'Suicide': '自殺',
