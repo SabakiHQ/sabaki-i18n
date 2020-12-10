@@ -394,7 +394,8 @@ module.exports = {
     'Cancel': '取消'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.': p => `請重新啟動 ${p.appName} 以套用您的語言設定。`,
+    'Please restart ${appName} to apply your language setting.': p =>
+      `請重新啟動 ${p.appName} 以套用您的語言設定。`,
     'Enable hardware acceleration if possible': '硬體加速（若支援）',
     'Check for updates at startup': '啟動程式時檢查更新',
     'Enable sounds': '打開聲音',

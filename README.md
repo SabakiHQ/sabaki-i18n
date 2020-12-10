@@ -17,7 +17,7 @@ Home of Sabaki's translation efforts.
 | русский (Russian)                           | `ru.i18n.js`      | 99%      |
 | Türkçe (Turkish)                            | `tr.i18n.js`      | 98%      |
 | 简体中文 (Simplified Chinese)               | `zh-Hans.i18n.js` | 96%      |
-| 繁體中文 (Traditional Chinese)              | `zh-Hant.i18n.js` | 96%      |
+| 繁體中文 (Traditional Chinese)              | `zh-Hant.i18n.js` | 99%      |
 
 <!-- end-progress-table -->
 
