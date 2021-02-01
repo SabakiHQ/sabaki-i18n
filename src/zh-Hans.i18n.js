@@ -559,7 +559,7 @@ module.exports = {
     '3-3 Point Invasion': null,
     'Shoulder Hit': '尖冲',
     'Diagonal Jump': '象飞',
-    '3-4 Point': null,
+    '3-4 Point': '小目',
     '4-4 Point': '星位',
     '3-3 Point': '三三',
     '3-5 Point': null,
