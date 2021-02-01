@@ -13,7 +13,7 @@ module.exports = {
     'Game Info': '对局信息',
     'Manage Games…': '对局管理...',
     'Preferences…': '首选项...',
-    'Quit': null
+    'Quit': '离开'
   },
   'updater': {
     'Download Update': '下载更新',
