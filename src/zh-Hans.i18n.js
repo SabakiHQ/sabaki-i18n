@@ -556,7 +556,7 @@ module.exports = {
     'Small Knight': '飞',
     'Two-Point Jump': '大跳',
     'Large Knight': '大飞',
-    '3-3 Point Invasion': null,
+    '3-3 Point Invasion': '点三三',
     'Shoulder Hit': '尖冲',
     'Diagonal Jump': '象飞',
     '3-4 Point': null,
