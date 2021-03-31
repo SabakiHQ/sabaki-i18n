@@ -524,7 +524,7 @@ module.exports = {
     'Game Records': 'Записи игр',
     'wBaduk NGF': 'WBaduk',
     'Smart Game Format': 'Smart Game Format',
-    'PandaNET UGF': null
+    'PandaNET UGF': 'Pandanet'
   },
   'boardmatcher': {
     'Low Chinese Opening': 'Низкое китайское фусэки',
@@ -549,10 +549,10 @@ module.exports = {
     'Diamond': 'Алмаз',
     'Tiger’s Mouth': 'Тигриная пасть',
     'Empty Triangle': 'Пустой треугольник',
-    'Turn': 'Магари',
-    'Stretch': 'Ноби',
+    'Turn': 'Загиб',
+    'Stretch': 'Удлинение',
     'Diagonal': 'Косуми',
-    'Wedge': 'Варикоми',
+    'Wedge': 'Вклинивание',
     'Hane': 'Ханэ',
     'Cut': 'Разрезание',
     'Square': 'Квадрат',
