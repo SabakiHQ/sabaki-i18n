@@ -504,8 +504,8 @@ module.exports = {
     'Comment': 'Комментарий'
   },
   'PeerList': {
-    'Running': 'Запущен',
-    'Stopped': 'Остановлен',
+    'Running': 'Запущено',
+    'Stopped': 'Остановлено',
     'Analyzer': 'Анализатор',
     'Plays as Black': 'Играть за чёрных',
     'Plays as White': 'Играть за белых',
