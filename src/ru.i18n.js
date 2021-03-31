@@ -549,7 +549,7 @@ module.exports = {
     'Diamond': 'Алмаз',
     'Tiger’s Mouth': 'Тигриная пасть',
     'Empty Triangle': 'Пустой треугольник',
-    'Turn': 'Загиб',
+    'Turn': 'Изгиб',
     'Stretch': 'Удлинение',
     'Diagonal': 'Косуми',
     'Wedge': 'Вклинивание',
