@@ -82,7 +82,7 @@ module.exports = {
   'menu.navigation': {
     'Navigation': 'Перемещение',
     'Back': 'Назад',
-    'Forward': 'Вперед',
+    'Forward': 'Вперёд',
     'Go to Previous Fork': 'Предыдущая развилка',
     'Go to Next Fork': 'Следующая развилка',
     'Go to Previous Comment': 'Предыдущий комментарий',
