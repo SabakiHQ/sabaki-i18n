@@ -16,27 +16,27 @@ module.exports = {
     'Quit': 'Esci'
   },
   'updater': {
-    'Download Update': null,
-    'View Changelog': null,
-    'Not Now': null,
-    '${appName} v${version} is available now.': null,
-    'OK': null,
-    'No updates available': null,
-    '${appName} v${version} is the latest version.': null
+    'Download Update': 'Scarica Aggiornamento',
+    'View Changelog': 'Vedi Changelog',
+    'Not Now': 'Non Adesso',
+    '${appName} v${version} is available now.': '${appName} v${version} è disponibile ora',
+    'OK': 'OK',
+    'No updates available': 'Nessun Nuovo Aggiornamento',
+    '${appName} v${version} is the latest version.': "${appName} v${version} è l'ultima versione"
   },
   'exception': {
-    '${appName} v${version}': null,
-    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': null
+    '${appName} v${version}':'${appName} v${version}': ,
+    'Something weird happened. ${appName} will shut itself down. If possible, please report this on ${appName}’s repository on GitHub.': 'È successo qualcosa di strano. ${appName} si chiuderà da solo. Se possibile, comunicalo su repository di ${appName} su GitHub.'
   },
   'menu.play': {
-    'Play': null,
-    'Toggle Player': null,
-    'Select Point': null,
-    'Enter a coordinate to select a point': null,
-    'Pass': null,
-    'Resign': null,
-    'Estimate': null,
-    'Score': null
+    'Play': 'Gioca',
+    'Toggle Player': 'Scambiare Giocatore',
+    'Select Point': 'Scegli Punto',
+    'Enter a coordinate to select a point': 'Inserisci una coordinata per scegliere un punto',
+    'Pass': 'Passa',
+    'Resign': 'Consegna',
+    'Estimate': 'Stimare il Punteggio',
+    'Score': 'Punteggio Finale'
   },
   'menu.edit': {
     'Edit': null,
