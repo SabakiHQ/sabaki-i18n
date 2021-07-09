@@ -1,19 +1,19 @@
 module.exports = {
   'menu.file': {
-    'New Window': null,
-    'File': null,
-    'New': null,
-    'Open…': null,
-    'Save': null,
-    'Save As…': null,
-    'Clipboard': null,
-    'Load SGF': null,
-    'Copy SGF': null,
-    'Copy ASCII Diagram': null,
-    'Game Info': null,
-    'Manage Games…': null,
-    'Preferences…': null,
-    'Quit': null
+    'New Window': 'Nuova Finestra',
+    'File': 'File',
+    'New': 'Nuovo',
+    'Open…': 'Apri',
+    'Save': 'Salva',
+    'Save As…': 'Salva con Nome',
+    'Clipboard': 'Appunti',
+    'Load SGF': 'Carica SGF',
+    'Copy SGF': 'Copia SGF',
+    'Copy ASCII Diagram': 'Copia Diagramma ASCII',
+    'Game Info': 'Dati della Partita',
+    'Manage Games…': 'Gestire Partita',
+    'Preferences…': 'Opzioni',
+    'Quit': 'Esci'
   },
   'updater': {
     'Download Update': null,
