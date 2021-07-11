@@ -99,4 +99,12 @@
       "unusedFlags": 1
     }
   }
+"it": {
+    "name": "Italian",
+    "nativeName": "Italiano",
+    "stats": {
+      "totalStringsCount": 463,
+      "translatedStringsCount": 0,
+      }
+  }
 }
