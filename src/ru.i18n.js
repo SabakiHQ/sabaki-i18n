@@ -82,7 +82,7 @@ module.exports = {
   'menu.navigation': {
     'Navigation': 'Перемещение',
     'Back': 'Назад',
-    'Forward': 'Вперед',
+    'Forward': 'Вперёд',
     'Go to Previous Fork': 'Предыдущая развилка',
     'Go to Next Fork': 'Следующая развилка',
     'Go to Previous Comment': 'Предыдущий комментарий',
@@ -246,7 +246,7 @@ module.exports = {
   },
   'menu.comment': {
     'Clear Annotations': 'Очистить метки',
-    'Good for Black': 'Хорошо для черных',
+    'Good for Black': 'Хорошо для чёрных',
     'Unclear Position': 'Неясная позиция',
     'Even Position': 'Равная позиция',
     'Good for White': 'Хорошо для белых',
@@ -495,8 +495,8 @@ module.exports = {
     'Very good for White': 'Очень хорошо для белых',
     'Even position': 'Равная позиция',
     'Very even position': 'Очень равная позиция',
-    'Good for Black': 'Хорошо для черных',
-    'Very good for Black': 'Очень хорошо для черных',
+    'Good for Black': 'Хорошо для чёрных',
+    'Very good for Black': 'Очень хорошо для чёрных',
     'Unclear position': 'Неясная позиция',
     'Very unclear position': 'Очень неясная позиция',
     'Edit': 'Редактировать',
@@ -504,8 +504,8 @@ module.exports = {
     'Comment': 'Комментарий'
   },
   'PeerList': {
-    'Running': 'Запущен',
-    'Stopped': 'Остановлен',
+    'Running': 'Запущено',
+    'Stopped': 'Остановлено',
     'Analyzer': 'Анализатор',
     'Plays as Black': 'Играть за чёрных',
     'Plays as White': 'Играть за белых',
@@ -524,7 +524,7 @@ module.exports = {
     'Game Records': 'Записи игр',
     'wBaduk NGF': 'WBaduk',
     'Smart Game Format': 'Smart Game Format',
-    'PandaNET UGF': null
+    'PandaNET UGF': 'Pandanet'
   },
   'boardmatcher': {
     'Low Chinese Opening': 'Низкое китайское фусэки',
@@ -549,10 +549,10 @@ module.exports = {
     'Diamond': 'Алмаз',
     'Tiger’s Mouth': 'Тигриная пасть',
     'Empty Triangle': 'Пустой треугольник',
-    'Turn': 'Магари',
-    'Stretch': 'Ноби',
+    'Turn': 'Изгиб',
+    'Stretch': 'Удлинение',
     'Diagonal': 'Косуми',
-    'Wedge': 'Варикоми',
+    'Wedge': 'Вклинивание',
     'Hane': 'Ханэ',
     'Cut': 'Разрезание',
     'Square': 'Квадрат',
