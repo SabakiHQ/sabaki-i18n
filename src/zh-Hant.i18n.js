@@ -3,7 +3,7 @@ module.exports = {
     'New Window': '新視窗',
     'File': '檔案',
     'New': '新對局',
-    'Open…': '打開...',
+    'Open…': '開啟...',
     'Save': '儲存',
     'Save As…': '另存為...',
     'Clipboard': '剪貼簿',
@@ -91,7 +91,7 @@ module.exports = {
     'Go to Main Variation': '主要變化',
     'Go to Previous Variation': '上一變化',
     'Go to Next Variation': '下一變化',
-    'Go to Move Number': '第...手',
+    'Go to Move Number': '前往第...手',
     'Enter a move number to go to': '請輸入手數',
     'Go to Next Game': '下一個對局',
     'Go to Previous Game': '上一個對局'
@@ -104,7 +104,7 @@ module.exports = {
       '載入的引擎不支援分析模式',
     'Start Engine vs. Engine Game': '開始引擎間的對戰',
     'Stop Engine vs. Engine Game': '停止引擎間的對戰',
-    'Generate Move': '生成一手棋',
+    'Generate Move': '產生一手棋',
     'Please assign an engine to the player first.':
       '請先為當前玩家分配一個引擎',
     '(Unnamed Engine)': '(未命名的引擎)',
@@ -164,7 +164,7 @@ module.exports = {
     'A language file is basically a JavaScript file and can be used to execute arbitrary code on your computer.\n\nIt can be extremely dangerous, so it is recommended to only load language files from authors you trust.':
       '語言包基本上是一個JaveScript檔，可以在您的電腦上執行任何指令。所以請不要載入任何來源不可信的語言包檔案。',
     'I understand': '我瞭解',
-    'JavaScript Files': 'JavaScript 文件',
+    'JavaScript Files': 'JavaScript 檔案',
     'Unload Language File': '卸載語言包'
   },
   'menu.macos': {
@@ -172,7 +172,7 @@ module.exports = {
   },
   'App': {
     'Press Esc to exit full screen mode': '按 ESC 鍵退出全螢幕模式',
-    'Press Alt to show menu bar': '按 Alt 鍵顯示功能表列'
+    'Press Alt to show menu bar': '按 Alt 鍵顯示功能表'
   },
   'ContentDisplay': {
     'Jump to Move Number': '跳轉至手數'
@@ -226,7 +226,7 @@ module.exports = {
   'sabaki.engine': {
     'Connection Failed': '連接失敗',
     '${engine} has failed to generate a move.': p =>
-      `${p.engine} 引擎生成下一手棋失敗。`,
+      `${p.engine} 引擎產生下一手棋失敗。`,
     '${engine} has resigned.': p => `${p.engine} 認輸了。`,
     'Please attach one or more engines first.': '請先載入一個或多個引擎。',
     'The selected engine does not support analysis.':
@@ -261,14 +261,14 @@ module.exports = {
     'Stop': '停止',
     'Detach': '卸載引擎',
     'Synchronize': '同步',
-    'Generate Move': '生成下一手',
+    'Generate Move': '產生下一手',
     'Set as Analyzer': '設為分析器',
     'Set as Black Player': '持黑',
     'Set as White Player': '持白',
     'Go to Engine': '轉到引擎控制台'
   },
   'AutoplayBar': {
-    'sec per move': '秒每步'
+    'sec per move': '秒/步'
   },
   'EditBar': {
     'Stone Tool': '棋子',
@@ -306,7 +306,7 @@ module.exports = {
     'White': '白棋'
   },
   'ScoringBar': {
-    'Details': '查看詳細',
+    'Details': '查看詳細資訊',
     'Draw': '平局',
     'Please select dead stones.': '請點擊設置活棋/死棋',
     'Toggle group status.': '切換活棋/死棋狀態'
@@ -347,10 +347,10 @@ module.exports = {
     'Do you really want to remove all other games permanently?':
       '您確定要刪除除此之外的所有對局嗎？',
     'Remove Games': '刪除對局',
-    'Add New Game': '增加新對局',
-    'Add Existing Files…': '添加文件...',
+    'Add New Game': '加入新對局',
+    'Add Existing Files…': '加入現有檔案...',
     'All Files': '所有檔案',
-    'Some files are unreadable.': '部分檔無法讀取',
+    'Some files are unreadable.': '部分檔案無法讀取',
     'Black Player': '黑棋玩家名稱',
     'White Player': '白棋玩家名稱',
     'Black Rank': '黑棋段位',
@@ -362,7 +362,7 @@ module.exports = {
     'Reverse': '倒序',
     'Manage Games': '管理對局',
     'Filter': '過濾',
-    'Add': '添加',
+    'Add': '加入',
     'Sort By': '排序',
     'Close': '關閉'
   },
@@ -398,14 +398,14 @@ module.exports = {
       `請重新啟動 ${p.appName} 以套用您的語言設定。`,
     'Enable hardware acceleration if possible': '硬體加速（若支援）',
     'Check for updates at startup': '啟動程式時檢查更新',
-    'Enable sounds': '打開聲音',
-    'Jump to end after loading file': '打開對局文件後跳轉至對局末尾',
-    'Fuzzy stone placement': '棋子顯示位置不必嚴格地位於棋盤交叉線上',
+    'Enable sounds': '開啟聲音',
+    'Jump to end after loading file': '開啟對局文件後跳轉至對局末尾',
+    'Fuzzy stone placement': '棋子顯示位置不必嚴格地置於棋盤交叉線上',
     'Animate fuzzy placement': '落子時棋子顯示位置動態效果',
     'Variation Replay Mode:': '變化重播模式',
     'Disabled': '停用',
     'Move by Move': '逐手',
-    'Instantly': null,
+    'Instantly': '立即',
     'Language:': '語言:',
     'Game Tree Style:': '對局變化樹樣式',
     'Compact': '緊湊',
@@ -424,10 +424,10 @@ module.exports = {
     'Browse…': '瀏覽...',
     'Directory not found': '未找到資料夾',
     'File not found': '未找到檔案',
-    'Do you really want to uninstall this theme?': '您確定要卸載該主題嗎？',
-    'Uninstall': '卸載',
+    'Do you really want to uninstall this theme?': '您確定要解除安裝該主題嗎？',
+    'Uninstall': '解除安裝',
     'Cancel': '取消',
-    'Uninstallation failed.': '卸載失敗',
+    'Uninstallation failed.': '解除安裝失敗',
     'Sabaki Themes': 'Sabaki 主題',
     'Installation failed.': '安裝失敗',
     'Custom Images': '自訂圖片',
@@ -438,7 +438,7 @@ module.exports = {
     'Current Theme': '當前主題',
     'Default': '預設',
     'Install Theme…': '安裝主題...',
-    'Get more themes…': '獲取更多主題...',
+    'Get more themes…': '取得更多主題...',
     'by ${author}': p => `作者：${p.author}`,
     'Homepage': '主頁',
     'All Files': '所有檔案',
@@ -489,7 +489,7 @@ module.exports = {
     'Good for Black': '黑好',
     'Very good for Black': '黑大好',
     'Unclear position': '形勢不明',
-    'Very unclear position': '形勢特別不明朗',
+    'Very unclear position': '形勢很不明朗',
     'Edit': '編輯',
     'Title': '註釋標題',
     'Comment': '註釋'
@@ -512,10 +512,10 @@ module.exports = {
   },
   'fileformats': {
     'Tygem GIB': '弈城GIB',
-    'Game Records': 'Game Records',
-    'wBaduk NGF': 'wBaduk NGF',
-    'Smart Game Format': 'Smart Game Format',
-    'PandaNET UGF': 'PandaNET UGF'
+    'Game Records': null,
+    'wBaduk NGF': null,
+    'Smart Game Format': null,
+    'PandaNET UGF': null
   },
   'boardmatcher': {
     'Low Chinese Opening': '低中國流',
