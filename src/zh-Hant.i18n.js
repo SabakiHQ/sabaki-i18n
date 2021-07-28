@@ -512,7 +512,7 @@ module.exports = {
   },
   'fileformats': {
     'Tygem GIB': '弈城GIB',
-    'Game Records': null,
+    'Game Records': '對局紀錄',
     'wBaduk NGF': null,
     'Smart Game Format': null,
     'PandaNET UGF': null
