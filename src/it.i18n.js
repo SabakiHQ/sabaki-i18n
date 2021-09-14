@@ -80,7 +80,7 @@ module.exports = {
     'Go to Next Fork': 'Branch Prossimo',
     'Go to Previous Comment': 'Commento Precedente',
     'Go to Next Comment': 'Commento Prossimo',
-    'Go to Beginning': 'Salta all'Inizio',
+    'Go to Beginning': 'Salta all Inizio',
     'Go to End': 'Salta alla fine',
     'Go to Main Variation': 'Vai alla Variazione Principale',
     'Go to Previous Variation': 'Vai alla Variazione Precedente',
@@ -91,9 +91,9 @@ module.exports = {
     'Go to Previous Game': 'Vai alla Partita Precedente'
   },
   'menu.engines': {
-    'Engines': null,
-    'Show Engines Sidebar': null,
-    'Toggle Analysis': null,
+    'Engines': 'Motori di Gioco',
+    'Show Engines Sidebar': 'Mostra Pannello dei Motori di Gioco',
+    'Toggle Analysis': 'Segna Analisi',
     'None of the attached engines support analysis.': null,
     'Start Engine vs. Engine Game': null,
     'Stop Engine vs. Engine Game': null,
