@@ -97,7 +97,7 @@ module.exports = {
   'menu.engines': {
     'Engines': 'Motorlar',
     'Show Engines Sidebar': 'Motor Kenar Çubuğunu Göster',
-    'Toggle Analysis': 'Analizi Aç/Kapat',
+    'Toggle Analysis': 'Analizi Başlat/Sonlandır',
     'None of the attached engines support analysis.': 'İlişkilendirilmiş motorlardan hiç biri analizi desteklemiyor.',
     'Start Engine vs. Engine Game': 'Motor - Motor Oyunu Başlat',
     'Stop Engine vs. Engine Game': 'Motor - Motor Oyununu Durdur',
@@ -260,7 +260,7 @@ module.exports = {
   'menu.engineAction': {
     'Start': 'Başlat',
     'Stop': 'Durdur',
-    'Detach': 'Ayır',
+    'Detach': 'Bağlantıyı Kes',
     'Synchronize': 'Senkronize Et',
     'Generate Move': 'Hamle Yap',
     'Set as Analyzer': 'Analiz Motoru Olarak Ayarla',
@@ -311,7 +311,7 @@ module.exports = {
     'Details': 'Ayrıntılar',
     'Draw': 'Berabere',
     'Please select dead stones.': 'Lütfen ölü taşları seçin.',
-    'Toggle group status.': 'Grup durumunu göster/gizle.'
+    'Toggle group status.': 'Grup durumunu değiştir.'
   },
   'AdvancedPropertiesDrawer': {
     'Remove': 'Sil',
@@ -403,8 +403,8 @@ module.exports = {
     'Check for updates at startup': 'Başlangıçta güncellemeleri denetle',
     'Enable sounds': 'Ses efektlerini etkinleştir',
     'Jump to end after loading file': 'Dosya yüklendikten sonra sona atla',
-    'Fuzzy stone placement': 'Analiz hamlelerini yerleştirme',
-    'Animate fuzzy placement': 'Analiz hamlelerini hareketlendir',
+    'Fuzzy stone placement': 'Belirsiz taş yerleştirme',
+    'Animate fuzzy placement': 'Belirsiz yerleştirmeyi hareketlendir',
     'Variation Replay Mode:': 'Varyasyon Oynatma Modu:',
     'Disabled': 'Devredışı',
     'Move by Move': 'Hamle Hamle',
@@ -573,7 +573,7 @@ module.exports = {
     'Atari': 'Atari',
     'Suicide': 'İntihar',
     'Fill': 'Doldur',
-    'Connect': 'Bağla',
+    'Connect': 'Bağlama',
     'Tengen': 'Tengen',
     'Hoshi': 'Hoshi'
   }
