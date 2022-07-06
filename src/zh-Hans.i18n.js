@@ -402,7 +402,7 @@ module.exports = {
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Variation Replay Mode:': '变化的播放模式',
+    'Variation Replay Mode:': '变化的显示模式',
     'Disabled': '禁用',
     'Move by Move': '逐步显示变化',
     'Instantly': '立刻显示变化',
