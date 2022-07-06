@@ -395,7 +395,7 @@ module.exports = {
   },
   'PreferencesDrawer': {
     'Please restart ${appName} to apply your language setting.': p => 
-      `请重新启动 ${p.appName} ，以应用您的语言设置。`,
+      `请重新启动 ${p.appName} 以应用您的语言设置。`,
     'Enable hardware acceleration if possible': '硬件加速（若支持）',
     'Check for updates at startup': '启动程序时检查更新',
     'Enable sounds': '打开声音',
