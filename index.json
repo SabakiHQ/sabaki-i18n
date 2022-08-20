@@ -98,5 +98,15 @@
       "progress": 0.978401727861771,
       "unusedFlags": 1
     }
+  },
+  "de": {
+    "name": "German",
+    "nativeName": "Deutsch",
+    "stats": {
+      "totalStringsCount": 463,
+      "translatedStringsCount": 46,
+      "progress": 0.0993520518359,
+      "unusedFlags": 0
+    }
   }
 }
