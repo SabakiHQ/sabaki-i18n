@@ -130,9 +130,9 @@ module.exports = {
     'Toggle Full Screen': '进入/取消全屏',
     'Show Coordinates': '显示坐标',
     'Don’t Show': '不显示',
-    'A1 (Default)': null,
-    '1-1': null,
-    'Relative': null,
+    'A1 (Default)': 'A1（默认）',
+    '1-1': '1-1',
+    'Relative': '相对',
     'Show Move Numbers': '显示手数',
     'Show Move Colorization': '颜色标记评注',
     'Show Next Moves': '用圆点显示下一手',
@@ -394,17 +394,18 @@ module.exports = {
     'Cancel': '取消'
   },
   'PreferencesDrawer': {
-    'Please restart ${appName} to apply your language setting.': null,
+    'Please restart ${appName} to apply your language setting.': p => 
+      `请重新启动 ${p.appName} 以应用您的语言设置。`,
     'Enable hardware acceleration if possible': '硬件加速（若支持）',
     'Check for updates at startup': '启动程序时检查更新',
     'Enable sounds': '打开声音',
     'Jump to end after loading file': '打开对局文件后跳转至对局末尾',
     'Fuzzy stone placement': '棋子显示位置不必严格地位于棋盘交叉线上',
     'Animate fuzzy placement': '落子时棋子显示位置动态效果',
-    'Variation Replay Mode:': null,
-    'Disabled': null,
-    'Move by Move': null,
-    'Instantly': null,
+    'Variation Replay Mode:': '变化的显示模式',
+    'Disabled': '禁用',
+    'Move by Move': '逐步显示变化',
+    'Instantly': '立刻显示变化',
     'Language:': '语言:',
     'Game Tree Style:': '对局变化树样式',
     'Compact': '紧凑',
@@ -514,7 +515,7 @@ module.exports = {
     'Game Records': 'Game Records',
     'wBaduk NGF': 'wBaduk NGF',
     'Smart Game Format': 'Smart Game Format',
-    'PandaNET UGF': null
+    'PandaNET UGF': 'PandaNet UGF'
   },
   'boardmatcher': {
     'Low Chinese Opening': '低中国流',
