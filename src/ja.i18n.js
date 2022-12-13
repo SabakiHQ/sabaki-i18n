@@ -133,7 +133,7 @@ module.exports = {
     'Don’t Show': '表示しない',
     'A1 (Default)': 'A1形式 (標準)',
     '1-1': '1-1形式',
-    'Relative': '盤端からの位置',
+    'Relative': '盤端からの相対位置',
     'Show Move Numbers': '手数を表示',
     'Show Move Colorization': '着手の色付け表示',
     'Show Next Moves': '次の着手を表示',
@@ -521,7 +521,7 @@ module.exports = {
     'Tygem GIB': '東洋囲碁GIB',
     'Game Records': 'Game Records',
     'wBaduk NGF': '幽玄の間 NGF',
-    'Smart Game Format': 'SGFファイル',
+    'Smart Game Format': 'SGFファイル (Smart Game Format)',
     'PandaNET UGF': 'パンダネット UGF'
   },
   'boardmatcher': {
