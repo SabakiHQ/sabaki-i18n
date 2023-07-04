@@ -68,7 +68,9 @@ module.exports = {
     'Shift Right': '右にずらす',
     'Flatten': '平板化',
     'Remove Node': 'ノードを削除',
-    'Remove Other Variations': '他の変化を削除'
+    'Remove Other Variations': '他の変化を削除',
+    'Annotate': null,
+    'Toggle Show Comments': null
   },
   'menu.find': {
     'Find': '探索',

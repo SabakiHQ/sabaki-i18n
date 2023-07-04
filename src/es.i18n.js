@@ -65,7 +65,9 @@ module.exports = {
     'Shift Right': 'Mover Variante hacia la Derecha',
     'Flatten': 'Aplanar',
     'Remove Node': 'Eliminar Nodo',
-    'Remove Other Variations': 'Eliminar las Demás Variantes'
+    'Remove Other Variations': 'Eliminar las Demás Variantes',
+    'Annotate': 'Anotar',
+    'Toggle Show Comments': 'Conmutar Mostrar Comentarios'
   },
   'menu.find': {
     'Find': '&Buscar',

@@ -61,7 +61,9 @@ module.exports = {
     'Shift Right': null,
     'Flatten': null,
     'Remove Node': null,
-    'Remove Other Variations': null
+    'Remove Other Variations': null,
+    'Annotate': null,
+    'Toggle Show Comments': null
   },
   'menu.find': {
     'Find': null,
