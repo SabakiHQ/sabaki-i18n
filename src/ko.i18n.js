@@ -68,7 +68,9 @@ module.exports = {
     'Shift Right': '오른쪽으로 옮기기',
     'Flatten': '병합',
     'Remove Node': '노드 제거',
-    'Remove Other Variations': '다른 변화도 삭제'
+    'Remove Other Variations': '다른 변화도 삭제',
+    'Annotate': null,
+    'Toggle Show Comments': null
   },
   'menu.find': {
     'Find': '찾기',

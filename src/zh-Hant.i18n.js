@@ -67,7 +67,9 @@ module.exports = {
     'Shift Right': '右移',
     'Flatten': '清空該節點前的所有變化',
     'Remove Node': '刪除節點',
-    'Remove Other Variations': '刪除其他變化'
+    'Remove Other Variations': '刪除其他變化',
+    'Annotate': '評註',
+    'Toggle Show Comments':  '切換顯示註釋'
   },
   'menu.find': {
     'Find': '尋找',
