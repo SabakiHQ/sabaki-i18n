@@ -551,7 +551,7 @@ module.exports = {
     'Parallelogram': '错位方阵',
     'Dog’s Head': '猴脸',
     'Horse’s Head': '马脸',
-    'Attachment': '贴',
+    'Attachment': '靠',
     'One-Point Jump': '跳',
     'Big Bulge': '小飞方阵少一子',
     'Small Knight': '飞',
