@@ -1,4 +1,4 @@
-# Sabaki I18n [![CI Status](https://github.com/SabakiHQ/sabaki-i18n/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/SabakiHQ/sabaki-i18n/actions) [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/workflows/Daily%20Sync/badge.svg?branch=master)](https://github.com/SabakiHQ/sabaki-i18n/actions)
+# Sabaki I18n [![CI](https://github.com/SabakiHQ/sabaki-i18n/actions/workflows/ci.yml/badge.svg)](https://github.com/SabakiHQ/sabaki-i18n/actions/workflows/ci.yml) [![Daily Sync](https://github.com/SabakiHQ/sabaki-i18n/actions/workflows/dailySync.yml/badge.svg)](https://github.com/SabakiHQ/sabaki-i18n/actions/workflows/dailySync.yml)
 
 Home of Sabaki's translation efforts.
 
