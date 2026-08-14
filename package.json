@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "globby": "^16.2.1",
-    "prettier": "3.9.4"
+    "prettier": "3.9.6"
   }
 }
