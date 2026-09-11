@@ -67,7 +67,9 @@ module.exports = {
     'Shift Right': 'Sağa Kaydır',
     'Flatten': 'Düzleştir',
     'Remove Node': 'Düğümü Kaldır',
-    'Remove Other Variations': 'Diğer Varyasyonları Sil'
+    'Remove Other Variations': 'Diğer Varyasyonları Sil',
+    'Annotate': null,
+    'Add/View Comment': null
   },
   'menu.find': {
     'Find': 'Bul',

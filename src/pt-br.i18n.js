@@ -68,7 +68,9 @@ module.exports = {
     'Shift Right': '&Deslocar à direita',
     'Flatten': '&Nivelar',
     'Remove Node': '&Remover Nó',
-    'Remove Other Variations': '&Remover Outras Variações'
+    'Remove Other Variations': '&Remover Outras Variações',
+    'Annotate': null,
+    'Add/View Comment': null
   },
   'menu.find': {
     'Find': '&Procurar',

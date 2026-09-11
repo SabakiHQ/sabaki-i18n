@@ -68,7 +68,9 @@ module.exports = {
     'Shift Right': 'Сдвинуть ветвь вправо',
     'Flatten': 'Преобразовать в начальную позицию',
     'Remove Node': 'Удалить',
-    'Remove Other Variations': 'Удалить другие ветви'
+    'Remove Other Variations': 'Удалить другие ветви',
+    'Annotate': null,
+    'Add/View Comment': null
   },
   'menu.find': {
     'Find': 'Найти',

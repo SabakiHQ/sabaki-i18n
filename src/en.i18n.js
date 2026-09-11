@@ -68,7 +68,9 @@ module.exports = {
     'Shift Right': 'Shift Ri&ght',
     'Flatten': '&Flatten',
     'Remove Node': '&Remove Node',
-    'Remove Other Variations': 'Remove &Other Variations'
+    'Remove Other Variations': 'Remove &Other Variations',
+    'Annotate': '&Annotate',
+    'Add/View Comment': 'Add/&View Comment'
   },
   'menu.find': {
     'Find': 'Fin&d',
